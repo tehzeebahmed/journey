@@ -1,5 +1,5 @@
 """
-this pythin ciode is foir showcasing how to use context engineering with Gemini models using langchain integration.
+this pythin code is for showcasing how to use context engineering with Gemini models using langchain integration.
 Context engineering is the practice of designing and structuring the input provided to a language model in a way that maximizes its understanding and relevance to the task at hand.
 In this code, we are collecting various pieces of context from the user, such as the system
 role, target audience, tone, previous context, and external knowledge. We then construct a prompt that incorporates all of this information to guide the Gemini model in generating a response that is tailored to the specified context.
