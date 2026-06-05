@@ -4,7 +4,8 @@
 # have logging into file    
 import os
 import time # this module provides various time-related functions
-import logging # this module provides a way to log messages for debugging and monitoring purposes
+import logging
+from urllib import response # this module provides a way to log messages for debugging and monitoring purposes
 from langchain_google_genai import ChatGoogleGenerativeAI # this module provides a way to interact with Google's Generative AI models
 from langchain_core import tools # this module provides a way to define tools that can be used by the agent
 from langchain.agents.factory import create_agent as create_langchain_agent # this
@@ -46,21 +47,25 @@ def create_gemini_llm():
 @tools.tool
 def add(a: int, b: int) -> int:
     """Add two numbers and return the result."""
+    print("TOOL CALLED -> Add")
     return a + b
 
 @tools.tool
 def multiply(a: int, b: int) -> int:
     """Multiply two numbers and return the result."""
+    print("TOOL CALLED -> Multiply")
     return a * b
 
 @tools.tool
-def square(a: int) -> int:
+def square(number: int) -> int:
     """Calculate the square of a number and return the result."""
-    return a * a
+    print("TOOL CALLED -> square")
+    return number * number
 
 @tools.tool
-def get_current_time():
+def get_current_time() ->str:
     """Get the current time in a human-readable format."""
+    print("TOOL CALLED -> get_current_time")
     return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 def create_agent(llm):
@@ -68,7 +73,11 @@ def create_agent(llm):
     Create an agent with the specified LLM and tools.
     This function defines the tools that the agent can use and creates the agent using the provided LLM and tools.
     """
-    tools = [add, multiply, square, get_current_time] # this defines a list of tools that the agent can use
+    tools = [add, 
+             multiply, 
+             square, 
+             get_current_time
+             ] # this defines a list of tools that the agent can use
     logger.info("Creating agent with tools...") # this logs an informational message indicating that the agent is being created
     agent = create_langchain_agent(model= llm, tools = tools) # this creates an agent using the specified LLM and tools
     logger.info("Agent created successfully.") # this logs an informational message indicating that the agent has been created successfully
@@ -88,10 +97,10 @@ def main():
     answer = agent.invoke(
         {"messages": [{"role": "user", "content": question}]}
     ) # this calls the invoke method of the agent with the user's question and stores the generated answer in the variable answer
-    answer = answer.__format__('') # this formats the answer to clean it up and make it more readable
-    logger.info(f"Question: {question} | \n \n Answer: {answer}") # this logs an informational message displaying the user's question and the agent's answer
-    print(f"Answer: {answer}") # this prints the agent's answer to the console
-    
+    final_answer = answer["messages"][-1].content
+    logger.info(f"Question: {question} | \n \n Answer: {final_answer}") # this logs an informational message displaying the user's question and the agent's answer
+    print(f"Answer: {final_answer}") # this prints the agent's answer to the console
+
 if __name__ == "__main__":
     main() # this calls the main function to execute the program
     
