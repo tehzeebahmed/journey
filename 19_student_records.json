@@ -1,0 +1,79 @@
+[
+    {
+        "student_id": "STD0001",
+        "name": "Mustafa Pasha",
+        "age": 11,
+        "course": "Economics",
+        "updated_at": "2026-06-07T11:30:12.736339"
+    },
+    {
+        "student_id": "STD0002",
+        "name": "Nazneen Rais",
+        "age": 12,
+        "course": "GenAi",
+        "updated_at": "2026-06-07T11:31:19.876663"
+    },
+    {
+        "student_id": "STD0003",
+        "name": "aasif aruna Ali",
+        "age": 23,
+        "course": "M.Sc Physics",
+        "updated_at": "2026-06-07T11:34:10.413598"
+    },
+    {
+        "student_id": "STD0004",
+        "name": "Arshi, Hasan",
+        "age": 9,
+        "course": "English",
+        "updated_at": "2026-06-07T11:39:06.212800"
+    },
+    {
+        "student_id": "STD0005",
+        "name": "hasan Arfi",
+        "age": 12,
+        "course": "Maths",
+        "updated_at": "2026-06-07T11:40:25.045333"
+    },
+    {
+        "student_id": "STD0006",
+        "name": "Tehzeeb Pasha",
+        "age": 23,
+        "course": "Chemistry",
+        "updated_at": "2026-06-07T11:41:36.142270"
+    },
+    {
+        "student_id": "STD0007",
+        "name": "Shakeel ganja",
+        "age": 19,
+        "course": "Engineering ",
+        "updated_at": "2026-06-07T11:43:02.305224"
+    },
+    {
+        "student_id": "STD0008",
+        "name": "Mushcha Pasha",
+        "age": 11,
+        "course": "Mathematics",
+        "updated_at": "2026-06-07T11:43:35.946357"
+    },
+    {
+        "student_id": "STD0009",
+        "name": "Mustaqeem saheb",
+        "age": 3,
+        "course": "D lit",
+        "updated_at": "2026-06-07T11:50:11.023987"
+    },
+    {
+        "student_id": "STD0010",
+        "name": "Arbaz khan",
+        "age": 8,
+        "course": "Urdu",
+        "updated_at": "2026-06-07T15:52:49.533373"
+    },
+    {
+        "student_id": "STD0011",
+        "name": "Ayan hussain",
+        "age": 13,
+        "course": "Arabic",
+        "updated_at": "2026-06-07T15:53:08.434458"
+    }
+]

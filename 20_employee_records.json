@@ -1,0 +1,35 @@
+[
+    {
+        "employee_id": "EMP0001",
+        "name": "Tehzeeb Ahmed",
+        "city": "",
+        "age": 35,
+        "salary": 35000,
+        "department": "Finance",
+        "email": "tehzeeb.ahmed@gmail.com",
+        "country": "",
+        "timestamp": "2026-06-08T16:05:09.430682"
+    },
+    {
+        "employee_id": "EMP0002",
+        "name": "Mansi Shah",
+        "city": "pune",
+        "age": 38,
+        "salary": 23000,
+        "department": "HR",
+        "email": "amnsi.shah@rediffmail.com",
+        "country": "India",
+        "timestamp": "2026-06-07T17:04:32.698979"
+    },
+    {
+        "employee_id": "EMP0003",
+        "name": "Nazneen Rais",
+        "city": "Pune",
+        "age": 30,
+        "salary": 23009,
+        "department": "Not Specified",
+        "email": "naz.ahmed@gmail.com",
+        "country": "India",
+        "timestamp": "2026-06-08T16:06:59.998723"
+    }
+]
