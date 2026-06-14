@@ -1,0 +1,82 @@
+2026-06-14 16:47:45,508 - INFO - Starting employee record agent
+2026-06-14 16:47:45,509 - INFO - Creating Mistral LLM with model mistral-small-latest
+2026-06-14 16:47:45,535 - INFO - Mistral LLM created successfully.
+2026-06-14 16:48:48,533 - INFO - Starting employee record agent
+2026-06-14 16:48:48,533 - INFO - Creating Mistral LLM with model mistral-small-latest
+2026-06-14 16:48:48,548 - INFO - Mistral LLM created successfully.
+2026-06-14 16:49:41,465 - INFO - Invoking agent with user question
+2026-06-14 16:49:42,661 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:49:42,661 - INFO - Reusing existing employee_id for email tehzeeb.ahmed@gmail.com: EMP0001
+2026-06-14 16:49:42,662 - INFO - Updated employee record EMP0001
+2026-06-14 16:49:45,826 - INFO - Agent final answer received
+2026-06-14 16:50:02,495 - INFO - Invoking agent with user question
+2026-06-14 16:50:03,338 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:50:03,339 - INFO - Generated next employee_id: EMP0004
+2026-06-14 16:50:03,339 - INFO - Created employee record EMP0004
+2026-06-14 16:50:04,362 - INFO - Agent final answer received
+2026-06-14 16:50:18,212 - INFO - Invoking agent with user question
+2026-06-14 16:50:20,440 - INFO - Agent final answer received
+2026-06-14 16:51:04,821 - INFO - Invoking agent with user question
+2026-06-14 16:51:06,419 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:51:06,420 - INFO - Generated next employee_id: EMP0005
+2026-06-14 16:51:06,420 - INFO - Created employee record EMP0005
+2026-06-14 16:51:07,442 - INFO - Agent final answer received
+2026-06-14 16:52:03,856 - INFO - Invoking agent with user question
+2026-06-14 16:52:05,607 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:52:05,607 - INFO - Reusing existing employee_id for email modiji@govt.in: EMP0005
+2026-06-14 16:52:05,607 - INFO - Updated employee record EMP0005
+2026-06-14 16:52:06,631 - INFO - Agent final answer received
+2026-06-14 16:53:04,556 - INFO - Invoking agent with user question
+2026-06-14 16:53:06,328 - INFO - Agent final answer received
+2026-06-14 16:53:50,802 - INFO - Invoking agent with user question
+2026-06-14 16:53:51,694 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:53:51,694 - INFO - Generated next employee_id: EMP0006
+2026-06-14 16:53:51,694 - INFO - Created employee record EMP0006
+2026-06-14 16:53:52,753 - INFO - Agent final answer received
+2026-06-14 16:55:11,523 - INFO - Invoking agent with user question
+2026-06-14 16:55:13,204 - INFO - Agent final answer received
+2026-06-14 16:55:20,430 - INFO - Invoking agent with user question
+2026-06-14 16:55:20,937 - INFO - Agent final answer received
+2026-06-14 16:55:35,142 - INFO - Invoking agent with user question
+2026-06-14 16:55:36,144 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 16:55:36,144 - INFO - Generated next employee_id: EMP0007
+2026-06-14 16:55:36,144 - INFO - Created employee record EMP0007
+2026-06-14 16:55:37,168 - INFO - Agent final answer received
+2026-06-14 16:56:07,934 - INFO - Invoking agent with user question
+2026-06-14 16:56:08,602 - INFO - Agent final answer received
+2026-06-14 17:18:26,946 - INFO - Starting employee record agent
+2026-06-14 17:18:26,947 - INFO - Creating Mistral LLM with model mistral-small-latest
+2026-06-14 17:18:26,972 - INFO - Mistral LLM created successfully.
+2026-06-14 17:18:46,229 - INFO - Invoking agent with user question
+2026-06-14 17:18:47,077 - INFO - Agent final answer received
+2026-06-14 17:19:04,919 - INFO - Invoking agent with user question
+2026-06-14 17:19:06,216 - INFO - Agent final answer received
+2026-06-14 17:19:21,825 - INFO - Invoking agent with user question
+2026-06-14 17:19:22,497 - INFO - Agent final answer received
+2026-06-14 17:20:19,967 - INFO - Invoking agent with user question
+2026-06-14 17:20:20,866 - INFO - Agent final answer received
+2026-06-14 17:20:49,296 - INFO - Invoking agent with user question
+2026-06-14 17:20:50,111 - INFO - Agent final answer received
+2026-06-14 17:37:11,796 - INFO - Invoking agent with user question
+2026-06-14 17:37:13,208 - INFO - Agent final answer received
+2026-06-14 17:37:26,455 - INFO - Invoking agent with user question
+2026-06-14 17:37:28,978 - INFO - Agent final answer received
+2026-06-14 17:38:06,983 - INFO - Invoking agent with user question
+2026-06-14 17:38:09,019 - INFO - Agent final answer received
+2026-06-14 17:38:39,408 - INFO - Invoking agent with user question
+2026-06-14 17:38:42,402 - INFO - Agent final answer received
+2026-06-14 17:39:07,584 - INFO - Starting employee record agent
+2026-06-14 17:39:07,584 - INFO - Creating Mistral LLM with model mistral-small-latest
+2026-06-14 17:39:07,608 - INFO - Mistral LLM created successfully.
+2026-06-14 17:39:19,925 - INFO - Invoking agent with user question
+2026-06-14 17:39:21,314 - INFO - Agent final answer received
+2026-06-14 17:39:46,966 - INFO - Invoking agent with user question
+2026-06-14 17:39:48,272 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 17:39:48,273 - INFO - Reusing existing employee_id for email tehzeeb.ahmed@gmail.com: EMP0001
+2026-06-14 17:39:48,273 - INFO - Updated employee record EMP0001
+2026-06-14 17:39:48,959 - INFO - Agent final answer received
+2026-06-14 17:40:22,615 - INFO - Invoking agent with user question
+2026-06-14 17:40:23,986 - INFO - Tool called: create_or_replace_employee_record
+2026-06-14 17:40:23,987 - INFO - Reusing existing employee_id for email tehzeeb.ahmed@gmail.com: EMP0001
+2026-06-14 17:40:23,987 - INFO - Updated employee record EMP0001
+2026-06-14 17:40:24,699 - INFO - Agent final answer received
