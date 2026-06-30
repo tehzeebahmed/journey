@@ -1,0 +1,105 @@
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's great to meet you. Working from home (WFH) for Novo in Moradabad sounds like a fantastic setup. How can I assist you today? Whether it's about work, productivity tips, local recommendations, or anything else, feel free to ask! 😊
+write your question here -  
+ the Second response from Memory is Based on what you shared earlier:
+
+- **Where you live:** **Moradabad, Uttar Pradesh, India** (a city known for its brass handicrafts and rich cultural heritage).
+- **What you do:** You work **remotely (WFH – Work From Home)** for **Novo** (likely **Novo Nordisk**, a global healthcare company specializing in diabetes care and other chronic diseases).
+
+Would you like help with anything related to your work, WFH setup, or life in Moradabad? 😊
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's great to meet you. Working from home (WFH) for Novo while based in Moradabad sounds like an interesting setup. How has your experience been so far? If you ever need assistance with work-related queries, productivity tips, or anything else, feel free to ask. I'm here to help! 😊
+
+What kind of role do you have at Novo?
+write your question here -  
+ the Second response from Memory is Got it, **Tehzeeb Pasha**!
+
+- **Where you live:** **Moradabad, Uttar Pradesh, India** (a city known for its brass handicrafts and rich cultural heritage).
+- **What you do:** You work **remotely (WFH) for Novo** (likely **Novo Nordisk**, a global healthcare company specializing in diabetes care and other chronic diseases).
+
+Since you're in **Moradabad** but working for a **global company like Novo**, I’m guessing your role could be in:
+✅ **IT/Tech Support** (if Novo has a digital/IT hub in India)
+✅ **Customer Service/Operations** (handling global queries)
+✅ **Finance/HR/Procurement** (back-office functions)
+✅ **Clinical Research/Data Analysis** (if in healthcare R&D)
+✅ **Digital Marketing/Sales Support** (for Novo’s products)
+
+Would you like help with:
+🔹 **WFH productivity tips** (since Moradabad may have power/internet challenges)?
+🔹 **Career growth at Novo** (certifications, internal mobility)?
+🔹 **Networking with other remote employees in India**?
+🔹 **Understanding Novo’s work culture** (if you’re new)?
+
+
+ ---------------------End of execution - <class 'datetime.datetime'>---------------------
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's great to meet you. Working from home (WFH) for Novo while based in Moradabad sounds like an interesting setup. How has your experience been so far? If you ever need assistance with work-related queries, productivity tips, or anything else, feel free to ask. I'm here to help! 😊
+
+What kind of role do you have at Novo, if you don’t mind sharing?
+write your question here -  
+ the Second response from Memory is Got it, **Tehzeeb Pasha**! Here’s a quick recap based on what you’ve shared:
+
+### **What You Do:**
+- You work **remotely (WFH)** for **Novo** (likely **Novo Nordisk**, the global healthcare company specializing in diabetes care and other chronic diseases).
+- Your role could be in **IT, HR, finance, customer support, or another corporate function**—let me know if you'd like help with work-related tools, productivity, or industry insights!
+
+### **Where You Live:**
+- **Moradabad, Uttar Pradesh** – A historic city known for its **brass handicrafts, rich culture, and as a major industrial hub** in North India.
+- Since you're WFH, you might enjoy the **affordable cost of living** while working for an international company.
+
+### **How I Can Help:**
+- **Work:** Need tips on remote collaboration (Teams/Slack), time management, or Novo’s internal tools?
+- **Local Life:** Looking for coworking spaces, internet providers, or things to do in Moradabad?
+- **Career Growth:** Want advice on upskilling or navigating corporate culture at Novo?
+
+
+ ---------------------End of execution - <method 'date' of 'datetime.datetime' objects>- <method 'time' of 'datetime.datetime' objects>---------------------
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's great to meet you. Working from home (WFH) for Novo while living in Moradabad sounds like a fantastic setup. How are you finding the WFH experience so far? If you ever need any tips on productivity, work-life balance, or anything else, feel free to ask. I'm here to help! 😊
+
+What do you do at Novo, if you don’t mind sharing?
+write your question here -  
+ the Second response from Memory is Based on the information you shared earlier:
+
+- **Your Name:** Tehzeeb Pasha
+- **Occupation:** You work for **Novo** (likely Novo Nordisk, a global healthcare company specializing in diabetes care and other chronic diseases).
+- **Location:** You live in **Moradabad, Uttar Pradesh, India**, and work remotely (WFH – Work From Home).
+
+If you'd like to clarify your role at Novo (e.g., software, healthcare, HR, etc.) or share more details, I’d be happy to assist further! 😊
+
+
+ ---------------------End of execution - 2026-06-30 08:57:30---------------------
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's nice to meet you. Working from home (WFH) in Moradabad for Novo sounds like a great setup. How can I assist you today? Are you looking for help with work-related tasks, productivity tips, or something else? Let me know!
+write your question here -  
+ the Second response from Memory is Your name is **Tehzeeb Pasha**, you live in **Moradabad**, and you work **remotely (WFH) for Novo**.
+
+Would you like any assistance related to your work, productivity, or anything else? 😊
+
+
+---------------------End of execution - 2026-06-30 09:35:07---------------------
+ file generation done .../Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_8_m_stateful.txt
+ 
+ first role user added ...
+
+ the first response is Hello Tehzeeb Pasha! It's nice to meet you. Working from home (WFH) in Moradabad for Novo sounds like a great setup. How can I assist you today? Are you looking for help with work-related tasks, productivity tips, or something else? Let me know!
+write your question here -  
+ the Second response from Memory is **Moradabad**, the *"Brass City,"* blends Mughal heritage with vibrant handicrafts. Known for intricate metalwork, it’s culturally rich with Urdu poetry, festivals like Eid and Holi, and warm hospitality. Your **WFH at Novo** offers flexibility, global exposure, and work-life balance while staying rooted in this artistic, historic hub. Best of both worlds!
+
+
+---------------------End of execution - 2026-06-30 09:37:45---------------------

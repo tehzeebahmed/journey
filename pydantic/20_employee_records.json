@@ -1,0 +1,79 @@
+[
+    {
+        "employee_id": "EMP0001",
+        "name": "Tehzeeb Ahmed",
+        "age": 18,
+        "department": "HR",
+        "designation": "Intern",
+        "salary": 0.0,
+        "email": "tehzeeb.ahmed@gmail.com",
+        "country": "USA",
+        "timestamp": "2026-06-14T17:40:23.987663"
+    },
+    {
+        "employee_id": "EMP0002",
+        "name": "Mansi Shah",
+        "city": "Pune",
+        "age": 38,
+        "salary": 23000,
+        "department": "HR",
+        "email": "amnsi.shah@rediffmail.com",
+        "country": "India",
+        "timestamp": "2026-06-07T17:04:32.698979"
+    },
+    {
+        "employee_id": "EMP0003",
+        "name": "Nazneen Rais",
+        "city": "Pune",
+        "age": 30,
+        "salary": 23009,
+        "department": "Not Specified",
+        "email": "naz.ahmed@gmail.com",
+        "country": "India",
+        "timestamp": "2026-06-08T16:06:59.998723"
+    },
+    {
+        "employee_id": "EMP0004",
+        "name": "Arshi Doe",
+        "age": 50,
+        "department": "Sales",
+        "designation": "Manager",
+        "salary": 90000.0,
+        "email": "arshi@example.com",
+        "country": "USA",
+        "timestamp": "2026-06-14T16:50:03.339319"
+    },
+    {
+        "employee_id": "EMP0005",
+        "name": "Narendra Modi",
+        "age": 65,
+        "department": "Government",
+        "designation": "Prime Minister",
+        "salary": 1.0,
+        "email": "modiji@govt.in",
+        "country": "India",
+        "timestamp": "2026-06-14T16:52:05.607705"
+    },
+    {
+        "employee_id": "EMP0006",
+        "name": "Tillu billa",
+        "age": 20,
+        "department": "",
+        "designation": "",
+        "salary": 0.0,
+        "email": "tillubilla@billi.com",
+        "country": "India",
+        "timestamp": "2026-06-14T16:53:51.694734"
+    },
+    {
+        "employee_id": "EMP0007",
+        "name": "Nitin Gadkari Ji",
+        "age": 64,
+        "department": "Transport Minister, Govt of India",
+        "designation": "Minister",
+        "salary": 0.0,
+        "email": "nitin@mic.in",
+        "country": "India",
+        "timestamp": "2026-06-14T16:55:36.144792"
+    }
+]

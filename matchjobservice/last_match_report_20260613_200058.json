@@ -1,0 +1,54 @@
+{
+  "match_percentage": 88,
+  "verdict": "Strong Apply",
+  "key_matching_strengths": [
+    "20+ years of enterprise data architecture experience with cloud and enterprise data platforms",
+    "Extensive expertise in Databricks Lakehouse, Snowflake, Azure, and AWS platforms",
+    "Proven leadership in managing global cross-functional teams (up to 60+ engineers)",
+    "Strong background in financial services (Barclays, NBIM, Aberdeen Asset Management, Hartford Life Insurance)",
+    "Experience with medallion architecture, CDC pipelines, data governance, and real-time data processing",
+    "Certifications in AWS, Databricks, and Scrum Master, demonstrating technical and leadership credentials",
+    "Domain experience in capital markets (T+1 reconciliation), asset management, sovereign wealth funds, and pharma supply chain",
+    "Experience with enterprise data modeling, MDM, and data lineage",
+    "Proven track record of delivering petabyte-scale migrations and cost savings ($1.2M savings in one project)",
+    "Experience with AI/Generative AI projects (Agentic-AI, prompt engineering, context engineering)"
+  ],
+  "key_gaps": [
+    "No explicit mention of experience with specific compliance frameworks (e.g., GDPR, CCPA) unless implied in governance roles",
+    "Limited detail on experience with specific financial regulations (e.g., Dodd-Frank, MiFID II) beyond reconciliation platforms",
+    "No mention of experience with specific data security frameworks (e.g., SOC 2, ISO 27001) unless implied in governance roles",
+    "No explicit experience with blockchain or distributed ledger technologies, which may be relevant for some financial roles"
+  ],
+  "ats_keywords_missing": [
+    "Data Mesh",
+    "Data Fabric",
+    "Regulatory Reporting",
+    "Basel III",
+    "Solvency II",
+    "FRTB",
+    "BCBS 239",
+    "Data Mesh Architecture",
+    "Data Virtualization",
+    "Kafka",
+    "Apache Kafka",
+    "Data Mesh Principles",
+    "Data Product Ownership",
+    "Data Mesh Governance"
+  ],
+  "resume_tailoring_suggestions": [
+    {
+      "section": "Professional Summary",
+      "suggestion": "Add a line explicitly mentioning experience with financial regulations (e.g., 'Expertise in designing data platforms compliant with financial regulations such as T+1, Dodd-Frank, and MiFID II') or compliance frameworks if applicable."
+    },
+    {
+      "section": "Core Competencies",
+      "suggestion": "Add 'Data Mesh', 'Data Fabric', 'Regulatory Reporting', and 'Kafka' if the role requires these technologies or principles."
+    },
+    {
+      "section": "Key Achievements",
+      "suggestion": "Highlight any experience with regulatory reporting, compliance frameworks, or specific financial regulations (e.g., 'Designed data platforms compliant with T+1 reconciliation requirements for Barclays') if applicable to the JD."
+    }
+  ],
+  "tailored_summary_rewrite": "Enterprise Data Architect with 20+ years of experience designing and modernizing cloud and enterprise data platforms for global financial institutions, sovereign wealth funds, and pharma organizations. Expertise in Databricks Lakehouse, Snowflake, Azure, and AWS, with a proven track record in medallion architecture, CDC pipelines, and real-time data processing. Led cross-functional teams of up to 60+ engineers to deliver petabyte-scale migrations, governance frameworks, and AI-driven data solutions, including Agentic-AI and prompt engineering projects.",
+  "overall_reasoning": "The candidate's resume demonstrates a strong match for the JD with 20+ years of enterprise data architecture experience, deep expertise in cloud platforms (Databricks, Snowflake, Azure, AWS), and a proven track record in financial services (Barclays, NBIM, Aberdeen Asset Management). The candidate's leadership in managing global teams, experience with medallion architecture, CDC pipelines, and data governance aligns well with the JD's requirements. Minor gaps include limited mention of specific financial regulations or compliance frameworks, and some ATS keywords like 'Data Mesh' and 'Kafka' are missing. The candidate is a strong fit for the role with minimal tailoring required."
+}
