@@ -1,0 +1,138 @@
+[tee_logger] logging to /Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_9_Gem_Mis_execution.txt
+ --- starting chat session with - gemini/gemini-2.5-flash
+1. Wrire your question here -  
+
+ 1. user Input is Hi my name is Pasha Tehzeeb working with Novo remotely from MOradabad and also plays cricket in my free time
+
+
+ 2. assistant reply is -  Hi Pasha Tehzeeb, it's great to meet you!
+
+It sounds like you have a dynamic setup, working remotely for Novo from Moradabad. And how cool that you also play cricket in your free time! That's a fantastic way to relax and stay active.
+
+Are you part of a local team, or do you play casually? What's your favorite part of the game?
+
+It's nice to learn a bit about you!
+
+
+3. write your next input here -  Second user input is - explain my hobby in 30 words and also provide my company's website 
+ 
+
+ *-*-4. Reply from AI on second Questions is Hi Pasha Tehzeeb! It's great to know about your work with Novo and your passion for cricket from Moradabad.
+
+Here's an explanation of your hobby:
+My hobby is cricket, a dynamic bat-and-ball team sport. It sharpens strategy, promotes fitness, builds teamwork. I enjoy the competitive spirit, camaraderie, making my free time active, fulfilling.
+
+Your company's website (assuming Novo Nordisk, a prominent global company) is: [novonordisk.com](https://www.novonordisk.com/)
+ --- starting chat session with - mistral/mistral-large-latest
+1. Wrire your question here -  
+
+ 1. user Input is Hi my name is Pasha Tehzeeb working with Novo remotely from MOradabad and also plays cricket in my free time
+
+
+ 2. assistant reply is -  Hello Pasha Tehzeeb! It's great to meet you. Working remotely from Moradabad while also enjoying cricket in your free time sounds like a fantastic balance. How long have you been working with Novo, and what do you do there? Also, do you play cricket competitively or just for fun? I'm here if you need any assistance or just want to chat!
+
+
+3. write your next input here -  Second user input is - give me address of my favorite cricket website and also send coordinates for my city
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+[tee_logger] logging to /Users/mustafapasha/LangChain/projects/llm_engineering/week1/wk1_9_Gem_Mis_execution.txt
+ --- starting chat session with - gemini/gemini-2.5-flash
+1. Wrire your question here -  
+
+ 1. user Input is My hobby is cricket name name is Tehzeeb Pasha and on professional front I am working as data architect from Moradabad for a company called altimetrik
+
+
+ 2. assistant reply is -  Here are a few options for how you can phrase your introduction, ranging from short and sweet to a bit more detailed:
+
+**Option 1 (Short & Sweet):**
+
+> Tehzeeb Pasha is a Data Architect at Altimetrik in Moradabad, who also has a passion for cricket.
+
+**Option 2 (Professional Bio):**
+
+> Tehzeeb Pasha is a Data Architect based in Moradabad, working for Altimetrik where he specializes in designing and implementing robust data solutions. Off the clock, he's an enthusiastic cricket player, enjoying the strategic thinking and teamwork the sport demands.
+
+**Option 3 (Slightly More Engaging):**
+
+> Meet Tehzeeb Pasha, a Data Architect at Altimetrik in Moradabad. When he's not busy crafting scalable data strategies and systems, you'll likely find him on the cricket pitch, indulging in his beloved hobby and bringing a competitive spirit to the game.
+
+**Option 4 (Focus on Balance):**
+
+> As a Data Architect at Altimetrik from Moradabad, Tehzeeb Pasha is dedicated to building efficient and insightful data infrastructures. Beyond his professional expertise, Tehzeeb is a passionate cricketer, finding a perfect balance between his analytical work and his love for the sport.
+
+Choose the one that best fits the context you need it for!
+
+
+3. write your next input here -  Second user input is - what is my city is famous for 
+ 
+
+ *-*-4. Reply from AI on second Questions is Moradabad, your city, is primarily and most famously known as the **"Peetal Nagri" (Brass City) of India.**
+
+Here's what it's famous for:
+
+1.  **Brassware and Handicrafts:** This is by far its biggest claim to fame. Moradabad is a major industrial hub for brass artware and handicrafts. It's renowned for its exquisite brass products, including:
+    *   Decorative items
+    *   Utensils
+    *   Idols
+    *   Lamps
+    *   Art pieces
+    *   Other metal crafts
+
+    The city has a long history of skilled artisans who create intricate designs, and its brassware is exported worldwide, making it a significant contributor to India's handicraft exports.
+
+2.  **Export Hub:** Due to its dominant brassware industry, Moradabad is a significant export hub for handicrafts from India, especially metalware.
+
+While it's also a regional commercial and educational center, its identity is inextricably linked to its gleaming brassware industry.
+ --- starting chat session with - mistral/mistral-large-latest
+1. Wrire your question here -  
+
+ 1. user Input is My hobby is cricket name name is Tehzeeb Pasha and on professional front I am working as data architect from Moradabad for a company called altimetrik
+
+
+ 2. assistant reply is -  Hello Tehzeeb Pasha! It's great to meet you. Cricket is a fantastic hobby—it’s a sport that combines strategy, skill, and teamwork. Whether you enjoy playing, watching, or analyzing the game, it’s a hobby that can be both relaxing and exciting.
+
+As a **Data Architect** at **Altimetrik**, you’re in a role that’s critical for shaping how organizations manage and leverage their data. Moradabad is known for its rich culture and craftsmanship, and it’s inspiring to see professionals like you contributing to the tech industry from there.
+
+If you ever want to combine your passion for cricket with your expertise in data, you could explore:
+- **Cricket analytics**: Using data to analyze player performance, team strategies, or even predicting match outcomes.
+- **Fantasy cricket insights**: Building models to optimize fantasy team selections.
+- **Data-driven storytelling**: Creating visualizations or reports on cricket trends, history, or statistics.
+
+Would you like help with any specific aspect of cricket or data architecture? I’d be happy to assist! 😊
+
+
+3. write your next input here -  Second user input is - give me my favorite games website and cordinates of my city
+ 
+
+ *-*-4. Reply from AI on second Questions is Here’s how I can help you, **Tehzeeb Pasha**!
+
+### **Your Favorite Cricket Games/Websites** (Likely Picks)
+Since cricket is your hobby, here are some popular **cricket gaming websites and apps** you might enjoy:
+
+1. **Dream11** ([www.dream11.com](https://www.dream11.com)) – Fantasy cricket platform.
+2. **MyCircle11** ([www.mycircle11.com](https://www.mycircle11.com)) – Another fantasy cricket game.
+3. **EA Sports Cricket** (Console/PC) – Classic cricket video games.
+4. **Real Cricket™ 22** (Mobile) – A realistic cricket game for Android/iOS.
+5. **Stick Cricket** ([www.stickcricket.com](https://www.stickcricket.com)) – Fun, casual browser-based cricket game.
+6. **Cricbuzz / ESPNcricinfo** ([www.cricbuzz.com](https://www.cricbuzz.com) / [www.espncricinfo.com](https://www.espncricinfo.com)) – For live scores, stats, and news.
+
+If you have a **specific favorite**, let me know, and I can refine the list!
+
+---
+
+### **Coordinates of Moradabad, Uttar Pradesh**
+Here are the **geographical coordinates** of Moradabad:
+- **Latitude:** **28.8389° N**
+- **Longitude:** **78.7769° E**
+
+You can use these in **Google Maps** ([maps.google.com](https://www.google.com/maps)) to locate Moradabad precisely.
+
+Would you like help with anything else, like **cricket stats, data architecture tools, or local tech meetups** in Moradabad? 😊
+
+
+---------------------End of execution - 2026-06-30 10:43:55---------------------

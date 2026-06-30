@@ -1,0 +1,201 @@
+Tehzeeb Ahmed
+
+Sr Data Architect – Cloud and enterprise data platform
+
+Email: tehzeeb.ahmed@gmail.com | contact: +91 8668454960 | https://www.linkedin.com/in/tehzeeb-ahmed/ | India
+
+
+
+PROFESSIONAL SUMMARY
+
+Enterprise Data Architect with 20+ years of experience designing and modernizing large scale cloud and enterprise data platforms for global financial institutions, sovereign wealth funds, telecom, insurance, and pharmaceutical organizations.
+
+Led enterprise scale data modernization program for Barclays, Norges Bank Investment Management (NBIM - $1.7T AUM), Aberdeen Asset Management, Novo Nordisk and XL Axiata, delivering petabyte-scale migrations, governed Lakehouse architecture, real time reconciliation platform and cloud native analytics ecosystem.
+
+Experienced in architecting Databricks Lakehouse, Snowflake, Azure and AWS platforms with expertise across enterprise data modelling, medallion architecture, CDC pipelines, governance frameworks, and large-scale data migrations.
+
+Proven leadership managing global cross functional teams of up-to 60+ across architecture, delivery, governance and platform transformation initiatives. 
+
+Developing Agentic-AI, Context Engineering and prompt engineering projects including Security compliance, performance and scalability using generative AI
+
+CORE COMPETENCIES 
+
+Enterprise Data Architecture, Cloud data modernization, Lakehouse architecture, Data platform transformation, Enterprise data modelling, Medallion architecture, Data governance, Data contracts, CDC, Data quality frameworks, Master data management, Data lineage, Real-time data processing, Data migration strategy, Performance optimization, Agile delivery leadership
+
+
+
+TECHNICAL STACK
+
+Cloud and data Platforms:  Azure, AWS, Databricks Delta Lake, Unity Catalog, Delta Pipelines, Apache Spark, Vector DB, Snowflake DWH, Time-Travel, Data Sharing, Zero-Copy Clone
+
+Data Engineering: dbt, Python, Apache Airflow, CDC Pipelines, ETL/ELT, CI/CD
+
+Modelling and Governance: Erwin, Data lineage, Data contracts, MDM, Forward and Reverse Engineering, CDM/LDM/PDM
+
+Databases: MS SQL Server, Oracle, Informatica, ab Initio, Autosys
+
+Domains: Pharma Supply Chain, Investment Banking, Capital Markets - (SWIFT/T+1) Reconciliation, Sovereign Wealth Funds, Asset Management, Insurance
+
+KEY ACHIEVEMENTS
+
+Architected petabyte-scale Hadoop/Hive to Snowflake migration for XL Axiata involving 1000+ tables using parallelized ingestion and CD frameworks, completing delivery 40% ahead of schedule and saving $1.2M in project costs.
+
+Designed enterprise-grade Databricks Medallion architecture for Novo Nordisk enabling global analytics across 20+ supply chain business functions.
+
+Built enterprise data models and governed multi-domain financial data architecture for NBIM ($1.7TAUM) sovereign wealth fund supporting portfolio exposure risk and investment analytics.
+
+Led architecture and delivery governance for large-scale enterprise platform managing globally distributed teams of up to 60+ engineers across ETL, data governance, QA and cloud modernization platform.
+
+Architected T+1 trade reconciliation platform for Barclays integrating SWIFT MT processing, CDC pipelines and automated exception management reducing reconciliation time from 15 hours to 3 hours.
+
+
+
+PROFESSIONAL EXPERIENCE:
+
+Senior Data Architect – Altimetrik | Jan 2025 – Present
+
+Client: Novo Nordisk | Supply Chain Control Tower - Global Analytics Platform
+
+Environment: Azure (ADF, ADLS), Databricks - Delta Lake, Delta Pipelines, (Gold Layer, Unity Catalog, Data Lineage
+
+Architected the enterprise-wide Databricks Medallion architecture (Bronze/Silver/Gold) supporting global Supply Chain analytics and KPI reporting across 20+ operational domains.
+
+Designed and delivered gold layer enterprise models in Erwin improving analytics consistency, audit readiness and downstream reporting performance.
+
+Built an AI-assisted model validation framework to detecting schema drift between Erwin models and production systems, reducing manual audit effort by 70%.
+
+Delivered critical supply chain KPI platforms including Forecast Accuracy, OTIF, Schedule Adherence, Safety Stock Attainment (SSA), and Days on Hand (DOH) for executive analytics consumption.
+
+Engineered scalable Databricks ingestion framework using Volumes-based staging architecture reducing ingestion failures by 35% and accelerating onboarding new pipelines from days to hours.
+
+Business Impact and Outcome
+
+Delivered 6 critical supply chain KPIs from requirement to design to implementation and deployed to production - Forecast Accuracy and Bias, Safety Stock Attainment (SSA), Days on Hand (DOH), In-Stock Rate (Finished and Semi-Finished), Schedule Adherence, and On-Time-In-Full (OTIF).
+
+Established a global Power BI analytics solution providing real-time supply chain visibility for senior leadership, replacing the legacy Simba-based reporting environment.
+
+Implemented governance framework, reducing data-quality incidents from 40/month to 24/month (40% improvement).
+
+Senior Data Architect and Program Lead – Hoonartek | Feb 2021 - Nov 2024
+
+Key Clients: ADAPT Platform - Aberdeen Asset Management (Full Greenfield Build), XL Axiata Tbk, Malaysia | Enterprise Hadoop/Hive to Snowflake Data Migration
+
+Environment: Snowflake, Ab Initio, Azure (ADLS), AWS(S3), Erwin
+
+Led architecture and delivery of enterprise-scale cloud migration program involving 1000+ Hadoop/Hive datasets into Snowflake using parallelized multi-pipeline ingestion architecture
+
+Completing delivery in 9 weeks vs. planned 15 weeks, saving $1.2M and avoiding critical 6-week delivery delays.
+
+Designed reusable migration orchestration frameworks for bulk ingestion, CDC, incremental merge and reconciliation reducing pipeline development efforts by 30%.
+
+Implemented Agile delivery model as Scrum Master, Reduced time-to-production for ETL pipelines by 30% and maintaining 95% on-time delivery rate.
+
+Decommissioning of multiple legacy data systems and engineered ADAPT (Aberdeen Data Analytics and Processing Tier), a modern enterprise-grade data platform ingesting and processing critical financial data 
+
+Data domains onboarded: Reference Data (ISIN, CUSIP, SEDOL), Transactions, Fund Fact Sheets, Pricing and Valuation, Settlements, Market Data (FX Rates, Daily NAV), Corporate Actions, Macroeconomic Indicators (GDP, Interest Rates), ESG Data, and News and Sentiment feeds.
+
+Owned end-to-end model governance across the ADAPT engagement to maintain bi-directional sync across data layers against live production schemas
+
+Built & mentored teams of 15-60 engineers, developers, BAs, DBAs, QA and solution architect across 2 initiatives, maintained 95% on-time delivery rate.
+
+Drove continuous improvement in data migration tooling and methodologies, cutting average migration effort by 25% across engagements.
+
+
+
+AVP - Barclays India, 2017 - 2020
+
+Client: Barclays Investment Bank | T+1 Reconciliation Platform
+
+Environment: SQL Server, Informatica, AWS (S3), SWIFT, Autosys, Intellimatch, Python
+
+Architected enterprise T+1 trade reconciliation platform integrating SWIFT MT parsing (MT103, MT202, MT515, MT540-548) with Intellimatch matching, Change Data Capture, ETL transformation with full audit trail
+
+Built reconciliation ingestion and transformation pipelines processing and enabled trading desks to action multi-currency settlement breaks across millions of daily records.
+
+Created Informatica pipelines ingesting daily data files from counterparties, executing reconciliation logic, and auto-generating trader exception reports (false positives, true negatives, unmatched breaks), 
+
+Reduced trade break resolution cycle from 15 hours to 3 hours, significantly lowering operational risk and manual intervention.
+
+Created an AWS S3 landing zone for inbound trade/reference files and Informatica logs - replacing on-prem storage with IAM-enforced buckets and lifecycle policies, reducing storage overhead significantly 
+
+TCS L3 vendor team as client-side owner enforcing escalation paths, accountability, and root cause resolution for high-severity incidents across SWIFT, Autosys, and Informatica.
+
+Business Impact
+
+Managed vendor governance and production support processes across critical capital markets reconciliation system.
+
+
+
+
+
+Data Architect and Manager– Cognizant Technology Solutions |Feb 2021 - Mar 2024
+
+Key Client: Norges Bank Investment management, Barclays Investment management, Hartford life Insurance 
+
+Environment: Erwin, Informatica, Oracle, SQL Server, Teradata, Autosys
+
+Architected enterprise CDM/LDM/PDM data models for Norges Bank Investment Management (NBIM – ~$1.7T AUM Sovereign Wealth Fund) supporting portfolio exposure, risk analytics, equity, debt, and fixed-income investment reporting.
+
+Designed and governed multi-domain financial data platforms supporting transactions, pricing, market data, trade feeds, reference/master data, and portfolio analytics.
+
+Led enterprise data warehouse modernization and ETL optimization initiatives across investment banking and insurance domains improving platform stability, reporting consistency, and operational scalability
+
+Managed mission-critical SQL Server/Informatica platforms supporting real-time order management, reporting, and downstream analytics for global banking operations
+
+Built Informatica source-to-mart/DWH pipelines for Hartford Life across actuarial, policy, and claims data (5+ product lines) - reducing execution time by 20% and consolidating actuarial and underwriting reporting onto a single governed mart for the first time.
+
+Cognizant – scope and scale
+
+Operated across 9 years at Cognizant as a trusted data architecture and engineering partner to tier-1 global institutions - delivering across sovereign wealth fund, global investment banks (Barclays, India), US life insurance (Hartford) - spanning data warehouse design, database server’s migrations and Informatica pipelines.
+
+
+
+Earlier Career Experience | 2005 – 2008
+
+Organizations: HCL Technologies
+
+Delivered enterprise ETL, ERP, reporting, and manufacturing platform implementations across banking, manufacturing, and enterprise reporting environments.
+
+Built foundational expertise in enterprise data integration, reporting systems, and application modernization that evolved into large-scale enterprise data architecture leadership roles.
+
+
+
+CERTIFICATIONS:
+
+Certified Scrum Master (CSM) | Scrum Alliance
+
+AWS developer Associates (2017)
+
+AWS Solution Architect (2017)
+
+Databricks Generative AI Engineering | Databricks Academy (2026)
+
+Claude Vibe coding | Altimetrik Academy (2026)
+
+AI Prompt Engineering and Agentic AI Specialization | Self-Study (2026)
+
+Cloud Data Engineering | AWS Certifications (2018)
+
+Generative AI – Advancing systems Analysis and Architecture | Self Study (2026)
+
+Claude code: Software engineering with Generative AI Agents | Altimetrik Academy (2026)
+
+EDUCATION:
+
+Master of Computer Applications (MCA) | Maharishi Dayanand University, India
+
+
+
+ADDITIONAL INFORMATION
+
+Domain: Capital Markets, Asset Management, Sovereign Wealth Funds, Telecom, Pharma Supply Chain, Insurance
+
+Leadership: Enterprise Architecture | Global Delivery Leadership | Architecture Governance | Vendor Management | Agile Program Delivery | Cross-Functional Stakeholder Management
+
+
+
+KEY ACHIEVEMENTS AT A GLANCE
+
+20+ Years Data Architecture   60+ Engineers team globally   5+ Tier-1 Global Institutions    $1.7T AUM Client (NBIM)
+
+
