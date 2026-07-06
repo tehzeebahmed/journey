@@ -1,0 +1,91 @@
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - moradabad
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - pune
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - pune
+ Price fetched by tool is - $123.0
+[llm_router] success via Groq
+ ------------------------------------------------------------
+
+ the price of the ticket for city - Pune is The price for a flight ticket from Pune is $123.0, great price!
+
+
+---------------------End of execution - 2026-07-06 08:48:13---------------------
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - pune
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - delhi
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - Pune
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - Pune
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - Pune
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+where do you want to travel to :  Database tool called for city - sad
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[db] Database ready: prices.db
+where do you want to travel to :  Database tool called for city - Delhi
+ Price fetched by tool is - $101
+[llm_router] success via Groq
+ ------------------------------------------------------------
+
+ the price of the ticket for city - Delhi is You can fly to Delhi for just $101, is that going to be the perfect price for your travels?
+
+
+---------------------End of execution - 2026-07-06 09:13:26---------------------
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[db] Database ready: prices.db
+where do you want to travel to :  Database tool called for city - moradaBad
+ Price fetched by tool is - $235
+[llm_router] success via Groq
+ ------------------------------------------------------------
+
+ the price of the ticket for city - moradaBad is The round-trip ticket price to Moradanbad is $235, would you like to book your flight now?
+
+
+---------------------End of execution - 2026-07-06 09:13:40---------------------
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[db] Database ready: prices.db
+where do you want to travel to :  Database tool called for city - tokyo
+ Price fetched by tool is - $538
+[llm_router] success via Groq
+ ------------------------------------------------------------
+
+  I've got just the ticket for you - flights to Tokyo are available for $538!
+
+
+---------------------End of execution - 2026-07-06 09:14:18---------------------
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[db] Database ready: prices.db
+where do you want to travel to :  Database tool called for city - London
+[llm_router] success via Groq
+ ------------------------------------------------------------
+
+  I've got the price for you - a ticket to London is currently priced at $487!
+
+
+---------------------End of execution - 2026-07-06 09:14:52---------------------
+[tee_logger] logging to /Users/mustafapasha/LangChain/journey/agents/a3_airline_agent_sql.txt
+[db] Database ready: prices.db
+where do you want to travel to :  Database tool called for city - London
+[llm_router] Groq failed: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+[llm_router] falling back to next provider...
+[llm_router] success via Mistral
+ ------------------------------------------------------------
+
+  Sure! A one-way ticket to London is around **$487**—happy travels! ✈️🇬🇧
+
+
+---------------------End of execution - 2026-07-06 09:15:07---------------------
