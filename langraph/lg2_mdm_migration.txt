@@ -1,0 +1,1463 @@
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'IN', 'country_name': 'INDIA', 'status': 'Error'}, 'errors': [' for inDia - currency is missing', 'currency is null for - INDIA'], 'warnings': [], 'standardized': False, 'approved': True, 'validation': False}
+
+========== Final Migration Report ==========
+ country_code                        - IN
+ country_name                        - INDIA
+ status                              - Error
+Error -------Printing
+-  for inDia - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : False
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'CH', 'country_name': 'CHINE', 'currency': 'yuan', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - CH
+ country_name                        - CHINE
+ currency                            - yuan
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'GB', 'country_name': 'GREAT BRITAIN', 'currency': 'GBP', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - GB
+ country_name                        - GREAT BRITAIN
+ currency                            - GBP
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'US', 'country_name': 'UNITED STATES OF AMERICA', 'currency': 'USD', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - US
+ country_name                        - UNITED STATES OF AMERICA
+ currency                            - USD
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'IT', 'country_name': 'ITALY', 'currency': 'EUR', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - IT
+ country_name                        - ITALY
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'NR', 'country_name': 'NORWAY', 'currency': 'Kroner', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - NR
+ country_name                        - NORWAY
+ currency                            - Kroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'SW', 'country_name': 'SWEDEN', 'currency': 'Swidish Kroner', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - SW
+ country_name                        - SWEDEN
+ currency                            - Swidish Kroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'NP', 'country_name': 'NEPAL', 'currency': 'Rupiyah', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - NP
+ country_name                        - NEPAL
+ currency                            - Rupiyah
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'BN', 'country_name': 'BENGLADESH', 'currency': 'taka', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - BN
+ country_name                        - BENGLADESH
+ currency                            - taka
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'FR', 'country_name': 'FRANCE', 'currency': 'EUR', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - FR
+ country_name                        - FRANCE
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'PO', 'country_name': 'POLAND', 'currency': 'EUR', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - PO
+ country_name                        - POLAND
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'DK', 'country_name': 'DENMARK', 'currency': 'Denish KLroner', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - DK
+ country_name                        - DENMARK
+ currency                            - Denish KLroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'PK', 'country_name': 'PAKISTAN', 'currency': 'Pakistani Rupiya', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - PK
+ country_name                        - PAKISTAN
+ currency                            - Pakistani Rupiya
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Validtion compltee ...
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+{'record': {'country_code': 'AF', 'country_name': 'AFGHANISTAN', 'currency': 'Riyal', 'status': 'Initialized'}, 'errors': [], 'warnings': [], 'standardized': True, 'approved': True, 'validation': True}
+
+========== Final Migration Report ==========
+ country_code                        - AF
+ country_name                        - AFGHANISTAN
+ currency                            - Riyal
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - IN
+ country_name                        - INDIA
+ status                              - Error
+Error -------Printing
+-  for INDIA - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - CH
+ country_name                        - CHINE
+ currency                            - yuan
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - GB
+ country_name                        - GREAT BRITAIN
+ currency                            - GBP
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - US
+ country_name                        - UNITED STATES OF AMERICA
+ currency                            - USD
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - IT
+ country_name                        - ITALY
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - NR
+ country_name                        - NORWAY
+ currency                            - Kroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - SW
+ country_name                        - SWEDEN
+ currency                            - Swidish Kroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - NP
+ country_name                        - NEPAL
+ currency                            - Rupiyah
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - BN
+ country_name                        - BENGLADESH
+ currency                            - taka
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - FR
+ country_name                        - FRANCE
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - PO
+ country_name                        - POLAND
+ currency                            - EUR
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - DK
+ country_name                        - DENMARK
+ currency                            - Denish KLroner
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - PK
+ country_name                        - PAKISTAN
+ currency                            - Pakistani Rupiya
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+
+========== Final Migration Report ==========
+ country_code                        - AF
+ country_name                        - AFGHANISTAN
+ currency                            - Riyal
+ status                              - Initialized
+Error -------Printing
+Standardized : True
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+-  for INDIA - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code                        - IN', 'country_name                        - INDIA', 'status                              - Error']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - CH', 'country_name                        - CHINE', 'currency                            - yuan', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - GB', 'country_name                        - GREAT BRITAIN', 'currency                            - GBP', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - US', 'country_name                        - UNITED STATES OF AMERICA', 'currency                            - USD', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - IT', 'country_name                        - ITALY', 'currency                            - EUR', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - NR', 'country_name                        - NORWAY', 'currency                            - Kroner', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - SW', 'country_name                        - SWEDEN', 'currency                            - Swidish Kroner', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - NP', 'country_name                        - NEPAL', 'currency                            - Rupiyah', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - BN', 'country_name                        - BENGLADESH', 'currency                            - taka', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - FR', 'country_name                        - FRANCE', 'currency                            - EUR', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - PO', 'country_name                        - POLAND', 'currency                            - EUR', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - DK', 'country_name                        - DENMARK', 'currency                            - Denish KLroner', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - PK', 'country_name                        - PAKISTAN', 'currency                            - Pakistani Rupiya', 'status                              - Initialized']
+------------------------------------------------------------
+ 
+----- Validation Agent -----
+
+------------------------------------------------------------
+ 
+----- standardisation Agent -----
+
+------------------------------------------------------------
+ 
+----- Report Agent -----
+
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - AF', 'country_name                        - AFGHANISTAN', 'currency                            - Riyal', 'status                              - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+Error -------Printing
+-  for INDIA - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code                        - IN', 'country_name                        - INDIA', 'status                              - Error']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - CH', 'country_name                        - CHINE', 'currency                            - yuan', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - GB', 'country_name                        - GREAT BRITAIN', 'currency                            - GBP', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - US', 'country_name                        - UNITED STATES OF AMERICA', 'currency                            - USD', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - IT', 'country_name                        - ITALY', 'currency                            - EUR', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - NR', 'country_name                        - NORWAY', 'currency                            - Kroner', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - SW', 'country_name                        - SWEDEN', 'currency                            - Swidish Kroner', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - NP', 'country_name                        - NEPAL', 'currency                            - Rupiyah', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - BN', 'country_name                        - BENGLADESH', 'currency                            - taka', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - FR', 'country_name                        - FRANCE', 'currency                            - EUR', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - PO', 'country_name                        - POLAND', 'currency                            - EUR', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - DK', 'country_name                        - DENMARK', 'currency                            - Denish KLroner', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - PK', 'country_name                        - PAKISTAN', 'currency                            - Pakistani Rupiya', 'status                              - Initialized']
+Error -------Printing
+Standardized : True
+validation     : True
+['country_code                        - AF', 'country_name                        - AFGHANISTAN', 'currency                            - Riyal', 'status                              - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+-  for INDIA - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code                        - IN', 'country_name                        - INDIA', 'status                              - Error']
+Standardized : True
+validation     : True
+['country_code                        - CH', 'country_name                        - CHINE', 'currency                            - yuan', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - GB', 'country_name                        - GREAT BRITAIN', 'currency                            - GBP', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - US', 'country_name                        - UNITED STATES OF AMERICA', 'currency                            - USD', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - IT', 'country_name                        - ITALY', 'currency                            - EUR', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - NR', 'country_name                        - NORWAY', 'currency                            - Kroner', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - SW', 'country_name                        - SWEDEN', 'currency                            - Swidish Kroner', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - NP', 'country_name                        - NEPAL', 'currency                            - Rupiyah', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - BN', 'country_name                        - BENGLADESH', 'currency                            - taka', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - FR', 'country_name                        - FRANCE', 'currency                            - EUR', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - PO', 'country_name                        - POLAND', 'currency                            - EUR', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - DK', 'country_name                        - DENMARK', 'currency                            - Denish KLroner', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - PK', 'country_name                        - PAKISTAN', 'currency                            - Pakistani Rupiya', 'status                              - Initialized']
+Standardized : True
+validation     : True
+['country_code                        - AF', 'country_name                        - AFGHANISTAN', 'currency                            - Riyal', 'status                              - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+-  for INDIA - currency is missing
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code - IN', 'country_name - INDIA', 'status       - Error']
+Standardized : True
+validation     : True
+['country_code - CH', 'country_name - CHINE', 'currency     - yuan', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - GB', 'country_name - GREAT BRITAIN', 'currency     - GBP', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - US', 'country_name - UNITED STATES OF AMERICA', 'currency     - USD', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - IT', 'country_name - ITALY', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NR', 'country_name - NORWAY', 'currency     - Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - SW', 'country_name - SWEDEN', 'currency     - Swidish Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NP', 'country_name - NEPAL', 'currency     - Rupiyah', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - BN', 'country_name - BENGLADESH', 'currency     - taka', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - FR', 'country_name - FRANCE', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PO', 'country_name - POLAND', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - DK', 'country_name - DENMARK', 'currency     - Denish KLroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PK', 'country_name - PAKISTAN', 'currency     - Pakistani Rupiya', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - AF', 'country_name - AFGHANISTAN', 'currency     - Riyal', 'status       - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code - IN', 'country_name - INDIA', 'status       - Error']
+Standardized : True
+validation     : True
+['country_code - CH', 'country_name - CHINE', 'currency     - yuan', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - GB', 'country_name - GREAT BRITAIN', 'currency     - GBP', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - US', 'country_name - UNITED STATES OF AMERICA', 'currency     - USD', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - IT', 'country_name - ITALY', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NR', 'country_name - NORWAY', 'currency     - Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - SW', 'country_name - SWEDEN', 'currency     - Swidish Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NP', 'country_name - NEPAL', 'currency     - Rupiyah', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - BN', 'country_name - BENGLADESH', 'currency     - taka', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - FR', 'country_name - FRANCE', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PO', 'country_name - POLAND', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - DK', 'country_name - DENMARK', 'currency     - Denish KLroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PK', 'country_name - PAKISTAN', 'currency     - Pakistani Rupiya', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - AF', 'country_name - AFGHANISTAN', 'currency     - Riyal', 'status       - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code - IN', 'country_name - INDIA', 'status       - Error']
+Standardized : True
+validation     : True
+['country_code - CH', 'country_name - CHINE', 'currency     - yuan', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - GB', 'country_name - GREAT BRITAIN', 'currency     - GBP', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - US', 'country_name - UNITED STATES OF AMERICA', 'currency     - USD', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - IT', 'country_name - ITALY', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NR', 'country_name - NORWAY', 'currency     - Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - SW', 'country_name - SWEDEN', 'currency     - Swidish Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NP', 'country_name - NEPAL', 'currency     - Rupiyah', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - BN', 'country_name - BENGLADESH', 'currency     - taka', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - FR', 'country_name - FRANCE', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PO', 'country_name - POLAND', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - DK', 'country_name - DENMARK', 'currency     - Denish KLroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PK', 'country_name - PAKISTAN', 'currency     - Pakistani Rupiya', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - AF', 'country_name - AFGHANISTAN', 'currency     - Riyal', 'status       - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+No Errors ---------/
+Standardized : False
+validation     : True
+['country_code - IN', 'country_name - INDIA', 'status       - Error']
+Standardized : True
+validation     : True
+['country_code - CH', 'country_name - CHINE', 'currency     - yuan', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - GB', 'country_name - GREAT BRITAIN', 'currency     - GBP', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - US', 'country_name - UNITED STATES OF AMERICA', 'currency     - USD', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - IT', 'country_name - ITALY', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NR', 'country_name - NORWAY', 'currency     - Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - SW', 'country_name - SWEDEN', 'currency     - Swidish Kroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - NP', 'country_name - NEPAL', 'currency     - Rupiyah', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - BN', 'country_name - BENGLADESH', 'currency     - taka', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - FR', 'country_name - FRANCE', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PO', 'country_name - POLAND', 'currency     - EUR', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - DK', 'country_name - DENMARK', 'currency     - Denish KLroner', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - PK', 'country_name - PAKISTAN', 'currency     - Pakistani Rupiya', 'status       - Initialized']
+Standardized : True
+validation     : True
+['country_code - AF', 'country_name - AFGHANISTAN', 'currency     - Riyal', 'status       - Initialized']
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Standardized : True
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+-  for Unknown - currency is missing
+- currency is null for - INDIA
+Standardized : False
+error : [' for Unknown - currency is missing', 'currency is null for - INDIA']
+validation     : False
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+-  for unknown - currency is missing
+- currency is null for - INDIA
+Standardized : False
+error : [' for unknown - currency is missing', 'currency is null for - INDIA']
+validation     : False
+Standardized : True
+error : []
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+ 
+
+ JSON Data file  exists .. going to do as planned 
+
+- currency is null for - INDIA
+Standardized : False
+error : ['currency is null for - INDIA']
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Standardized : True
+error : []
+validation     : True
+Successfully saved data in /Users/mustafapasha/LangChain/journey/langraph/lg2_agents_file.json
