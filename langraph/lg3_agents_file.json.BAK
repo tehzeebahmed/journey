@@ -1,0 +1,85 @@
+[
+    {
+        "country_code": "IN",
+        "country_name": "INDIA",
+        "status": "Error"
+    },
+    {
+        "country_code": "CH",
+        "country_name": "CHINE",
+        "currency": "yuan",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "GB",
+        "country_name": "GREAT BRITAIN",
+        "currency": "GBP",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "US",
+        "country_name": "UNITED STATES OF AMERICA",
+        "currency": "USD",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "IT",
+        "country_name": "ITALY",
+        "currency": "EUR",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "NR",
+        "country_name": "NORWAY",
+        "currency": "Kroner",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "SW",
+        "country_name": "SWEDEN",
+        "currency": "Swidish Kroner",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "NP",
+        "country_name": "NEPAL",
+        "currency": "Rupiyah",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "BN",
+        "country_name": "BENGLADESH",
+        "currency": "taka",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "FR",
+        "country_name": "FRANCE",
+        "currency": "EUR",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "PO",
+        "country_name": "POLAND",
+        "currency": "EUR",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "DK",
+        "country_name": "DENMARK",
+        "currency": "Denish KLroner",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "PK",
+        "country_name": "PAKISTAN",
+        "currency": "Pakistani Rupiya",
+        "status": "Initialized"
+    },
+    {
+        "country_code": "AF",
+        "country_name": "AFGHANISTAN",
+        "currency": "Riyal",
+        "status": "Initialized"
+    }
+]
