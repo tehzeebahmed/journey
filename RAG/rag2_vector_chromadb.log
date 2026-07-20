@@ -1,0 +1,243 @@
+
+....... Inserting the Documents .......
+
+
+....... Insert complete .......
+
+
+ ...... Query Database  .......
+
+...Querying ...: Are there any space survival films
+Best Match ID: id3
+Best Match Text: An astronaut gets stranded on Mars and must survive using science and wit.
+Distance Score (lower is closer): 1.4121387004852295
+Execution ends - 2026-07-19 - 08 - 00 - 12
+
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+...Querying ...: Are there any space survival films
+Best Match ID: id3
+Best Match Text: An astronaut gets stranded on Mars and must survive using science and wit.
+Distance Score (lower is closer): 1.4121387004852295
+Execution ends - 2026-07-19 - 09:35:03
+
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: films of History or drama
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: films on drama and history
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: films on drama and History
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: films on drama and History
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: films of cyberpunk
+
+Rank = 1: Match Id: id1 Description: A movie about a dark knight fighting crime in Gotham city using high-tech gadgets. Genre: action Distance: 1.0801732540130615
+
+Rank = 2: Match Id: id6 Description: A lone hacker attempts to take down a corrupt megacorporation in a neon-lit futuristic Tokyo. Genre: cyberpunk Distance: 1.3740994930267334
+Execution ends - 2026-07-19 - 09:49:30
+
+
+Movie description database cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+....... Inserting the Documents .......
+
+....... Insert complete .......
+
+Total records in existing movie description database are : 10
+
+ ...... Query Database  .......
+
+write your query on movies: ...Querying ...: space films if in database
+
+Rank = 1: Match Id: id4 Description: A crew travels through a wormhole in space to find a new home for humanity. Genre: sci-fi Distance: 1.6166090965270996
+
+Rank = 2: Match Id: id7 Description: A biographical drama focusing on the development of the first atomic bomb during WWII. Genre: drama Distance: 1.7189807891845703
+Execution ends - 2026-07-19 - 09:50:17
+
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+movie_descriptions has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 into 'movie_descriptions' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movie_descriptions' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: films on cyberpunk for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id1 Description: A movie about a dark knight fighting crime in Gotham city using high-tech gadgets. Genre: action released in 2008 Distance: 1.0906085968017578
+-----------------------
+
+Rank = 2: Match Id: id6 Description: A lone hacker attempts to take down a corrupt megacorporation in a neon-lit futuristic Tokyo. Genre: cyberpunk released in 1999 Distance: 1.4042285680770874
+-----------------------
+
+ No results fiound for your query 
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+movie_descriptions has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movie_descriptions' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movie_descriptions' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: drama films for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id7 Description: A biographical drama focusing on the development of the first atomic bomb during WWII. Genre: drama released in 1976 Distance: 1.1621472835540771
+-----------------------
+
+Rank = 2: Match Id: id1 Description: A movie about a dark knight fighting crime in Gotham city using high-tech gadgets. Genre: action released in 2008 Distance: 1.3065437078475952
+-----------------------
+
+ No results fiound for your query 
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+movie_descriptions has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movie_descriptions' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movie_descriptions' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: Thriller films for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id1 Description: A movie about a dark knight fighting crime in Gotham city using high-tech gadgets. Genre: action released in 2008 Distance: 1.1363606452941895
+-----------------------
+
+Rank = 2: Match Id: id7 Description: A biographical drama focusing on the development of the first atomic bomb during WWII. Genre: drama released in 1976 Distance: 1.3588173389434814
+-----------------------
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_database...
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movie_database' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movie_database' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: Thriller Movies for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id1 Description: A movie about a dark knight fighting crime in Gotham city using high-tech gadgets. Genre: action released in 2008 Distance: 1.157128095626831
+-----------------------
+
+Rank = 2: Match Id: id7 Description: A biographical drama focusing on the development of the first atomic bomb during WWII. Genre: drama released in 1976 Distance: 1.3964086771011353
+-----------------------

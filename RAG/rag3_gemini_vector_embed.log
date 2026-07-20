@@ -1,0 +1,172 @@
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+movie_descriptions has been cleared and will be recreated again.....
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movie_descriptions...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movies_database' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: list Drama films for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id7 Description: A biographical drama focusing on the development of the first atomic bomb during WWII. Genre: drama released in 1976 Distance: 0.8037749528884888
+-----------------------
+
+Rank = 2: Match Id: id2 Description: A romantic story about two star-crossed lovers on a doomed giant cruise ship. Genre: romance released in 1997 Distance: 0.9369708299636841
+-----------------------
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movies_database' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: list films based on cyberpunk for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id6 Description: A lone hacker attempts to take down a corrupt megacorporation in a neon-lit futuristic Tokyo. Genre: cyberpunk released in 1999 Distance: 0.6121469736099243
+-----------------------
+
+Rank = 2: Match Id: id5 Description: A software engineer discovers that reality is a simulated matrix controlled by machines. Genre: cyberpunk released in 2017 Distance: 0.7592628002166748
+-----------------------
+
+Step 1. Initializing chromadb client at : ./local_vectordb
+
+Step 2. collection create/get procedure - movies_database...
+
+movies_database has been cleared and will be recreated again.....
+
+Total records in existing movie description database are : 0
+
+Step 3. preparing movies data ....
+
+Step 4. Inserting 10 records into 'movies_database' ...
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'movies_database' are : 10
+
+Step 5. Querying the database..
+
+write your query on movies: ...Querying ...: astronaut stranded alone survival for top 2 results
+
+ ------ query results ------
+
+Rank = 1: Match Id: id3 Description: An astronaut gets stranded on Mars and must survive using science and wit. Genre: sci-fi released in 2015 Distance: 0.31884732842445374
+-----------------------
+
+Rank = 2: Match Id: id4 Description: A crew travels through a wormhole in space to find a new home for humanity. Genre: sci-fi released in 2004 Distance: 0.7027183771133423
+-----------------------

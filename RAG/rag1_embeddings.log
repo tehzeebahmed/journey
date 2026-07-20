@@ -1,0 +1,12 @@
+Embedding Shapes : (3, 384)
+Each Vector has : 384 dimensions
+
+Sentence : 1 : [-0.024, 0.017, -0.055, -0.059, -0.046, -0.025, -0.052, -0.026.....]
+Sentence : 2 : [0.003, 0.032, -0.047, -0.038, -0.048, -0.030, -0.026, -0.023.....]
+Sentence : 3 : [0.009, 0.006, -0.031, -0.013, 0.008, 0.117, -0.127, -0.022.....]
+
+Similarity Scores ...........
+
+NPA Query vs NPA Guidelines: 0.5257
+NPA Query vs Cricket: 0.0782
+NPA Guidelines vs Cricket: 0.0438
