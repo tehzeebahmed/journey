@@ -1,0 +1,267 @@
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+embeddings are zero
+
+embeddings are added up
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'bookscatalogue' are : 100
+
+Step 5. Querying the database..
+
+what is on your mind to read today: ...Querying ...: I procrastinate and can’t stay disciplined. for top 5 results
+
+embeddings are zero
+
+embeddings are added up
+
+ ------ query results ------
+
+Rank = 1: Match Id: 3 Description: Explains how habits are formed and how they can be changed. Genre: Personal Development released in None Distance: 0.7656258344650269
+-----------------------
+
+Rank = 2: Match Id: 2 Description: Strategies for achieving focused success in a distracted world. Genre: Personal Development released in None Distance: 0.7765809297561646
+-----------------------
+
+Rank = 3: Match Id: 1 Description: A practical guide to building good habits and breaking bad ones through small consistent improvements. Genre: Personal Development released in None Distance: 0.7930383682250977
+-----------------------
+
+Rank = 4: Match Id: 5 Description: Principles for personal leadership, effectiveness, and character development. Genre: Personal Development released in None Distance: 0.8208611011505127
+-----------------------
+
+Rank = 5: Match Id: 77 Description: A scientist must save humanity from extinction. Genre: Sci-Fi released in None Distance: 0.8317655324935913
+-----------------------
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+embeddings are zero
+
+embeddings are added up
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'bookscatalogue' are : 100
+
+Step 5. Querying the database..
+
+what is on your mind to read today: ...Querying ...: I procrastinate and can’t stay disciplined for top 5 results
+
+embeddings are zero
+
+embeddings are added up
+
+ ------ query results ------
+
+Rank = 1: Match Id: 3 Title: The Power of Habit Description: Explains how habits are formed and how they can be changed. Genre: Personal Development released in None Distance: 0.7721395492553711
+-----------------------
+
+Rank = 2: Match Id: 2 Title: Deep Work Description: Strategies for achieving focused success in a distracted world. Genre: Personal Development released in None Distance: 0.7886817455291748
+-----------------------
+
+Rank = 3: Match Id: 1 Title: Atomic Habits Description: A practical guide to building good habits and breaking bad ones through small consistent improvements. Genre: Personal Development released in None Distance: 0.8040152788162231
+-----------------------
+
+Rank = 4: Match Id: 5 Title: The 7 Habits of Highly Effective People Description: Principles for personal leadership, effectiveness, and character development. Genre: Personal Development released in None Distance: 0.8428914546966553
+-----------------------
+
+Rank = 5: Match Id: 93 Title: Man's Search for Meaning Description: Finding purpose despite suffering. Genre: Psychology / Philosophy released in None Distance: 0.84742271900177
+-----------------------
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+after
+
+ HASH File Status - True
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+embeddings are zero
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+after
+
+ HASH File Status - True
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+embeddings are zero
+
+embeddings are added up
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'bookscatalogue' are : 100
+
+Step 5. Querying the database..
+
+what is on your mind to read today: ...Querying ...: How do startups become successful? for top 5 results
+
+embeddings are zero
+
+embeddings are added up
+
+ ------ query results ------
+
+Rank = 1: Match Id: 83 Title: Good to Great Description: How companies become exceptional. Genre: Business & Startups released in None Distance: 0.664515495300293
+-----------------------
+
+Rank = 2: Match Id: 89 Title: The Hard Thing About Hard Things Description: Managing difficult startup challenges. Genre: Business & Startups released in None Distance: 0.6760741472244263
+-----------------------
+
+Rank = 3: Match Id: 81 Title: The Lean Startup Description: Building startups using experimentation and customer feedback. Genre: Business & Startups released in None Distance: 0.7070760726928711
+-----------------------
+
+Rank = 4: Match Id: 82 Title: Zero to One Description: Creating innovative businesses that build the future. Genre: Business & Startups released in None Distance: 0.784853458404541
+-----------------------
+
+Rank = 5: Match Id: 2 Title: Deep Work Description: Strategies for achieving focused success in a distracted world. Genre: Personal Development released in None Distance: 0.7911447286605835
+-----------------------
+
+Step 1 - initializing books catalogue instance
+
+Step 2 - Initializing the catalogue bookscatalogue...wait for few seconds..
+after
+
+ HASH File Status - True
+
+collection bookscatalogue has been cleared..initializing again..
+
+Total records in existing movie description database are : 0
+Step 4 - preparing books catalogue ...
+
+embeddings are zero
+
+embeddings are added up
+
+....... Document insertion complete .......
+
+Total records in existing movie description database 'bookscatalogue' are : 100
+
+Step 5. Querying the database..
+
+what is on your mind to read today: ...Querying ...: Learning to invest my money wisely. for top 5 results
+
+embeddings are zero
+
+embeddings are added up
+
+ ------ query results ------
+
+Rank = 1: Match Id: 6 Title: Rich Dad Poor Dad Description: Lessons about financial education, investing, and building wealth. Genre: Finance released in None Distance: 0.6399378776550293
+-----------------------
+
+Rank = 2: Match Id: 7 Title: The Psychology of Money Description: Explores how human behavior influences financial decisions. Genre: Finance released in None Distance: 0.7377251386642456
+-----------------------
+
+Rank = 3: Match Id: 84 Title: The Intelligent Investor Description: Value investing principles by Benjamin Graham. Genre: Finance released in None Distance: 0.757561206817627
+-----------------------
+
+Rank = 4: Match Id: 64 Title: The Great Gatsby Description: Love, wealth, and the American Dream. Genre: Classic Fiction released in None Distance: 0.7841301560401917
+-----------------------
+
+Rank = 5: Match Id: 97 Title: Walden Description: Simple living in natural surroundings. Genre: Philosophy released in None Distance: 0.7914841175079346
+-----------------------
