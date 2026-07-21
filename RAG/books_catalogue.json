@@ -1,0 +1,602 @@
+[
+    {
+        "id": "1",
+        "title": "Atomic Habits",
+        "description": "A practical guide to building good habits and breaking bad ones through small consistent improvements.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "2",
+        "title": "Deep Work",
+        "description": "Strategies for achieving focused success in a distracted world.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "3",
+        "title": "The Power of Habit",
+        "description": "Explains how habits are formed and how they can be changed.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "4",
+        "title": "Think and Grow Rich",
+        "description": "Classic book on personal success, wealth creation, and mindset.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "5",
+        "title": "The 7 Habits of Highly Effective People",
+        "description": "Principles for personal leadership, effectiveness, and character development.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "6",
+        "title": "Rich Dad Poor Dad",
+        "description": "Lessons about financial education, investing, and building wealth.",
+        "genre": "Finance"
+    },
+    {
+        "id": "7",
+        "title": "The Psychology of Money",
+        "description": "Explores how human behavior influences financial decisions.",
+        "genre": "Finance"
+    },
+    {
+        "id": "8",
+        "title": "Ikigai",
+        "description": "Japanese philosophy for finding purpose and living a meaningful life.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "9",
+        "title": "Can't Hurt Me",
+        "description": "David Goggins shares lessons on mental toughness and resilience.",
+        "genre": "Memoir / Personal Development"
+    },
+    {
+        "id": "10",
+        "title": "The Subtle Art of Not Giving a F*ck",
+        "description": "A different approach to happiness by focusing on what truly matters.",
+        "genre": "Personal Development"
+    },
+    {
+        "id": "11",
+        "title": "Clean Code",
+        "description": "Best practices for writing readable, maintainable, and efficient software.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "12",
+        "title": "Design Patterns",
+        "description": "Reusable object-oriented software design solutions.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "13",
+        "title": "Python Crash Course",
+        "description": "Beginner-friendly guide to learning Python programming.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "14",
+        "title": "Fluent Python",
+        "description": "Advanced concepts and idiomatic programming in Python.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "15",
+        "title": "The Pragmatic Programmer",
+        "description": "Professional software development techniques and best practices.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "16",
+        "title": "Code Complete",
+        "description": "Comprehensive guide to software construction.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "17",
+        "title": "Introduction to Algorithms",
+        "description": "Detailed explanations of algorithms and data structures.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "18",
+        "title": "Refactoring",
+        "description": "Improving existing software without changing behavior.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "19",
+        "title": "Effective Java",
+        "description": "Best practices for writing high-quality Java applications.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "20",
+        "title": "System Design Interview",
+        "description": "Preparing for scalable distributed system design interviews.",
+        "genre": "Computer Science"
+    },
+    {
+        "id": "21",
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "description": "A young wizard begins his magical education at Hogwarts.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "22",
+        "title": "Harry Potter and the Chamber of Secrets",
+        "description": "A mysterious monster threatens students inside Hogwarts.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "23",
+        "title": "The Hobbit",
+        "description": "Bilbo Baggins embarks on an unexpected adventure with dwarves.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "24",
+        "title": "The Lord of the Rings",
+        "description": "Epic fantasy adventure to destroy the One Ring.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "25",
+        "title": "The Name of the Wind",
+        "description": "Story of a gifted magician recounting his extraordinary life.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "26",
+        "title": "The Way of Kings",
+        "description": "Epic fantasy filled with ancient powers and legendary warriors.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "27",
+        "title": "Mistborn",
+        "description": "A magical rebellion against an immortal emperor.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "28",
+        "title": "The Lion, the Witch and the Wardrobe",
+        "description": "Children enter a magical world through a wardrobe.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "29",
+        "title": "Eragon",
+        "description": "A farm boy discovers a dragon egg and becomes a Dragon Rider.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "30",
+        "title": "Percy Jackson and the Lightning Thief",
+        "description": "A teenager discovers he is the son of a Greek god.",
+        "genre": "Fantasy"
+    },
+    {
+        "id": "31",
+        "title": "Sherlock Holmes",
+        "description": "Brilliant detective solving mysterious crimes using logic.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "32",
+        "title": "Murder on the Orient Express",
+        "description": "A detective investigates a murder aboard a luxury train.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "33",
+        "title": "Gone Girl",
+        "description": "Psychological thriller involving a missing wife.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "34",
+        "title": "The Girl with the Dragon Tattoo",
+        "description": "A journalist and hacker investigate an old disappearance.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "35",
+        "title": "The Da Vinci Code",
+        "description": "Mystery involving hidden religious secrets and puzzles.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "36",
+        "title": "The Silent Patient",
+        "description": "Psychological mystery surrounding a woman who stopped speaking.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "37",
+        "title": "Big Little Lies",
+        "description": "Secrets, murder, and deception among suburban families.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "38",
+        "title": "The Reversal",
+        "description": "A lawyer investigates a high-profile criminal case.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "39",
+        "title": "In the Woods",
+        "description": "Detectives investigate a murder connected to childhood memories.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "40",
+        "title": "The Cuckoo's Calling",
+        "description": "Private detective investigates a celebrity's suspicious death.",
+        "genre": "Mystery & Thriller"
+    },
+    {
+        "id": "41",
+        "title": "Sapiens",
+        "description": "History of humankind from ancient times to modern civilization.",
+        "genre": "History"
+    },
+    {
+        "id": "42",
+        "title": "Homo Deus",
+        "description": "Exploration of humanity's future and technological evolution.",
+        "genre": "History"
+    },
+    {
+        "id": "43",
+        "title": "Guns, Germs, and Steel",
+        "description": "Explains how geography shaped civilizations.",
+        "genre": "History"
+    },
+    {
+        "id": "44",
+        "title": "The Silk Roads",
+        "description": "History of global trade and cultural exchange.",
+        "genre": "History"
+    },
+    {
+        "id": "45",
+        "title": "1776",
+        "description": "Historical account of America's fight for independence.",
+        "genre": "History"
+    },
+    {
+        "id": "46",
+        "title": "The Wright Brothers",
+        "description": "Biography of aviation pioneers.",
+        "genre": "History"
+    },
+    {
+        "id": "47",
+        "title": "The Diary of a Young Girl",
+        "description": "Anne Frank's diary during World War II.",
+        "genre": "History"
+    },
+    {
+        "id": "48",
+        "title": "Team of Rivals",
+        "description": "Abraham Lincoln's political leadership.",
+        "genre": "History"
+    },
+    {
+        "id": "49",
+        "title": "The Story of Civilization",
+        "description": "Comprehensive history of world civilizations.",
+        "genre": "History"
+    },
+    {
+        "id": "50",
+        "title": "A Short History of Nearly Everything",
+        "description": "Science and history explained for general readers.",
+        "genre": "Science"
+    },
+    {
+        "id": "51",
+        "title": "Cosmos",
+        "description": "Carl Sagan explores the universe and humanity's place within it.",
+        "genre": "Science"
+    },
+    {
+        "id": "52",
+        "title": "Astrophysics for People in a Hurry",
+        "description": "Simple explanations of modern astrophysics.",
+        "genre": "Science"
+    },
+    {
+        "id": "53",
+        "title": "The Selfish Gene",
+        "description": "Evolution explained through genetics.",
+        "genre": "Science"
+    },
+    {
+        "id": "54",
+        "title": "Brief Answers to the Big Questions",
+        "description": "Stephen Hawking discusses major scientific mysteries.",
+        "genre": "Science"
+    },
+    {
+        "id": "55",
+        "title": "The Gene",
+        "description": "History and science of genetics.",
+        "genre": "Science"
+    },
+    {
+        "id": "56",
+        "title": "The Body",
+        "description": "Explains how the human body works.",
+        "genre": "Science"
+    },
+    {
+        "id": "57",
+        "title": "Why We Sleep",
+        "description": "Scientific exploration of sleep and health.",
+        "genre": "Science"
+    },
+    {
+        "id": "58",
+        "title": "Thinking, Fast and Slow",
+        "description": "How human thinking and decision making work.",
+        "genre": "Psychology"
+    },
+    {
+        "id": "59",
+        "title": "Factfulness",
+        "description": "Understanding the world through facts rather than assumptions.",
+        "genre": "Science"
+    },
+    {
+        "id": "60",
+        "title": "The Immortal Life of Henrietta Lacks",
+        "description": "Medical ethics and scientific discovery.",
+        "genre": "Science"
+    },
+    {
+        "id": "61",
+        "title": "To Kill a Mockingbird",
+        "description": "Justice and racism in a small American town.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "62",
+        "title": "1984",
+        "description": "Dystopian society under constant surveillance.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "63",
+        "title": "Animal Farm",
+        "description": "Political satire using farm animals.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "64",
+        "title": "The Great Gatsby",
+        "description": "Love, wealth, and the American Dream.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "65",
+        "title": "Pride and Prejudice",
+        "description": "Romance and social expectations in England.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "66",
+        "title": "Jane Eyre",
+        "description": "A governess overcomes hardship and finds love.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "67",
+        "title": "Moby Dick",
+        "description": "Captain Ahab's obsession with a white whale.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "68",
+        "title": "The Catcher in the Rye",
+        "description": "Teenage alienation and identity.",
+        "genre": "Classic Fiction"
+    },
+    {
+        "id": "69",
+        "title": "The Alchemist",
+        "description": "A shepherd pursues his personal legend.",
+        "genre": "Fiction"
+    },
+    {
+        "id": "70",
+        "title": "The Kite Runner",
+        "description": "Friendship, betrayal, and redemption in Afghanistan.",
+        "genre": "Fiction"
+    },
+    {
+        "id": "71",
+        "title": "Dune",
+        "description": "Political intrigue and survival on a desert planet.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "72",
+        "title": "Foundation",
+        "description": "Scientists try to preserve civilization after an empire falls.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "73",
+        "title": "Ender's Game",
+        "description": "Gifted children trained to defend Earth from alien threats.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "74",
+        "title": "Neuromancer",
+        "description": "Cyberpunk novel involving artificial intelligence and hackers.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "75",
+        "title": "Snow Crash",
+        "description": "Virtual reality, hackers, and futuristic society.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "76",
+        "title": "The Martian",
+        "description": "Astronaut struggles to survive alone on Mars.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "77",
+        "title": "Project Hail Mary",
+        "description": "A scientist must save humanity from extinction.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "78",
+        "title": "Ready Player One",
+        "description": "Virtual reality treasure hunt.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "79",
+        "title": "Hyperion",
+        "description": "Pilgrims journey toward a mysterious alien creature.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "80",
+        "title": "Childhood's End",
+        "description": "Human civilization transformed by alien visitors.",
+        "genre": "Sci-Fi"
+    },
+    {
+        "id": "81",
+        "title": "The Lean Startup",
+        "description": "Building startups using experimentation and customer feedback.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "82",
+        "title": "Zero to One",
+        "description": "Creating innovative businesses that build the future.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "83",
+        "title": "Good to Great",
+        "description": "How companies become exceptional.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "84",
+        "title": "The Intelligent Investor",
+        "description": "Value investing principles by Benjamin Graham.",
+        "genre": "Finance"
+    },
+    {
+        "id": "85",
+        "title": "Blue Ocean Strategy",
+        "description": "Creating uncontested market space.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "86",
+        "title": "Start With Why",
+        "description": "Leadership begins with purpose.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "87",
+        "title": "Never Split the Difference",
+        "description": "Negotiation techniques from an FBI hostage negotiator.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "88",
+        "title": "Measure What Matters",
+        "description": "Goal setting using Objectives and Key Results.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "89",
+        "title": "The Hard Thing About Hard Things",
+        "description": "Managing difficult startup challenges.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "90",
+        "title": "Hooked",
+        "description": "Building habit-forming products.",
+        "genre": "Business & Startups"
+    },
+    {
+        "id": "91",
+        "title": "The Art of War",
+        "description": "Ancient military strategy and leadership.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "92",
+        "title": "Meditations",
+        "description": "Stoic philosophy by Roman emperor Marcus Aurelius.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "93",
+        "title": "Man's Search for Meaning",
+        "description": "Finding purpose despite suffering.",
+        "genre": "Psychology / Philosophy"
+    },
+    {
+        "id": "94",
+        "title": "The Prince",
+        "description": "Political leadership and power.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "95",
+        "title": "Beyond Good and Evil",
+        "description": "Philosophical critique of morality.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "96",
+        "title": "Republic",
+        "description": "Plato discusses justice and the ideal state.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "97",
+        "title": "Walden",
+        "description": "Simple living in natural surroundings.",
+        "genre": "Philosophy"
+    },
+    {
+        "id": "98",
+        "title": "The Republic of Tea",
+        "description": "History and culture surrounding tea traditions.",
+        "genre": "Business / Culture"
+    },
+    {
+        "id": "99",
+        "title": "Emotional Intelligence",
+        "description": "Understanding emotions for personal and professional success.",
+        "genre": "Psychology"
+    },
+    {
+        "id": "100",
+        "title": "The Four Agreements",
+        "description": "Personal freedom through four guiding principles.",
+        "genre": "Personal Development"
+    }
+]
