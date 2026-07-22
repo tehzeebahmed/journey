@@ -1,0 +1,64 @@
+Step 1- Initiating Chromadb instance....
+[RAG] Indexing 9 chunks...
+Step 1- Initiating Chromadb instance....
+[RAG] Indexing 2 chunks...
+[RAG] Knowledge base ready — 2 chunks indexed
+what is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What board approval is needed for NPA restructuring? for top 4 results
+[llm_router] Groq failed: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+[llm_router] falling back to next provider...
+[llm_router] success via Mistral
+The reponse of the user query is: 
+
+
+ Based on the provided context, **board approval is required for NPA restructuring when the amount exceeds INR 5 crores**. This is mentioned in **Section 2 - Restructuring Eligibility**.
+Script Execution ended - 2026-07-22 19:07:38.297488
+Total execution time: 0:00:28.244543
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What documents must a borrower submit? for top 4 results
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ The borrower must submit:
+*   Form 15C duly signed by a chartered accountant.
+*   Audited financials for the last 3 years.
+*   A detailed viability study prepared by an independent agency (mandatory for accounts above INR 1 crore).
+*   Property valuation reports (not older than 6 months).
+*   Fresh consent letters from all guarantors.
+Script Execution ended - 2026-07-22 19:10:18.352920
+Total execution time: 0:00:14.174355
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: When must restructured accounts be reported to RBI? for top 4 results
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ All restructured accounts must be reported to the Central Repository of Information on Large Credits (CRILC) within 30 days of restructuring. Additionally, quarterly progress reports on restructured accounts must be submitted to the RBI Regional Office by the 15th of the following month.
+Script Execution ended - 2026-07-22 19:13:20.118825
+Total execution time: 0:00:07.862503
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What is the weather in Dubai? for top 4 results
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ The answer is not in the context.
+Script Execution ended - 2026-07-22 19:13:47.769943
+Total execution time: 0:00:05.824051
