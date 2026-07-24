@@ -1,0 +1,161 @@
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What is CRILC? for top 4 results
+Kept Distnace -  0.393227
+Kept Distnace -  0.492151
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What is CRILC? for top 4 results
+Kept Distnace -  0.393227
+Kept Distnace -  0.492151
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: What is CRILC? for top 4 results
+Kept Distnace -  0.393227
+Kept Distnace -  0.492151
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ CRILC is the Central Repository of Information on Large Credits.
+
+Do you have another question? (Y/N): Exiting. Goodbye!
+Script Execution ended - 2026-07-23 13:11:21.269092
+Total execution time: 0:00:27.844545
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: Tell me about Section 2 for top 4 results
+Kept Distnace -  0.461990
+Kept Distnace -  0.496956
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ Section 2 - Restructuring Eligibility:
+A borrower is eligible for restructuring if the account was standard for the preceding 12 months before being classified as NPA. The borrower must demonstrate viable business operations and submit audited financials for the last 3 years. Restructuring requires approval from the Credit Committee for amounts above INR 50 lakhs and board approval for amounts above INR 5 crores.
+
+Do you have another question? (Y/N): Exiting. Goodbye!
+Script Execution ended - 2026-07-23 13:12:07.748258
+Total execution time: 0:00:24.936454
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...:  for top 4 results
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: Tell me about Section 2 for top 4 results
+Kept Distnace -  0.461990
+Kept Distnace -  0.496956
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ Section 2 of the guidelines covers Restructuring Eligibility. A borrower is eligible for restructuring if their account was standard for the 12 months preceding its classification as an NPA. The borrower must show viable business operations and provide audited financials for the last 3 years. Restructuring approval is required from the Credit Committee for amounts above INR 50 lakhs and board approval for amounts above INR 5 crores.
+
+Do you have another question? (Y/N): Exiting. Goodbye!
+Script Execution ended - 2026-07-23 13:16:37.797445
+Total execution time: 0:00:21.991109
+Step 1- Initiating Chromadb instance....
+[RAG] Collection already has 2 chunks — skipping index
+
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHAT IS CRILC for top 4 results
+Kept Distnace -  0.397203
+Kept Distnace -  0.491003
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ CRILC is the Central Repository of Information on Large Credits.
+
+Do you have another question? (Y/N): 
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHAT IS THE WEATHER IN DUBAI? for top 4 results
+filtered - distnace  0.566602
+filtered - distnace  0.581108
+
+ No relevent chunks available for this query..
+
+Do you have another question? (Y/N): 
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHAT BOARD APPROVAL IS NEEDED FOR NPA RESTRUCTURING? for top 4 results
+Kept Distnace -  0.241535
+Kept Distnace -  0.333544
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ Board approval is required for NPA restructuring for amounts above INR 5 crores.
+
+Do you have another question? (Y/N): 
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHAT DOCUMENTS MUST A BORROWER SUBMIT? for top 4 results
+Kept Distnace -  0.411858
+Kept Distnace -  0.448179
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ A borrower must submit:
+* Form 15C duly signed by a chartered accountant.
+* A detailed viability study prepared by an independent agency (mandatory for accounts above INR 1 crore).
+* Property valuation reports (not older than 6 months).
+* Fresh consent letters from all guarantors.
+
+Do you have another question? (Y/N): 
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHEN MUST RESTRUCTURED ACCOUNTS BE REPORTED TO RBI? for top 4 results
+Kept Distnace -  0.111533
+Kept Distnace -  0.243901
+[llm_router] success via Gemini
+The reponse of the user query is: 
+
+
+ All restructured accounts must be reported to the Central Repository of Information on Large Credits (CRILC) within 30 days of restructuring. Additionally, quarterly progress reports on restructured accounts must be submitted to the RBI Regional Office by the 15th of the following month.
+
+Do you have another question? (Y/N): 
+
+What is your BFSI policy related query: 
+Step 4 - Querying the collection based on user question: 
+...Querying ...: WHAT IS GEMINI MODEL FOR EMBEDDINGS for top 4 results
+filtered - distnace  0.543706
+filtered - distnace  0.561696
+
+ No relevent chunks available for this query..
+
+Do you have another question? (Y/N): Exiting. Goodbye!
+Script Execution ended - 2026-07-24 07:52:34.065293
+Total execution time: 0:02:15.488158
