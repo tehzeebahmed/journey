@@ -109,7 +109,10 @@ def build_knowledge_base(client: chromadb.Client, text_content: str, embedding_f
             collection.add(
             ids = [f"chunks_{i}"],         # Unique ID for each individual chunk 
             #embeddings = [embed(chunks)], # since I am using custom_embedding now no need for this
-            documents = [chunk]            # Each document is a single string chunk
+            documents = [chunk],
+                        metadatas = [{"section": f"section{i}",
+                                      "source": "bfsi_policy_document_2024",
+                                      "version": "1.3.2"}]            # Each document is a single string chunk
             )
         print(f"[RAG] Knowledge base ready — {collection.count()} chunks indexed")
     else:
@@ -123,13 +126,18 @@ def query_knowledge_base(collection: chromadb.Collection, question: str, top_k: 
     print(f"...Querying ...: {question} for top {top_k} results")
     results = collection.query(
         query_texts=[question], n_results = top_k,
-        include=["documents", "distances"]
+        include=["documents", "distances", "metadatas"]
         )
     filtered = []
-    for doc, dist in zip(results["documents"][0], results["distances"][0]):
+    for doc, dist, meta in zip(
+         results["documents"][0], 
+         results["distances"][0],
+         results["metadatas"][0]):
          if dist < threshold:
               filtered.append(doc)
-              print(f"Kept Distnace - {dist: 3f}")
+              if meta is None:
+                    meta = {"section": "unknown"}
+                    print(f"  Section: {meta['section']} — Kept distance: {dist:.3f}")
          else:
               print(f"filtered - distnace {dist: 3f}")
     return filtered
