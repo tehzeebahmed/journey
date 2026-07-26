@@ -1,0 +1,260 @@
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 3 - Credit agent was called at - 2026-07-24 17:35:45.821122
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 17:36:34.730966
+Worker 2 - Fraud agent was called at - 2026-07-24 17:36:34.731096Worker 3 - Credit agent was called at - 2026-07-24 17:36:34.731172
+
+
+Enter your PAN No here - [MAIN SECTION] - PAN   if credit_result < 650: does not ecists
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 17:39:12.029115Worker 2 - Fraud agent was called at - 2026-07-24 17:39:12.029285
+Worker 3 - Credit agent was called at - 2026-07-24 17:39:12.029412
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 17:39:41.787784Worker 2 - Fraud agent was called at - 2026-07-24 17:39:41.787955
+Worker 3 - Credit agent was called at - 2026-07-24 17:39:41.788089
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 17:40:11.333034Worker 2 - Fraud agent was called at - 2026-07-24 17:40:11.333209
+Worker 3 - Credit agent was called at - 2026-07-24 17:40:11.333351
+
+
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:01:04.558004Worker 2 - Fraud agent was called at - 2026-07-24 18:01:04.558216
+Worker 3 - Credit agent was called at - 2026-07-24 18:01:04.558374
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:03:35.153185Worker 2 - Fraud agent was called at - 2026-07-24 18:03:35.153386
+Worker 3 - Credit agent was called at - 2026-07-24 18:03:35.153539
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:41:41.951395
+Worker 2 - Fraud agent was called at - 2026-07-24 18:41:41.951581Credit Agent - worker 1 - credit score for pan TYUGW5812O - 645
+
+Worker 3 - Credit agent was called at - 2026-07-24 18:41:41.951769
+
+============================================================
+Applicant    : Aditya Patel
+Credit Score : 645
+Fraud Flag   : False
+Property Val : INR 12,500,000
+LTV Ratio    : 60.0%
+DECISION     : APPROVED
+Reason       : Loan application has approved - congratulations
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:42:18.842054Worker 2 - Fraud agent was called at - 2026-07-24 18:42:18.842246
+Worker 3 - Credit agent was called at - 2026-07-24 18:42:18.842393Credit Agent - worker 1 - credit score for pan SQWLY2548K - 395
+
+
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : APPROVED
+Reason       : Loan application has approved - congratulations
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:44:17.221389
+Worker 2 - Fraud agent was called at - 2026-07-24 18:44:17.221590Credit Agent - worker 1 - credit score for pan SQWLY2548K - 395
+Worker 3 - Credit agent was called at - 2026-07-24 18:44:17.221738
+
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : APPROVED
+Reason       : Loan application has approved - congratulations
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:46:04.408694Worker 2 - Fraud agent was called at - 2026-07-24 18:46:04.408862
+Worker 3 - Credit agent was called at - 2026-07-24 18:46:04.408999Credit Agent - worker 1 - credit score for pan SQWLY2548K - 395
+
+
+Value: 395 Type: <class 'int'>
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : APPROVED
+Reason       : Loan application has approved - congratulations
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:55:25.535400Worker 2 - Fraud agent was called at - 2026-07-24 18:55:25.535554
+Worker 3 - Credit agent was called at - 2026-07-24 18:55:25.535689Credit Agent - worker 1 - credit score for pan SQWLY2548K - 395
+
+
+Value: 395 Type: <class 'int'>
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : REJECT
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:56:14.343292Worker 2 - Fraud agent was called at - 2026-07-24 18:56:14.343494
+Worker 3 - Credit agent was called at - 2026-07-24 18:56:14.343644Credit Agent - worker 1 - credit score for pan ERAXG7852E - 511
+
+
+Value: 511 Type: <class 'int'>
+
+============================================================
+Applicant    : Aditi Roy
+Credit Score : 511
+Fraud Flag   : False
+Property Val : INR 15,000,000
+LTV Ratio    : 60.0%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:56:50.706916Worker 2 - Fraud agent was called at - 2026-07-24 18:56:50.707086
+Worker 3 - Credit agent was called at - 2026-07-24 18:56:50.707233Credit Agent - worker 1 - credit score for pan VZNXW8733D - 526
+
+
+Value: 526 Type: <class 'int'>
+
+============================================================
+Applicant    : Ananya Reddy
+Credit Score : 526
+Fraud Flag   : True
+Property Val : INR 24,500,000
+LTV Ratio    : 61.2%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:57:19.618093Worker 2 - Fraud agent was called at - 2026-07-24 18:57:19.618276
+Worker 3 - Credit agent was called at - 2026-07-24 18:57:19.618421Credit Agent - worker 1 - credit score for pan EDAME4283E - 754
+
+
+Value: 754 Type: <class 'int'>
+
+============================================================
+Applicant    : Diya Shah
+Credit Score : 754
+Fraud Flag   : True
+Property Val : INR 6,100,000
+LTV Ratio    : 57.4%
+DECISION     : REJECTED
+Reason       : Frad Detected at PAN
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:58:07.423033Worker 2 - Fraud agent was called at - 2026-07-24 18:58:07.423204
+Worker 3 - Credit agent was called at - 2026-07-24 18:58:07.423340Credit Agent - worker 1 - credit score for pan EBVWF7227J - 469
+
+
+Value: 469 Type: <class 'int'>
+
+============================================================
+Applicant    : Nidhi Agrawal
+Credit Score : 469
+Fraud Flag   : True
+Property Val : INR 8,100,000
+LTV Ratio    : 92.6%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 18:58:33.474861
+Worker 2 - Fraud agent was called at - 2026-07-24 18:58:33.475027
+Worker 3 - Credit agent was called at - 2026-07-24 18:58:33.475163
+Credit Agent - worker 1 - credit score for pan EBVWF7227J - 769
+
+
+Value: 769 Type: <class 'int'>
+
+============================================================
+Applicant    : Nidhi Agrawal
+Credit Score : 769
+Fraud Flag   : False
+Property Val : INR 8,100,000
+LTV Ratio    : 92.6%
+DECISION     : REJECTED
+Reason       : LTV ratio 92.6% exceeds maximum 80%
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 19:02:20.012419
+Worker 2 - Fraud agent was called at - 2026-07-24 19:02:20.012630Worker 3 - Credit agent was called at - 2026-07-24 19:02:20.012762
+Credit Agent - worker 1 - credit score for pan SQWLY2548K - 395
+
+Value: 395 Type: <class 'int'>
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-24 19:03:22.516394
+
+Worker 2 - Fraud agent was called at - 2026-07-24 19:03:22.516572
+Worker 3 - Credit agent was called at - 2026-07-24 19:03:22.516727
+
+Value: 395 Type: <class 'int'>
+
+============================================================
+Applicant    : Sanya Mehta
+Credit Score : 395
+Fraud Flag   : False
+Property Val : INR 7,500,000
+LTV Ratio    : 60.0%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
