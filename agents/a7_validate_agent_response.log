@@ -1,0 +1,128 @@
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:05:21.858218
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:05:21.858415
+Worker 3 - Credit agent was called at - 2026-07-26 16:05:21.858671
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:08:44.522013
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:08:44.522199
+Worker 3 - Credit agent was called at - 2026-07-26 16:08:44.522341
+credit agent validated.....
+
+
+
+Property agent validated.....
+
+Fraud agent validated.....
+
+Enter your PAN No here - [MAIN SECTION] - PAN     fraud_validated = fraudResponse(**fraud_result) does not ecists
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:10:27.950449
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:10:27.950622
+Worker 3 - Credit agent was called at - 2026-07-26 16:10:27.950760
+
+credit agent validated.....
+
+
+Fraud agent validated.....
+Property agent validated.....
+
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:13:11.326357
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:13:11.326516
+credit agent validated.....
+Worker 3 - Credit agent was called at - 2026-07-26 16:13:11.326796
+
+
+Property agent validated.....
+
+
+Fraud agent validated.....
+
+Enter your PAN No here - [MAIN SECTION] - PAN  does not ecists
+
+Enter your PAN No here - [MAIN SECTION] - PAN       credit_result   = credit_future.result() # raw dict from agent does not ecists
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:15:59.369023
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:15:59.369181
+Worker 3 - Credit agent was called at - 2026-07-26 16:15:59.369332
+
+credit agent validated.....
+Fraud agent validated.....
+
+
+
+Property agent validated.....
+
+============================================================
+Applicant    : Omkar Deshpande
+Credit Score : 790
+Fraud Flag   : False
+Property Val : INR 5,800,000.0
+LTV Ratio    : 55.2%
+DECISION     : APPROVED
+Reason       : Loan application has approved - congratulations
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:16:42.737221
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:16:42.737364
+Worker 3 - Credit agent was called at - 2026-07-26 16:16:42.737477
+credit agent validated.....
+
+
+
+Property agent validated.....
+
+Fraud agent validated.....
+
+============================================================
+Applicant    : Sourabh Dutta
+Credit Score : 313
+Fraud Flag   : True
+Property Val : INR 7,600,000.0
+LTV Ratio    : 55.3%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+Worker 1 - Credit agent was called at - 2026-07-26 16:16:59.061050
+
+Worker 2 - Fraud agent was called at - 2026-07-26 16:16:59.061250
+credit agent validated.....
+
+Worker 3 - Credit agent was called at - 2026-07-26 16:16:59.061568
+
+
+Fraud agent validated.....
+
+Property agent validated.....
+
+============================================================
+Applicant    : Sourabh Dutta
+Credit Score : 713
+Fraud Flag   : True
+Property Val : INR 7,600,000.0
+LTV Ratio    : 55.3%
+DECISION     : REJECTED
+Reason       : Frad Detected at PAN
+============================================================
