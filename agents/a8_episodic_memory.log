@@ -1,0 +1,134 @@
+
+Enter your PAN No here - [MAIN SECTION] - PAN ABCD2365rd does not ecists
+
+Enter your PAN No here - [MAIN SECTION] - PAN ABCD2365rd does not exists
+
+Enter your PAN No here - [MAIN SECTION] - PAN ABCD3452YR does not exists
+
+Enter your PAN No here - [MAIN SECTION] - PAN ABVF3453ER does not exists
+
+Enter your PAN No here - 
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+ [memory] Pan ITKYI0986U not found in the cache
+Worker 1 - Credit agent was called at - 2026-07-29 07:37:54.919204
+
+Worker 2 - Fraud agent was called at - 2026-07-29 07:37:54.919353
+credit agent validated.....
+Worker 3 - Credit agent was called at - 2026-07-29 07:37:54.919589
+
+
+Fraud agent validated.....
+
+Property agent validated.....
+
+
+============================================================
+Applicant    : Sourabh Dutta
+Credit Score : 713
+Fraud Flag   : True
+Property Val : INR 7,600,000.0
+LTV Ratio    : 55.3%
+DECISION     : REJECTED
+Reason       : Frad Detected for PAN
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+ [memory] Pan EQXEM0189G not found in the cache
+Worker 1 - Credit agent was called at - 2026-07-29 07:38:18.635814
+
+Worker 2 - Fraud agent was called at - 2026-07-29 07:38:18.636014
+credit agent validated.....
+
+
+Worker 3 - Credit agent was called at - 2026-07-29 07:38:18.636306
+
+Fraud agent validated.....
+Property agent validated.....
+
+
+============================================================
+Applicant    : Neha Patel
+Credit Score : 481
+Fraud Flag   : True
+Property Val : INR 27,500,000.0
+LTV Ratio    : 16.4%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+[Memory]- PAN EQXEM0189G found in cache and is valid for 89
+Supervisor using the cached results - skipping the agents workload
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+[Memory]- PAN EQXEM0189G found in cache and is valid for 89
+Supervisor using the cached results - skipping the agents workload
+
+============================================================
+Applicant    : Neha Patel
+Credit Score : 481
+Fraud Flag   : True
+Property Val : INR 27,500,000.0
+LTV Ratio    : 16.4%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+[Memory]- PAN EQXEM0189G found in cache and is valid for 89
+Supervisor using the cached results - skipping the agents workload
+
+============================================================
+Applicant    : Neha Patel
+Credit Score : 481
+Fraud Flag   : True
+Property Val : INR 27,500,000.0
+LTV Ratio    : 16.4%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+ [memory] Pan ERGZZ2205O not found in the cache
+Worker 1 - Credit agent was called at - 2026-07-29 07:41:59.715572
+
+Worker 2 - Fraud agent was called at - 2026-07-29 07:41:59.715732
+Worker 3 - Credit agent was called at - 2026-07-29 07:41:59.715878
+credit agent validated.....
+
+
+Fraud agent validated.....
+
+
+Property agent validated.....
+
+============================================================
+Applicant    : Aarav Sharma
+Credit Score : 458
+Fraud Flag   : False
+Property Val : INR 6,500,000.0
+LTV Ratio    : 61.5%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
+
+Enter your PAN No here - 
+[Supervisor] Starting parallel checks...
+[Memory]- PAN ERGZZ2205O found in cache and is valid for 89
+Supervisor using the cached results - skipping the agents workload
+
+============================================================
+Applicant    : Aarav Sharma
+Credit Score : 458
+Fraud Flag   : False
+Property Val : INR 6,500,000.0
+LTV Ratio    : 61.5%
+DECISION     : REJECTED
+Reason       : credit score below minimum threshold of 650
+============================================================
