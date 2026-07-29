@@ -1,0 +1,26 @@
+{
+    "ITKYI0986U": {
+        "pan_number": "ITKYI0986U",
+        "credit_score": 713,
+        "fraud_flag": true,
+        "property_value": 7600000.0,
+        "cached_at": "2026-07-29T07:37:54.920116",
+        "valid_until": "2026-10-27T07:37:54.920120"
+    },
+    "EQXEM0189G": {
+        "pan_number": "EQXEM0189G",
+        "credit_score": 481,
+        "fraud_flag": true,
+        "property_value": 27500000.0,
+        "cached_at": "2026-07-29T07:38:18.636975",
+        "valid_until": "2026-10-27T07:38:18.636978"
+    },
+    "ERGZZ2205O": {
+        "pan_number": "ERGZZ2205O",
+        "credit_score": 458,
+        "fraud_flag": false,
+        "property_value": 6500000.0,
+        "cached_at": "2026-07-29T07:41:59.716688",
+        "valid_until": "2026-10-27T07:41:59.716693"
+    }
+}
