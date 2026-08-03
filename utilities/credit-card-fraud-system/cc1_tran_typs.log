@@ -1,0 +1,154 @@
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+agent got transactions for transaction - 'TXN100002'
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+agent got transactions for transaction - 'TXN100002'
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+agent got transactions for transaction - 'TXN100002'
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+
+Transaction ID CUST0074 was not found in the dataset for customer TXN100002.
+
+ Dispute data found for TXN100002 - and customer CUST0074
+None
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+
+Transaction ID CUST0074 was not found in the dataset for customer TXN100002.
+
+ Dispute data found for TXN100002 - and customer CUST0074
+None
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+
+Transaction ID CUST0074 was not found in the dataset for customer TXN100002.
+
+ Dispute data found for TXN100002 - and customer CUST0074
+None
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+
+ Dispute data found for TXN100002 - and customer CUST0074
+{'dispute_id': 'DIS001', 'customer_id': 'CUST0074', 'transaction_id': 'TXN100002', 'dispute_amount': 14515.98, 'dispute_reason': 'unauthorized_transaction', 'transaction_date': '2026-08-01', 'merchant': 'Amazon India', 'dispute_status': 'OPEN'}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+============================================================
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+============================================================
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+============================================================
+
+ Dispute data found for TXN100002 - and customer CUST0074
+{'dispute_id': 'DIS001', 'customer_id': 'CUST0074', 'transaction_id': 'TXN100002', 'dispute_amount': 14515.98, 'dispute_reason': 'unauthorized_transaction', 'transaction_date': '2026-08-01', 'merchant': 'Amazon India', 'dispute_status': 'OPEN'}
+We are searching data in /Users/mustafapasha/LangChain/journey/utilities/credit-card-fraud-system/transactions_db.json
+ the Transaction ID  TXN100002 -  14515.98 has a record for TXN100002
+
+agent got transactions for transaction - 'TXN100002'
+============================================================
+
+The output of record {'transaction_id': 'TXN100002', 'customer_id': 'CUST0074', 'amount_transaction': 14515.98, 'merchant_name': 'Amazon India', 'merchant_transaction': 'Amazon India', 'device_used': 'mobile_ios', 'payment_tran_type': 'Wallet', 'fraud_signal': False, 'fraud_risk_score': 25}
+============================================================
+
+Customer - CUST0074 analyzed by agent and here is the fraud data - 
+{'curomer_id': 'CUST0074', 'fraud_score': 0.68, 'prev_dispute_counts': 2, 'suspecious_flag': True}
+============================================================
+
+Merchant details collected by Agent 3 (merchant Agent) for - Amazon India
+{'merchant_name': 'Amazon India', 'merchant_id': 'M_001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}
+============================================================
+
+ Dispute data found for TXN100002 - and customer CUST0074
+{'dispute_id': 'DIS001', 'customer_id': 'CUST0074', 'transaction_id': 'TXN100002', 'dispute_amount': 14515.98, 'dispute_reason': 'unauthorized_transaction', 'transaction_date': '2026-08-01', 'merchant': 'Amazon India', 'dispute_status': 'OPEN'}
+============================================================
