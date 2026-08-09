@@ -1,0 +1,1639 @@
+provide the file name :Analyzing file  - utilities/credit-card-fraud-system/cc2_state_validations.py ........
+This program is a core component of a credit card fraud detection and dispute resolution system. It automates the process of gathering information related to a customer's dispute and making an initial decision on whether to approve a refund, reject the dispute, or escalate it for human review.
+
+====================================================================
+1. High-Level Purpose
+====================================================================
+
+*   **What problem does this program solve?**
+    Credit card companies receive numerous disputes from customers regarding transactions. Manually investigating each dispute is time-consuming and resource-intensive. This program automates the initial data gathering and decision-making for these disputes. It acts like an intelligent assistant that collects all relevant information (transaction details, customer fraud history, merchant reputation, and company policies) and then recommends a course of action.
+
+*   **What is the input?**
+    1.  **User Input**: A "Dispute ID" entered by the user at runtime. This ID uniquely identifies a customer's specific transaction dispute.
+    2.  **Configuration**: An environment variable `GEMINI_API_KEY` for accessing Google's AI services for embeddings, and `GEMINI_EMBEDDING_MODEL` for specifying the embedding model.
+    3.  **Local Data Files (JSON)**:
+        *   `transactions_db.json`: Contains records of all transactions.
+        *   `fraud_patterns_db.json`: Stores customer-specific fraud history and scores.
+        *   `merchant_db.json`: Holds information about various merchants, including their dispute rates.
+        *   `dispute_db.json`: Stores initial records of disputes.
+    4.  **Local Policy File (TXT)**:
+        *   `dispute_policies.txt`: Contains the company's rules and guidelines for handling disputes.
+
+*   **What is the output?**
+    The primary output is a comprehensive `DisputeState` object printed to the console. This object encapsulates:
+    *   All the initial dispute details (ID, customer, transaction, amount, reason, date, merchant).
+    *   Detailed transaction data fetched.
+    *   Customer's fraud history and score.
+    *   Merchant's details and dispute rate.
+    *   Relevant company policy context retrieved from the knowledge base.
+    *   The supervisor's final `decision` (e.g., "refund", "rejected", "escalated").
+    *   The `reason` behind that decision.
+
+    Additionally, the program uses a `tee_logger` to capture all console output into a log file, providing an audit trail.
+
+*   **What are the major components?**
+    1.  **Data Models (Pydantic)**: These define the strict structure and types for various pieces of information (like `transactionResponse`, `fraudResponse`, `DisputeState`). They ensure data consistency and validate incoming data.
+    2.  **Agents (Functions)**: These are specialized functions (e.g., `agent_get_transaction`, `agent_fraud_signal`, `Agent_merchant_details`) responsible for fetching specific types of data from different databases (JSON files) based on the dispute.
+    3.  **Supervisor (Function)**: The `supervisor` function acts as the central orchestrator. It coordinates the execution of the agents, collects their findings, validates the data, queries the policy knowledge base, and applies business logic to make a final decision.
+    4.  **Knowledge Base (ChromaDB with Gemini Embeddings)**: This component stores the company's dispute policies in a searchable vector database. It uses Google Gemini's embedding model to convert policy text into numerical vectors, allowing for semantic search (Retrieval-Augmented Generation, or RAG).
+    5.  **Concurrent Execution**: Utilizes Python's `concurrent.futures.ThreadPoolExecutor` to run the data-gathering agents in parallel, speeding up the process.
+
+*   **How do they interact?**
+    1.  The `main` function starts the process, taking a dispute ID from the user.
+    2.  It initializes a `DisputeState` object with the basic dispute information.
+    3.  It sets up a ChromaDB client and populates a knowledge base with dispute policies from `dispute_policies.txt`.
+    4.  The `main` function then calls the `supervisor` function, passing the initial `DisputeState` and the ChromaDB `collection`.
+    5.  The `supervisor` function launches the individual "agents" (functions) in separate threads to concurrently fetch transaction, fraud, and merchant data. Each agent updates the shared `DisputeState` object with its findings.
+    6.  Once all agents complete, the `supervisor` validates their collected data using Pydantic models.
+    7.  The `supervisor` then queries the ChromaDB knowledge base (using the dispute reason and amount) to retrieve relevant policy sections.
+    8.  Finally, the `supervisor` applies a set of business rules (e.g., high amount, many previous disputes, high merchant dispute rate, high fraud score) to determine the `decision` and `reason`, updating the `DisputeState`.
+    9.  The `main` function receives the fully updated `DisputeState` and prints it, providing a complete audit of the dispute's assessment.
+
+====================================================================
+2. Project Structure
+====================================================================
+
+This program is contained within a single Python file. Let's assume its name is `main.py` for clarity in the explanation.
+
+```
+main.py
+   │
+   ├── Imports (os, json, chromadb, config, tee_logger, pydantic, pathlib, google.genai, typing, concurrent.futures, typing_extensions)
+   │
+   ├── Global Constants (CURR_DIR, TRN_DB_FILE, etc., DB_PATH, COLLECTION_NAME, api_key)
+   │
+   ├── Class: customEmbeddingFunction (ChromaDB embedding logic using Gemini)
+   │
+   ├── Pydantic Models:
+   │    ├── initializationResponse
+   │    ├── transactionResponse
+   │    ├── fraudResponse
+   │    ├── merchantResponse
+   │    ├── masterTransaction (TypedDict, noted as potentially unused)
+   │    ├── DisputeRecord
+   │    └── DisputeState (Central state object)
+   │
+   ├── Function: initiate_chromadb_instance (Setup ChromaDB client)
+   │
+   ├── Function: chunks_by_section (Text chunking for RAG)
+   │
+   ├── Function: supervisor (Orchestrates agents, makes decisions)
+   │
+   ├── Function: initialize_state_by_dispute_id (Fetches initial dispute data)
+   │
+   ├── Function: agent_get_transaction (Agent 1: Fetches transaction data)
+   │
+   ├── Function: agent_fraud_signal (Agent 2: Fetches fraud data)
+   │
+   ├── Function: Agent_merchant_details (Agent 3: Fetches merchant data)
+   │
+   ├── Function: agent_get_disputex (Agent 4: Cross-verification, currently unused in main flow)
+   │
+   ├── Global Instance: EMBEDDING_FUNCTION_GEMINI (Instance of customEmbeddingFunction)
+   │
+   ├── Function: build_knowledge_base (Populates ChromaDB with policies)
+   │
+   └── Function: main (Entry point, orchestrates high-level flow)
+        │
+        └── Calls supervisor, agents, and other setup functions.
+```
+
+Let's break down each component:
+
+*   **Files:**
+    *   `main.py`: This is the sole Python file containing all the logic.
+    *   (Implicit) `config.py`: Imported, but its content is not provided. It's typically used for application-wide settings.
+    *   (Implicit) `tee_logger.py`: Imported, but its content is not provided. It likely implements a logging mechanism that writes to both the console and a file ("tee" means to split the stream).
+    *   `transactions_db.json`, `fraud_patterns_db.json`, `merchant_db.json`, `dispute_db.json`, `dispute_policies.txt`: These are data files used by the program, assumed to be in the same directory or a subdirectory.
+
+*   **Modules Imported and Their Responsibilities:**
+    *   `os`: Provides a way to interact with the operating system, e.g., `os.getenv()` to read environment variables.
+    *   `json`: For working with JSON data, e.g., `json.load()` to read data from JSON files.
+    *   `chromadb`: The client library for ChromaDB, a vector database used for the RAG knowledge base.
+    *   `config`: (Assumed) A custom module for application configuration.
+    *   `tee_logger`: (Assumed) A custom module for logging to both console and file.
+    *   `pydantic`: A data validation and settings management library. Used extensively for defining data models and ensuring data integrity.
+    *   `pathlib`: Provides an object-oriented way to interact with file system paths, e.g., `Path(__file__).parent`.
+    *   `google.genai`: The client library for Google's Generative AI services (Gemini), used here for generating text embeddings.
+    *   `typing`: Provides support for type hints, e.g., `Optional`, `List`, `Union`.
+    *   `concurrent.futures`: A module for launching asynchronous tasks, specifically `ThreadPoolExecutor` for running tasks in parallel using threads.
+    *   `typing_extensions`: Provides backports of features from newer `typing` versions, such as `TypedDict`.
+    *   `chromadb.api.types`: Provides type hints specific to ChromaDB API, like `EmbeddingFunction`, `Documents`, `Embeddings`.
+
+*   **Classes and Their Responsibilities:**
+    *   `customEmbeddingFunction(EmbeddingFunction)`:
+        *   **Responsibility**: Implements ChromaDB's `EmbeddingFunction` interface. Its `__call__` method takes a list of documents (strings) and returns a list of corresponding embedding vectors generated by the Google Gemini embedding model. This allows ChromaDB to use Gemini for vectorizing text.
+    *   `initializationResponse(BaseModel)`:
+        *   **Responsibility**: Pydantic model to define the expected structure and types for the initial dispute details fetched from `dispute_db.json`.
+    *   `transactionResponse(BaseModel)`:
+        *   **Responsibility**: Pydantic model to define the structure and types for transaction data, including potential fraud signals and risk scores, fetched from `transactions_db.json`. It uses `Field(validation_alias="transaction_id")` to map an input key to an attribute name.
+    *   `fraudResponse(BaseModel)`:
+        *   **Responsibility**: Pydantic model to define the structure and types for customer-specific fraud history, including fraud score and previous dispute counts, fetched from `fraud_patterns_db.json`.
+    *   `merchantResponse(BaseModel)`:
+        *   **Responsibility**: Pydantic model to define the structure and types for merchant-specific details, such as dispute rate and trusted status, fetched from `merchant_db.json`.
+    *   `masterTransaction(TypedDict)`:
+        *   **Responsibility**: A `TypedDict` defining a dictionary structure. The comment suggests it might not be needed, implying it's a remnant or placeholder. It doesn't use `BaseModel` and therefore doesn't get Pydantic's validation features.
+    *   `DisputeRecord(BaseModel)`:
+        *   **Responsibility**: A Pydantic model for a full dispute record, including its status. It's similar to `initializationResponse` but includes `dispute_status`. It's not directly used in the main `supervisor` flow but could be used elsewhere.
+    *   `DisputeState(BaseModel)`:
+        *   **Responsibility**: This is the **central state object** of the entire dispute processing flow. It holds all the collected data from various sources and the final decision. It starts with initial dispute details and is progressively updated by agents and the supervisor. `Field(default_factory=dict)` is used for mutable default values for dictionaries.
+
+*   **Functions and Their Responsibilities:**
+    *   `initiate_chromadb_instance()`:
+        *   **Responsibility**: Creates and returns a `chromadb.PersistentClient` instance, configured to store vector database files in the `DB_PATH` directory.
+    *   `chunks_by_section(text: str) -> list[str]`:
+        *   **Responsibility**: Takes a large block of text (like the policy document) and splits it into smaller, semantically meaningful chunks based on section headers. This is crucial for RAG, as smaller chunks lead to more precise retrieval.
+    *   `supervisor(state: DisputeState, collection: chromadb.Collection) -> DisputeState`:
+        *   **Responsibility**: The brain of the operation. It orchestrates the entire dispute resolution process.
+            1.  Receives the current `DisputeState` and the ChromaDB `collection`.
+            2.  Launches `agent_get_transaction`, `agent_fraud_signal`, and `Agent_merchant_details` in separate threads using `ThreadPoolExecutor`.
+            3.  Waits for all agents to complete and update the `DisputeState` object.
+            4.  Performs Pydantic validation on the data gathered by agents.
+            5.  Applies decision logic based on `dispute_amount`, `prev_dispute_counts`, `dispute_rate`, and `fraud_score`.
+            6.  Queries the ChromaDB `collection` to find relevant policy sections based on the dispute reason and amount.
+            7.  Updates the `DisputeState` with the final `decision`, `reason`, and `policy_context`.
+            8.  Returns the fully updated `DisputeState`.
+    *   `initialize_state_by_dispute_id(disputeId: str, disputrdbFile: str) -> Optional[DisputeState]`:
+        *   **Responsibility**: Reads the `dispute_db.json` file to find the initial details for a given `disputeId`. If found, it populates and returns an initial `DisputeState` object; otherwise, it returns `None`.
+    *   `agent_get_transaction(state: DisputeState, db_file_path: str) -> DisputeState`:
+        *   **Responsibility**: Acts as "Agent 1". It takes the `DisputeState` and the path to `transactions_db.json`. It searches for the `transaction_id` within the `transactions_db.json` and, if found, updates the `state.transaction_data` dictionary with transaction details and risk signals.
+    *   `agent_fraud_signal(state: DisputeState, fraud_db_file:str) -> DisputeState`:
+        *   **Responsibility**: Acts as "Agent 2". It takes the `DisputeState` and the path to `fraud_patterns_db.json`. It searches for the `customer_id` within `fraud_patterns_db.json` and updates `state.fraud_data` with fraud scores, previous dispute counts, and suspicious flags. If no fraud history is found, it populates `fraud_data` with default zero/false values.
+    *   `Agent_merchant_details(state: DisputeState, merchant_df_file: str) -> DisputeState`:
+        *   **Responsibility**: Acts as "Agent 3". It takes the `DisputeState` and the path to `merchant_db.json`. It searches for the `merchant` name within `merchant_db.json` and updates `state.merchant_data` with details like dispute rate and trusted status.
+    *   `agent_get_disputex(disputedb: str, custId: str, originalTrxn_id: str)`:
+        *   **Responsibility**: Acts as "Agent 4". Its purpose is to cross-verify a dispute record against a transaction master file. It's currently defined but **not called** within the `main` function's primary flow, suggesting it might be for future use or a separate verification step.
+    *   `build_knowledge_base(client: chromadb.Client, inputStr: str, enb_function: EmbeddingFunction) -> chromadb.Collection`:
+        *   **Responsibility**: Sets up or retrieves a ChromaDB `collection`. It uses `chunks_by_section` to split the policy text (`inputStr`) and then adds these chunks as documents to the ChromaDB `collection`, using the `customEmbeddingFunction` to generate embeddings. It avoids re-indexing if the collection already contains data.
+    *   `main(ORIG_TRXN_ID: str = "TXN100002")`:
+        *   **Responsibility**: The entry point of the program when executed.
+            1.  Starts the `tee_logger` to capture output.
+            2.  Prompts the user for a dispute ID.
+            3.  Initializes the ChromaDB client and builds the policy knowledge base.
+            4.  Calls `initialize_state_by_dispute_id` to get the initial `DisputeState`.
+            5.  (In the current code, it then calls the individual agents sequentially for demonstration purposes, *before* calling the `supervisor` which would call them concurrently).
+            6.  Finally, calls the `supervisor` function to process the dispute and make a decision.
+            7.  Prints the final `DisputeState`.
+            8.  Stops the `tee_logger`.
+
+*   **Global Instance:**
+    *   `EMBEDDING_FUNCTION_GEMINI = customEmbeddingFunction()`: An instance of our custom embedding function, created once globally to be reused by ChromaDB.
+
+**How Control Moves Between Files:**
+Since all the core logic is in `main.py`, control primarily moves between functions within this single file.
+1.  Execution begins in `main.py` at the `if __name__ == "__main__":` block.
+2.  `main()` is called.
+3.  `main()` calls `start_tee` (from `tee_logger.py`), `input` (built-in), `initiate_chromadb_instance` (local function).
+4.  `main()` opens `dispute_policies.txt` (local file) and calls `build_knowledge_base` (local function).
+5.  `build_knowledge_base` calls `chunks_by_section` (local function) and interacts with the `chromadb` module. It also uses the global `EMBEDDING_FUNCTION_GEMINI` instance, which in turn interacts with `google.genai` to generate embeddings.
+6.  `main()` calls `initialize_state_by_dispute_id` (local function), which opens `dispute_db.json` (local file) and uses `json.load`.
+7.  `main()` then calls `agent_get_transaction`, `agent_fraud_signal`, `Agent_merchant_details` (all local functions) sequentially (in the provided code, these calls are *outside* the `supervisor` for direct printing, but the `supervisor` itself also calls them). These agents open and read their respective JSON files.
+8.  Finally, `main()` calls `supervisor` (local function).
+9.  `supervisor` orchestrates calls to `executor.submit` (from `concurrent.futures`) for `agent_get_transaction`, `agent_fraud_signal`, `Agent_merchant_details`. These agents again open and read their respective JSON files.
+10. `supervisor` also interacts with the `chromadb` `collection` (which uses `EMBEDDING_FUNCTION_GEMINI` internally) to query for policies.
+11. `supervisor` uses Pydantic models (`initializationResponse`, `transactionResponse`, etc.) for data validation.
+12. `main()` calls `stop_tee` (from `tee_logger.py`).
+
+====================================================================
+3. Runtime Execution Flow
+====================================================================
+
+Let's trace the execution step-by-step as Python would execute it, assuming the file is named `dispute_processor.py` and it's run from the command line: `python dispute_processor.py`.
+
+**Step 1: Python starts the interpreter.**
+The Python interpreter is launched. It sets up the basic environment and prepares to execute the script.
+
+**Step 2: Python creates a new execution frame.**
+A global execution frame (also known as the module's top-level scope) is created for `dispute_processor.py`. This frame will hold all global variables, functions, and classes defined in the file.
+
+**Step 3: Imports begin executing.**
+Python starts processing `import` statements from top to bottom.
+*   `import os`: The `os` module is loaded. Its contents (functions like `getenv`) become available in the global namespace.
+*   `import json`: The `json` module is loaded.
+*   `import chromadb`: The `chromadb` library is loaded.
+*   `import config`: The `config` module is loaded. (Assuming it exists and is on the Python path).
+*   `from tee_logger import start_tee, stop_tee`: The `tee_logger` module is loaded, and the `start_tee` and `stop_tee` functions are directly imported into the global namespace.
+*   `from pydantic import BaseModel, Field`: The `pydantic` module is loaded, and `BaseModel` and `Field` are imported.
+*   `from pathlib import Path`: The `pathlib` module is loaded, and `Path` is imported.
+*   `from google import genai`: The `google.genai` module is loaded.
+*   `from typing import Optional`: The `typing` module is loaded, and `Optional` is imported.
+*   `import concurrent.futures`: The `concurrent.futures` module is loaded.
+*   `from typing_extensions import TypedDict, List, Union`: The `typing_extensions` module is loaded, and `TypedDict`, `List`, `Union` are imported.
+*   `from chromadb.api.types import EmbeddingFunction, Documents, Embeddings`: Specific types from `chromadb` are imported.
+
+**Step 4: Top-level statements execute.**
+Python continues executing statements in the global scope.
+
+*   **Line `CURR_DIR = Path(__file__).parent`**:
+    *   `__file__` is a special built-in variable that holds the path to the current script (`dispute_processor.py`).
+    *   `Path(__file__)` creates a `Path` object representing the script's file path.
+    *   `.parent` accesses the parent directory of that path.
+    *   This `Path` object, representing the directory where `dispute_processor.py` resides, is assigned to the global variable `CURR_DIR`.
+    *   **Debugger View**:
+        *   `CURR_DIR` = `Path('/path/to/your/script_directory')`
+
+*   **Lines `TRN_DB_FILE = "transactions_db.json"` to `DISPUTE_POLICYFILE_FULL_PATH = CURR_DIR.joinpath(DISPUTE_POLICY_FILE)`**:
+    *   These lines define several string constants for filenames (`TRN_DB_FILE`, `FRD_DB_FILE`, etc.).
+    *   Then, they construct full paths to these files by calling `CURR_DIR.joinpath()`. `joinpath` is a method of `Path` objects that intelligently concatenates path components, handling slashes correctly across operating systems.
+    *   These full `Path` objects are assigned to global variables like `TRN_FILE_FULL_PATH`, `FRD_FILE_FULL_PATH`, etc.
+    *   **Debugger View**:
+        *   `TRN_DB_FILE` = `"transactions_db.json"`
+        *   `TRN_FILE_FULL_PATH` = `Path('/path/to/your/script_directory/transactions_db.json')`
+        *   ...and so on for other file paths.
+
+*   **Lines `DB_PATH = "./local_vectordb"` to `api_key = os.getenv("GEMINI_API_KEY")`**:
+    *   `DB_PATH` is set to a string representing the local directory for ChromaDB.
+    *   `COLLECTION_NAME` is set to the name of the ChromaDB collection.
+    *   `api_key = os.getenv("GEMINI_API_KEY")`: Python calls `os.getenv("GEMINI_API_KEY")`. This function looks up the value of the environment variable named "GEMINI_API_KEY" in the operating system's environment. If found, its string value is assigned to the global variable `api_key`. If not found, `api_key` will be `None`.
+    *   **Debugger View**:
+        *   `DB_PATH` = `"./local_vectordb"`
+        *   `COLLECTION_NAME` = `"disputeCollection"`
+        *   `api_key` = `"<your_gemini_api_key_from_env>"` (or `None`)
+
+*   **Class Definitions (`customEmbeddingFunction`, `initializationResponse`, etc.)**:
+    *   Python encounters the `class` keywords. It reads and parses these class definitions.
+    *   For `customEmbeddingFunction`, it notes that it inherits from `EmbeddingFunction`.
+    *   For Pydantic models (`initializationResponse`, `transactionResponse`, etc.), Python recognizes `BaseModel` as their parent. During this phase, Pydantic's metaclass magic (`__init_subclass__` or similar hooks) is invoked, which processes the field annotations (`str`, `float`, `Field`, `default_factory`) to set up the validation logic for each model. No instances of these classes are created yet; only their blueprints are registered.
+    *   `masterTransaction(TypedDict)`: This defines a dictionary type hint, not a Pydantic model.
+
+*   **Function Definitions (`initiate_chromadb_instance`, `chunks_by_section`, etc.)**:
+    *   Python encounters `def` keywords. It parses these function definitions and creates function objects in the global namespace. No function code is executed at this point; they are just registered for later calls.
+
+*   **Line `EMBEDDING_FUNCTION_GEMINI = customEmbeddingFunction()`**:
+    *   Python calls the constructor of `customEmbeddingFunction`.
+    *   **Object Creation**: `customEmbeddingFunction.__new__` is called to allocate memory for the new object.
+    *   **Object Initialization**: `customEmbeddingFunction.__init__` is called with `self` (the newly created object) and no other arguments.
+        *   `self.client = genai.Client(api_key = api_key)`: An instance of `genai.Client` is created, passing the `api_key` (retrieved earlier from environment variables). This client is stored as an instance attribute `self.client`.
+        *   `self.model_name = os.getenv("GEMINI_EMBEDDING_MODEL")`: Python calls `os.getenv("GEMINI_EMBEDDING_MODEL")` to get the name of the embedding model (e.g., "embedding-001") from environment variables. This string is stored as `self.model_name`.
+    *   The newly created `customEmbeddingFunction` object is assigned to the global variable `EMBEDDING_FUNCTION_GEMINI`.
+    *   **Debugger View**:
+        *   `EMBEDDING_FUNCTION_GEMINI` = `<customEmbeddingFunction object at 0x...>`
+            *   `EMBEDDING_FUNCTION_GEMINI.client` = `<genai.Client object at 0x...>`
+            *   `EMBEDDING_FUNCTION_GEMINI.model_name` = `"embedding-001"` (or `None`)
+
+*   **Line `if __name__ == "__main__":`**:
+    *   Python checks the special variable `__name__`. When a script is run directly, `__name__` is set to `"__main__"`.
+    *   The condition `__name__ == "__main__"` evaluates to `True`.
+
+*   **Line `main()`**:
+    *   Python calls the `main` function. A new stack frame is pushed onto the call stack for `main()`.
+
+**Inside `main()` function:**
+
+*   **Line `tee_stream = start_tee(__file__)`**:
+    *   Python calls the `start_tee` function (imported from `tee_logger`).
+    *   Argument: `__file__` (the path to the current script).
+    *   This function likely sets up a logging mechanism that duplicates `sys.stdout` (console output) to both the console and a file (e.g., `dispute_processor.log`).
+    *   The return value (likely a file object or a stream handler) is assigned to the local variable `tee_stream`.
+    *   **Debugger View (inside `main`)**:
+        *   `tee_stream` = `<_io.TextIOWrapper name='dispute_processor.log' mode='w' encoding='utf-8'>` (example)
+        *   Call Stack: `main()`
+
+*   **Line `print("\n provide the dispute id:")`**:
+    *   The string `"\n provide the dispute id:"` is printed to standard output (and simultaneously to the log file via `tee_logger`).
+
+*   **Line `dispute_user_input = input("Dispute ID = ")`**:
+    *   Python calls the built-in `input()` function.
+    *   The prompt `"Dispute ID = "` is displayed to the user on the console.
+    *   The program pauses, waiting for the user to type something and press Enter.
+    *   Let's assume the user enters `DIS005`.
+    *   The string `"DIS005"` is returned by `input()` and assigned to the local variable `dispute_user_input`.
+    *   **Debugger View (inside `main`)**:
+        *   `dispute_user_input` = `"DIS005"`
+
+*   **Line `chroma_client = initiate_chromadb_instance()`**:
+    *   Python calls the `initiate_chromadb_instance` function.
+    *   A new stack frame is created for `initiate_chromadb_instance()`.
+
+    **Inside `initiate_chromadb_instance()`:**
+    *   **Line `print("\n Initializing chroma db....wait for few seconds..")`**: Prints the message.
+    *   **Line `return chromadb.PersistentClient(path=DB_PATH)`**:
+        *   `chromadb.PersistentClient` is called with `path=DB_PATH` (`./local_vectordb`).
+        *   **Object Creation**: A `chromadb.PersistentClient` object is created. This client manages the connection and interaction with the local ChromaDB instance, which stores its data in the specified `DB_PATH`. If the directory doesn't exist, ChromaDB will create it.
+        *   The newly created client object is returned.
+    *   The `initiate_chromadb_instance` stack frame is popped.
+
+    **Back in `main()`:**
+    *   The returned `chromadb.PersistentClient` object is assigned to the local variable `chroma_client`.
+    *   **Debugger View (inside `main`)**:
+        *   `chroma_client` = `<chromadb.api.client.PersistentClient object at 0x...>`
+
+*   **Line `with open(DISPUTE_POLICYFILE_FULL_PATH, "r") as file:`**:
+    *   This is a `with` statement, which uses a context manager.
+    *   `open(DISPUTE_POLICYFILE_FULL_PATH, "r")` attempts to open the `dispute_policies.txt` file in read mode (`"r"`).
+    *   If successful, a file object is created and assigned to the variable `file`.
+    *   The `__enter__` method of the file object's context manager is implicitly called.
+    *   **Debugger View (inside `main`)**:
+        *   `file` = `<_io.TextIOWrapper name='/path/to/your/script_directory/dispute_policies.txt' mode='r' encoding='UTF-8'>`
+
+*   **Line `policy_text = file.read()`**:
+    *   The `read()` method of the `file` object is called. It reads the *entire content* of `dispute_policies.txt` as a single string.
+    *   This string is assigned to the local variable `policy_text`.
+    *   **Debugger View (inside `main`)**:
+        *   `policy_text` = `"Section 1: General Dispute Policy...\nSection 2: High Value Transactions..."` (example content)
+
+*   **End of `with` block**:
+    *   The `__exit__` method of the file object's context manager is implicitly called, which automatically closes the `file`, even if errors occurred.
+
+*   **Line `collection = build_knowledge_base(chroma_client, policy_text, EMBEDDING_FUNCTION_GEMINI)`**:
+    *   Python calls the `build_knowledge_base` function.
+    *   Arguments: `chroma_client` (the client object), `policy_text` (the full policy string), `EMBEDDING_FUNCTION_GEMINI` (the global embedding function instance).
+    *   A new stack frame is created for `build_knowledge_base()`.
+
+    **Inside `build_knowledge_base()`:**
+    *   Parameters mapping: `client` = `chroma_client`, `inputStr` = `policy_text`, `enb_function` = `EMBEDDING_FUNCTION_GEMINI`.
+    *   **Line `collection = client.get_or_create_collection(name = COLLECTION_NAME, metadata = {"hnsw:space": "cosine"}, embedding_function = EMBEDDING_FUNCTION_GEMINI)`**:
+        *   `client.get_or_create_collection` is called. It checks if a collection named `COLLECTION_NAME` ("disputeCollection") already exists in the ChromaDB instance at `DB_PATH`.
+        *   If it exists, it retrieves it. If not, it creates a new one.
+        *   `metadata={"hnsw:space": "cosine"}` configures the similarity metric for vector search to use cosine similarity.
+        *   `embedding_function = EMBEDDING_FUNCTION_GEMINI` tells ChromaDB to use our custom Gemini embedding function whenever it needs to embed new documents for this collection.
+        *   The resulting `chromadb.Collection` object is assigned to the local variable `collection`.
+        *   **Debugger View (inside `build_knowledge_base`)**:
+            *   `collection` = `<chromadb.api.models.Collection object at 0x...>`
+
+    *   **Line `if collection.count() == 0:`**:
+        *   `collection.count()` is called to get the number of documents currently in the collection.
+        *   If the collection is empty (first run), the condition is `True`. Let's assume it's `True` for the first run.
+
+    *   **Line `chunks = chunks_by_section(inputStr)`**:
+        *   Python calls `chunks_by_section` with `inputStr` (`policy_text`).
+        *   A new stack frame is created for `chunks_by_section()`.
+
+        **Inside `chunks_by_section()`:**
+        *   Parameter mapping: `text` = `inputStr` (`policy_text`).
+        *   **Line `import re`**: The `re` (regular expression) module is imported *locally* within this function.
+        *   **Line `sections = re.split(r'\n\n(?=Section \d+)' , text)`**:
+            *   The `re.split` function is called. It splits the `text` (policy content) using the regular expression `r'\n\n(?=Section \d+)'`. This regex looks for two newlines (`\n\n`) followed by "Section" and a digit (a positive lookahead `(?=...)` ensures the "Section" part is not consumed by the split). This effectively splits the policy into individual sections.
+            *   The resulting list of strings (chunks) is assigned to `sections`.
+        *   **Line `return[s.strip() for s in sections if s.strip()]`**:
+            *   A list comprehension is used: it iterates through `sections`.
+            *   `s.strip()` removes leading/trailing whitespace from each section.
+            *   `if s.strip()` ensures that only non-empty strings are included in the final list.
+            *   This list of cleaned chunks is returned.
+        *   The `chunks_by_section` stack frame is popped.
+
+        **Back in `build_knowledge_base()`:**
+        *   The returned list of policy chunks is assigned to the local variable `chunks`.
+        *   **Debugger View (inside `build_knowledge_base`)**:
+            *   `chunks` = `['Section 1: General Dispute Policy...', 'Section 2: High Value Transactions...', ...]`
+
+    *   **Line `for i, chunk in enumerate(chunks):`**:
+        *   A loop starts, iterating through `chunks` with an index `i`.
+        *   For each `chunk`:
+            *   **Line `collection.add(ids = [f"chunks_{i}"], documents = [chunk])`**:
+                *   `collection.add()` is called to add a document to ChromaDB.
+                *   `ids = [f"chunks_{i}"]`: A unique ID (e.g., "chunks_0", "chunks_1") is generated for each chunk.
+                *   `documents = [chunk]`: The `chunk` string itself is added as a document.
+                *   **Behind the Scenes**: Because `embedding_function` was specified when creating the collection, ChromaDB *implicitly* calls `EMBEDDING_FUNCTION_GEMINI.__call__([chunk])` to generate the embedding vector for this `chunk`. This embedding vector is then stored alongside the `chunk` and its `id`.
+                *   **Inside `EMBEDDING_FUNCTION_GEMINI.__call__(input: Documents)`**:
+                    *   Parameter mapping: `input` = `[chunk]`.
+                    *   Checks `if not input: return[]`. (False, as `input` has one item).
+                    *   `embeddings = []`.
+                    *   `for text in input:` (loop runs once for the `chunk`).
+                        *   `response = self.client.models.embed_content(model = self.model_name, contents = text)`: Calls the Gemini API to get the embedding.
+                        *   `embeddings.append(response.embeddings[0].values)`: Extracts the embedding vector (a list of floats) and adds it to the `embeddings` list.
+                    *   Returns the `embeddings` list.
+                *   This process repeats for every chunk.
+
+    *   **Line `print(f"[RAG] Knowledge base ready — {collection.count()} chunks indexed")`**: Prints a confirmation message with the total number of indexed chunks.
+    *   **Line `else:`**: (If `collection.count()` was not 0, this block would execute, printing a message that the collection already has chunks).
+    *   **Line `return collection`**: The `collection` object is returned.
+    *   The `build_knowledge_base` stack frame is popped.
+
+    **Back in `main()`:**
+    *   The returned `chromadb.Collection` object is assigned to the local variable `collection`.
+    *   **Debugger View (inside `main`)**:
+        *   `collection` = `<chromadb.api.models.Collection object at 0x...>`
+
+*   **Line `print(f"We are searching data in {TRN_FILE_FULL_PATH}")`**: Prints the path to the transaction database file.
+
+*   **Line `current_state = initialize_state_by_dispute_id(dispute_user_input, DISPUTE_FILE_FULL_PATH)`**:
+    *   Python calls `initialize_state_by_dispute_id`.
+    *   Arguments: `dispute_user_input` (`"DIS005"`), `DISPUTE_FILE_FULL_PATH` (`Path('/path/to/.../dispute_db.json')`).
+    *   A new stack frame is created for `initialize_state_by_dispute_id()`.
+
+    **Inside `initialize_state_by_dispute_id()`:**
+    *   Parameters mapping: `disputeId` = `"DIS005"`, `disputrdbFile` = `DISPUTE_FILE_FULL_PATH`.
+    *   **Line `try:`**: Enters a `try` block for error handling.
+    *   **Line `with open(disputrdbFile, "r", encoding='utf-8') as file:`**: Opens `dispute_db.json` for reading.
+    *   **Line `data = json.load(file)`**: Reads the entire JSON content from the file and parses it into a Python list of dictionaries. This list is assigned to `data`.
+    *   **Line `for record in data:`**: Starts iterating through each dictionary (`record`) in the `data` list.
+        *   Let's assume `disputeId` `"DIS005"` is found in one of the records.
+        *   **Line `if record.get("dispute_id") == disputeId:`**: Checks if the "dispute_id" value in the current `record` matches `"DIS005"`. When a match is found, the condition is `True`.
+            *   **Line `print(f"\nFound record for Dispute ID  {record.get('dispute_id')}")`**: Prints a confirmation message.
+            *   **Line `return DisputeState(...)`**:
+                *   **Object Creation**: `DisputeState` constructor is called.
+                *   Arguments are taken from the `record` dictionary using `record.get()`.
+                *   Pydantic performs validation:
+                    *   It checks if `dispute_id`, `customer_id`, `transaction_id`, `dispute_reason`, `transaction_date`, `merchant` are strings.
+                    *   It checks if `dispute_amount` can be converted to a `float`.
+                    *   If any validation fails, a `ValidationError` would be raised.
+                    *   Assuming valid data, a new `DisputeState` object is created with these initial values. The `transaction_data`, `fraud_data`, `merchant_data` fields will be initialized to empty dictionaries due to `default_factory=dict`. `policy_context`, `decision`, `reason`, `policy_ref` will be initialized to their default string values.
+                *   The newly created `DisputeState` object is returned.
+            *   The loop terminates, and the `initialize_state_by_dispute_id` stack frame is popped.
+
+    **Back in `main()`:**
+    *   The returned `DisputeState` object is assigned to the local variable `current_state`.
+    *   **Debugger View (inside `main`)**:
+        *   `current_state` = `<DisputeState object at 0x...>`
+            *   `current_state.dispute_id` = `"DIS005"`
+            *   `current_state.customer_id` = `"CUST005"`
+            *   `current_state.transaction_id` = `"TXN100005"`
+            *   `current_state.dispute_amount` = `1200.50`
+            *   `current_state.dispute_reason` = `"Unauthorized transaction"`
+            *   `current_state.transaction_date` = `"2023-01-15"`
+            *   `current_state.merchant` = `"GlobalMart"`
+            *   `current_state.transaction_data` = `{}`
+            *   `current_state.fraud_data` = `{}`
+            *   `current_state.merchant_data` = `{}`
+            *   `current_state.policy_context` = `" "`
+            *   `current_state.decision` = `"pending"`
+            *   `current_state.reason` = `""`
+            *   `current_state.policy_ref` = `""`
+
+*   **Line `if current_state:`**:
+    *   The condition is `True` because `current_state` is an object, not `None`. The code inside this `if` block will execute.
+
+*   **Line `print(f"\nDISPIUTE State - transaction id {current_state.transaction_id} fornd for dispute id 'DIS001'")`**:
+    *   Prints a message, using `current_state.transaction_id`. (Note: The message incorrectly says 'DIS001' instead of the actual `dispute_user_input`).
+
+*   **Line `print('='*60)`**: Prints a separator line.
+
+*   **Line `print(current_state)`**:
+    *   Prints the string representation of the `current_state` object. Pydantic models have a useful `__repr__` method that shows all their attributes and values.
+
+*   **Line `transaction_id_toget_details = current_state.transaction_id`**:
+    *   The value of `current_state.transaction_id` (`"TXN100005"`) is assigned to the local variable `transaction_id_toget_details`.
+    *   **Debugger View (inside `main`)**:
+        *   `transaction_id_toget_details` = `"TXN100005"`
+
+*   **Line `print(f"\nTransaction ID = {transaction_id_toget_details}")`**: Prints the transaction ID.
+
+*   **Line `transaction_state = agent_get_transaction(current_state, TRN_FILE_FULL_PATH)`**:
+    *   **Important Note**: In the current `main` function, the agents are called *sequentially* here, and *then* the `supervisor` is called, which *also* calls them concurrently. This means the agents will be run twice (once sequentially, once in parallel via `supervisor`). The sequential calls here are likely for debugging/demonstration before the `supervisor` fully takes over.
+    *   Python calls `agent_get_transaction`.
+    *   Arguments: `current_state` (the `DisputeState` object), `TRN_FILE_FULL_PATH`.
+    *   A new stack frame is created for `agent_get_transaction()`.
+
+    **Inside `agent_get_transaction()`:**
+    *   Parameters mapping: `state` = `current_state` (reference), `db_file_path` = `TRN_FILE_FULL_PATH`.
+    *   **Line `try:`**: Enters `try` block.
+    *   **Line `with open(db_file_path, "r", encoding='utf-8') as file:`**: Opens `transactions_db.json`.
+    *   **Line `data = json.load(file)`**: Loads JSON data into `data` (list of dicts).
+    *   **Line `for record in data:`**: Iterates through transaction records.
+        *   **Line `if record.get("transaction_id") == state.transaction_id:`**: Checks if `record["transaction_id"]` matches `state.transaction_id` (`"TXN100005"`).
+        *   When a match is found (`True`):
+            *   **Line `print(f" the Transaction ID  {record.get('transaction_id')} -  {record.get('amount')} has a record for {state.transaction_id}")`**: Prints confirmation.
+            *   **Line `state.transaction_data = {...}`**:
+                *   A new dictionary is created with fetched transaction details and risk signals.
+                *   This dictionary is assigned to `state.transaction_data`. Since `state` is a reference to `current_state` from `main()`, this modifies the `current_state` object directly (in-place).
+                *   **Debugger View (inside `agent_get_transaction`)**:
+                    *   `state.transaction_data` = `{"transaction_id": "TXN100005", "customer_id": "CUST005", "amount_transaction": 1200.50, ...}`
+            *   **Line `return state`**: The modified `state` (which is `current_state`) is returned.
+        *   The loop terminates, and the `agent_get_transaction` stack frame is popped.
+
+    **Back in `main()`:**
+    *   The returned `DisputeState` object (which is `current_state` itself) is assigned to `transaction_state`. This means `transaction_state` now points to the same object as `current_state`.
+    *   **Debugger View (inside `main`)**:
+        *   `current_state.transaction_data` is now populated.
+        *   `transaction_state` points to the same object as `current_state`.
+
+*   **Line `print(transaction_state)`**: Prints the `current_state` (via `transaction_state` reference), showing the newly added transaction data.
+
+*   **Lines for `fraud_state` and `merchant_data`**:
+    *   The execution flow for `agent_fraud_signal` and `Agent_merchant_details` is very similar to `agent_get_transaction`.
+    *   `fraud_state = agent_fraud_signal(current_state, FRD_FILE_FULL_PATH)`:
+        *   Calls `agent_fraud_signal`.
+        *   This agent reads `fraud_patterns_db.json`.
+        *   It finds the record for `current_state.customer_id`.
+        *   It populates `current_state.fraud_data` with fraud score, previous dispute counts, etc.
+        *   Returns `current_state`. `fraud_state` will point to `current_state`.
+    *   `merchant_data = Agent_merchant_details(current_state, MRCHNT_FILE_FULL_PATH)`:
+        *   Calls `Agent_merchant_details`.
+        *   This agent reads `merchant_db.json`.
+        *   It finds the record for `current_state.merchant`.
+        *   It populates `current_state.merchant_data` with merchant dispute rate, trusted status, etc.
+        *   Returns `current_state`. `merchant_data` will point to `current_state`.
+    *   After these calls, `current_state` will have its `transaction_data`, `fraud_data`, and `merchant_data` fields fully populated.
+
+*   **Line `suoervisor_data = supervisor(current_state, collection)`**:
+    *   Python calls the `supervisor` function.
+    *   Arguments: `current_state` (the now richly populated `DisputeState` object), `collection` (the ChromaDB collection).
+    *   A new stack frame is created for `supervisor()`.
+
+    **Inside `supervisor()`:**
+    *   Parameters mapping: `state` = `current_state` (reference), `collection` = `collection`.
+    *   **Line `initial_results_validated = initializationResponse(...)`**:
+        *   **Object Creation**: `initializationResponse` Pydantic model is instantiated using data directly from the `state` object. This performs an initial validation of the core dispute fields.
+        *   The validated model instance is assigned to `initial_results_validated`.
+        *   **Debugger View (inside `supervisor`)**:
+            *   `initial_results_validated` = `<initializationResponse object at 0x...>` (contains validated dispute_id, customer_id, etc.)
+
+    *   **Line `with concurrent.futures.ThreadPoolExecutor() as executor:`**:
+        *   This is a `with` statement using `ThreadPoolExecutor` as a context manager.
+        *   **Object Creation**: A `ThreadPoolExecutor` object is created. This object manages a pool of worker threads. When the `with` block is entered, the executor is ready to accept tasks.
+        *   The `executor` object is assigned to the local variable `executor`.
+        *   **Debugger View (inside `supervisor`)**:
+            *   `executor` = `<ThreadPoolExecutor object at 0x...>`
+
+    *   **Lines `transx_state = executor.submit(agent_get_transaction, state, TRN_FILE_FULL_PATH)` etc.**:
+        *   `executor.submit()` is called three times.
+        *   Each call submits a function (`agent_get_transaction`, `agent_fraud_signal`, `Agent_merchant_details`) along with its arguments (`state`, `file_path`) to the thread pool.
+        *   `submit()` does *not* wait for the function to complete. It immediately returns a `Future` object. A `Future` object represents the eventual result of the asynchronous operation.
+        *   These `Future` objects are assigned to `transx_state`, `fraudx_state`, `mercht_state`.
+        *   **Behind the Scenes**: The `ThreadPoolExecutor` dispatches these function calls to available threads in its pool. These threads start executing the agent functions *concurrently*. Each agent function will attempt to read its respective JSON file and update the *same* `state` object (which is a reference to `current_state` from `main`).
+        *   **Debugger View (inside `supervisor`)**:
+            *   `transx_state` = `<Future at 0x... state=running>`
+            *   `fraudx_state` = `<Future at 0x... state=running>`
+            *   `mercht_state` = `<Future at 0x... state=running>`
+
+    *   **Lines `transx_state.result()` etc.**:
+        *   `result()` is called on each `Future` object.
+        *   `result()` is a blocking call: it waits until the corresponding submitted task (the agent function) has completed execution in its thread.
+        *   Once an agent completes, its return value (which is the `state` object itself) is retrieved.
+        *   The purpose here is to ensure all agents have finished updating the `state` object before proceeding. The return values are not explicitly stored, as the `state` object itself has been modified in-place.
+        *   **Behind the Scenes**: At this point, all three agents have finished executing in their respective threads, and the `state` object (which is `current_state` in `main`) now contains the data collected by these *concurrent* calls. (Note: This is the second time these agents have run, due to the sequential calls in `main` earlier. The data will simply be overwritten with the same values).
+
+    *   **Lines `if state.transaction_data: transxx_state_validated = transactionResponse(**state.transaction_data); state.transaction_data = transxx_state_validated.model_dump()`**:
+        *   Checks if `state.transaction_data` is not empty.
+        *   **Pydantic Validation**: `transactionResponse(**state.transaction_data)` is called. Pydantic takes the `state.transaction_data` dictionary and attempts to create an instance of `transactionResponse`.
+            *   It validates that all required fields are present and have the correct types (e.g., `amount_transaction` is a float, `fraud_signal` is a bool).
+            *   It applies `validation_alias="transaction_id"` if the input dict had `transaction_id` but the model field was `id_transaction`.
+            *   If validation passes, a `transactionResponse` object is created and assigned to `transxx_state_validated`.
+        *   `state.transaction_data = transxx_state_validated.model_dump()`: The validated Pydantic model is converted back into a dictionary using `model_dump()` and *re-assigned* to `state.transaction_data`. This ensures that the dictionary stored in the state is clean, validated, and matches the model's structure.
+        *   Similar validation and re-assignment happens for `state.fraud_data` (using `fraudResponse`) and `state.merchant_data` (using `merchantResponse`).
+        *   **Debugger View (inside `supervisor`)**:
+            *   `state.transaction_data` (and `fraud_data`, `merchant_data`) now contain the *validated* and potentially type-coerced versions of the data.
+
+    *   **End of `with executor:` block**: The `__exit__` method of `ThreadPoolExecutor` is called, which gracefully shuts down the worker threads.
+
+    *   **Decision Logic (lines `fraud_score = state.fraud_data.get("fraud_score", 0)` to `else: state.decision = "refund"; state.reason = "All checks passed — refund approved"`)**:
+        *   Retrieves `fraud_score`, `dispute_rate`, and `prev_dispute` from the `state` object's nested dictionaries (using `.get()` with a default value to prevent `KeyError`).
+        *   A series of `if/elif/else` conditions are evaluated:
+            *   If `dispute_amount > 50000`: `state.decision` is "escalated", `state.reason` is set.
+            *   Else if `prev_dispute > 3`: `state.decision` is "rejected", `state.reason` is set.
+            *   Else if `dispute_rate > 0.05`: `state.decision` is "refund", `state.reason` is set.
+            *   Else if `fraud_score > 0.7`: `state.decision` is "refund", `state.reason` is set.
+            *   Else (all other conditions false): `state.decision` is "refund", `state.reason` is set to a default approval message.
+        *   Each of these assignments directly modifies the `state` object (which is `current_state` from `main`).
+        *   **Debugger View (inside `supervisor`)**:
+            *   `fraud_score` = `0.0` (example)
+            *   `dispute_rate` = `0.02` (example)
+            *   `prev_dispute` = `0` (example)
+            *   `state.decision` = `"refund"` (example, based on conditions)
+            *   `state.reason` = `"All checks passed — refund approved"` (example)
+
+    *   **Line `policy_results = collection.query(query_texts=[f"{state.dispute_reason} {state.dispute_amount}"], n_results=2)`**:
+        *   `collection.query()` is called on the ChromaDB collection.
+        *   `query_texts`: A list containing a string formed by combining `state.dispute_reason` and `state.dispute_amount`. This string is used as the query to find similar policy documents.
+        *   `n_results=2`: Requests the top 2 most relevant policy documents.
+        *   **Behind the Scenes**: ChromaDB uses `EMBEDDING_FUNCTION_GEMINI.__call__` to embed the query text. It then performs a vector similarity search against the embeddings of the stored policy chunks to find the closest matches.
+        *   The results (a dictionary containing `documents`, `ids`, `distances`, etc.) are assigned to `policy_results`.
+        *   **Debugger View (inside `supervisor`)**:
+            *   `policy_results` = `{'ids': [['chunks_0', 'chunks_1']], 'embeddings': None, 'documents': [['Section 1: ...', 'Section 2: ...']], 'metadatas': [[{}, {}]], 'distances': [[0.1, 0.2]]}` (example)
+
+    *   **Line `if policy_results.get("documents") and len(policy_results["documents"]) > 0:`**:
+        *   Checks if the query returned any documents.
+        *   If `policy_results` contains a "documents" key and it's not empty (`True`):
+            *   **Line `state.policy_context = "\n".join(policy_results["documents"][0])`**:
+                *   `policy_results["documents"][0]` gets the first list of retrieved document texts.
+                *   `"\n".join(...)` concatenates these documents into a single string, separated by newlines.
+                *   This concatenated string is assigned to `state.policy_context`.
+            *   **Debugger View (inside `supervisor`)**:
+                *   `state.policy_context` = `"Section 1: General Dispute Policy...\nSection 2: High Value Transactions..."` (example)
+
+    *   **Line `return state`**: The fully updated `state` object (which is `current_state`) is returned.
+    *   The `supervisor` stack frame is popped.
+
+    **Back in `main()`:**
+    *   The returned `DisputeState` object (which is `current_state` itself) is assigned to `suoervisor_data`. This means `suoervisor_data` now points to the same object as `current_state`.
+
+*   **Line `print(suoervisor_data)`**:
+    *   Prints the string representation of the `current_state` object (via `suoervisor_data`), which now includes all collected data, the policy context, and the supervisor's decision and reason. This is the final comprehensive output.
+
+*   **Line `stop_tee(tee_stream)`**:
+    *   Python calls the `stop_tee` function (imported from `tee_logger`), passing the `tee_stream` object.
+    *   This function likely restores `sys.stdout` to its original state and closes the log file, flushing any remaining buffered output.
+
+*   **End of `main()`**: The `main` function's stack frame is popped.
+
+**Step 5: Program Termination.**
+The Python interpreter has finished executing all statements. The program exits. Any objects that are no longer referenced are subject to garbage collection.
+
+**Summary of Execution Flow:**
+The program first sets up its environment and loads static data (policy documents into ChromaDB). Then, for a given dispute ID, it fetches initial details. It then *demonstrates* fetching data from individual agents sequentially, which updates the `current_state`. Following this, it calls the `supervisor` which *again* fetches data from these agents, but this time concurrently, ensuring robust data collection. The `supervisor` then validates this data, queries the policy knowledge base, and applies decision logic to finalize the `DisputeState` object. Finally, the complete `DisputeState` is printed.
+
+====================================================================
+4. Variable Flow
+====================================================================
+
+This section tracks the creation, lifetime, values, and movement of important variables.
+
+1.  **`CURR_DIR`**:
+    *   **Created**: Line `CURR_DIR = Path(__file__).parent` in the global scope.
+    *   **Memory Lifetime**: Global, exists for the entire duration of the program.
+    *   **Current Value**: A `pathlib.Path` object representing the directory where the script is located (e.g., `Path('/home/user/fraud_system')`).
+    *   **When it changes**: Never changes after initial assignment.
+    *   **Where it is passed**: Not passed directly.
+    *   **Who receives it**: Its value is used by `joinpath` methods to construct other global path variables.
+    *   **When it goes out of scope**: Never, as it's a global variable.
+
+2.  **`TRN_FILE_FULL_PATH`, `FRD_FILE_FULL_PATH`, `MRCHNT_FILE_FULL_PATH`, `DISPUTE_FILE_FULL_PATH`, `DISPUTE_POLICYFILE_FULL_PATH`**:
+    *   **Created**: Lines `TRN_FILE_FULL_PATH = CURR_DIR.joinpath(TRN_DB_FILE)` etc., in the global scope.
+    *   **Memory Lifetime**: Global, exists for the entire duration of the program.
+    *   **Current Value**: `pathlib.Path` objects representing the absolute paths to the respective data files (e.g., `Path('/home/user/fraud_system/transactions_db.json')`).
+    *   **When it changes**: Never changes after initial assignment.
+    *   **Where it is passed**:
+        *   `DISPUTE_POLICYFILE_FULL_PATH` is passed to `open()` in `main()`.
+        *   `DISPUTE_FILE_FULL_PATH` is passed to `initialize_state_by_dispute_id()` in `main()`.
+        *   `TRN_FILE_FULL_PATH` is passed to `agent_get_transaction()` in `main()` and `supervisor()`.
+        *   `FRD_FILE_FULL_PATH` is passed to `agent_fraud_signal()` in `main()` and `supervisor()`.
+        *   `MRCHNT_FILE_FULL_PATH` is passed to `Agent_merchant_details()` in `main()` and `supervisor()`.
+    *   **Who receives it**: `open()` (builtin), `initialize_state_by_dispute_id()` (as `disputrdbFile`), `agent_get_transaction()` (as `db_file_path`), `agent_fraud_signal()` (as `fraud_db_file`), `Agent_merchant_details()` (as `merchant_df_file`).
+    *   **When it goes out of scope**: Never.
+
+3.  **`api_key`**:
+    *   **Created**: Line `api_key = os.getenv("GEMINI_API_KEY")` in the global scope.
+    *   **Memory Lifetime**: Global, exists for the entire duration of the program.
+    *   **Current Value**: A string containing the Gemini API key (e.g., `"AIzaSy..."`) or `None` if the environment variable is not set.
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Passed as an argument to `genai.Client()` when `EMBEDDING_FUNCTION_GEMINI` is initialized.
+    *   **Who receives it**: The `genai.Client` constructor parameter.
+    *   **When it goes out of scope**: Never.
+
+4.  **`EMBEDDING_FUNCTION_GEMINI`**:
+    *   **Created**: Line `EMBEDDING_FUNCTION_GEMINI = customEmbeddingFunction()` in the global scope.
+    *   **Memory Lifetime**: Global, exists for the entire duration of the program.
+    *   **Current Value**: An instance of the `customEmbeddingFunction` class, holding a `genai.Client` and `model_name`.
+    *   **When it changes**: Never (its internal attributes `client` and `model_name` are set during `__init__` and don't change).
+    *   **Where it is passed**:
+        *   Passed to `build_knowledge_base()` in `main()`.
+        *   Passed as `embedding_function` argument to `client.get_or_create_collection()` within `build_knowledge_base()`.
+    *   **Who receives it**: `build_knowledge_base()` (as `enb_function`), `chromadb.Collection` (internally, for its embedding needs).
+    *   **When it goes out of scope**: Never.
+
+5.  **`tee_stream`**:
+    *   **Created**: Line `tee_stream = start_tee(__file__)` inside `main()`.
+    *   **Memory Lifetime**: Local to `main()`.
+    *   **Current Value**: A file-like object or stream handler (e.g., `<_io.TextIOWrapper name='dispute_processor.log'>`).
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Passed to `stop_tee()` at the end of `main()`.
+    *   **Who receives it**: `stop_tee()` (from `tee_logger`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+6.  **`dispute_user_input`**:
+    *   **Created**: Line `dispute_user_input = input("Dispute ID = ")` inside `main()`.
+    *   **Memory Lifetime**: Local to `main()`.
+    *   **Current Value**: A string provided by the user (e.g., `"DIS005"`).
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Passed to `initialize_state_by_dispute_id()` in `main()`.
+    *   **Who receives it**: `initialize_state_by_dispute_id()` (as `disputeId`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+7.  **`chroma_client`**:
+    *   **Created**: Line `chroma_client = initiate_chromadb_instance()` inside `main()`.
+    *   **Memory Lifetime**: Local to `main()`.
+    *   **Current Value**: A `chromadb.PersistentClient` object.
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Passed to `build_knowledge_base()` in `main()`.
+    *   **Who receives it**: `build_knowledge_base()` (as `client`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+8.  **`policy_text`**:
+    *   **Created**: Line `policy_text = file.read()` inside `main()`.
+    *   **Memory Lifetime**: Local to `main()`.
+    *   **Current Value**: A large string containing the entire content of `dispute_policies.txt`.
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Passed to `build_knowledge_base()` in `main()`.
+    *   **Who receives it**: `build_knowledge_base()` (as `inputStr`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+9.  **`collection`**:
+    *   **Created**: Line `collection = build_knowledge_base(...)` inside `main()`. (Actually created inside `build_knowledge_base` and returned).
+    *   **Memory Lifetime**: Local to `main()`.
+    *   **Current Value**: A `chromadb.Collection` object, representing the "disputeCollection" in ChromaDB.
+    *   **When it changes**: Never (the object itself), but its internal state (documents) changes during `build_knowledge_base`.
+    *   **Where it is passed**: Passed to `supervisor()` in `main()`.
+    *   **Who receives it**: `supervisor()` (as `collection`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+10. **`current_state`**:
+    *   **Created**: Line `current_state = initialize_state_by_dispute_id(...)` inside `main()`.
+    *   **Memory Lifetime**: Local to `main()`. It is a mutable object on the heap, and `current_state` is a reference to it.
+    *   **Current Value**: Initially, a `DisputeState` object populated with basic dispute details.
+    *   **When it changes**: This is a crucial variable that **changes frequently** due to in-place modification.
+        *   `initialize_state_by_dispute_id()` creates and returns the initial object.
+        *   `agent_get_transaction()` modifies `current_state.transaction_data`.
+        *   `agent_fraud_signal()` modifies `current_state.fraud_data`.
+        *   `Agent_merchant_details()` modifies `current_state.merchant_data`.
+        *   `supervisor()` (both its concurrent agent calls and its decision logic/RAG) modifies `current_state.transaction_data`, `current_state.fraud_data`, `current_state.merchant_data`, `current_state.policy_context`, `current_state.decision`, `current_state.reason`.
+    *   **Where it is passed**:
+        *   Passed to `agent_get_transaction()`, `agent_fraud_signal()`, `Agent_merchant_details()` in `main()` (as `state`).
+        *   Passed to `supervisor()` in `main()` (as `state`).
+        *   Passed to `executor.submit()` within `supervisor()` for each agent call (as `state`).
+    *   **Who receives it**:
+        *   `initialize_state_by_dispute_id()` returns it.
+        *   `agent_get_transaction()`, `agent_fraud_signal()`, `Agent_merchant_details()` (as `state`).
+        *   `supervisor()` (as `state`).
+    *   **When it goes out of scope**: When `main()` finishes execution.
+
+11. **`state` (parameter in agent functions and `supervisor`)**:
+    *   **Created**: As a parameter when functions like `agent_get_transaction`, `agent_fraud_signal`, `Agent_merchant_details`, and `supervisor` are called.
+    *   **Memory Lifetime**: Local to the function call.
+    *   **Current Value**: A reference to the `DisputeState` object (which is `current_state` from `main`).
+    *   **When it changes**: The `state` *reference itself* doesn't change, but the object it points to (`current_state`) is modified through this reference (e.g., `state.transaction_data = ...`).
+    *   **Where it is passed**:
+        *   Returned by the agent functions and `supervisor`.
+    *   **Who receives it**: The caller (`main()` or `supervisor`) receives the returned reference.
+    *   **When it goes out of scope**: When the function call returns.
+
+12. **`executor` (inside `supervisor`)**:
+    *   **Created**: Line `with concurrent.futures.ThreadPoolExecutor() as executor:` inside `supervisor()`.
+    *   **Memory Lifetime**: Local to the `with` block within `supervisor()`.
+    *   **Current Value**: A `concurrent.futures.ThreadPoolExecutor` object.
+    *   **When it changes**: Never.
+    *   **Where it is passed**: Not passed.
+    *   **Who receives it**: Used internally to `submit` tasks.
+    *   **When it goes out of scope**: When the `with` block exits, the executor is shut down and its reference becomes unreachable.
+
+13. **`transx_state`, `fraudx_state`, `mercht_state` (inside `supervisor`)**:
+    *   **Created**: Lines `transx_state = executor.submit(...)` etc. inside `supervisor()`.
+    *   **Memory Lifetime**: Local to `supervisor()`.
+    *   **Current Value**: `concurrent.futures.Future` objects.
+    *   **When it changes**: Their internal `state` (e.g., `running`, `finished`) changes as the submitted tasks progress.
+    *   **Where it is passed**: Not passed.
+    *   **Who receives it**: Used by `result()` to wait for completion.
+    *   **When it goes out of scope**: When `supervisor()` finishes execution.
+
+**Variable Flow Diagram (Simplified for `current_state`):**
+
+```
+User Input (dispute_user_input)
+       │
+       ▼
+initialize_state_by_dispute_id()
+       │ (returns new DisputeState object)
+       ▼
+current_state (DisputeState object created on heap)
+       │
+       ▼
+agent_get_transaction(current_state, ...)
+       │ (modifies current_state.transaction_data in-place)
+       ▼
+agent_fraud_signal(current_state, ...)
+       │ (modifies current_state.fraud_data in-place)
+       ▼
+Agent_merchant_details(current_state, ...)
+       │ (modifies current_state.merchant_data in-place)
+       ▼
+supervisor(current_state, collection)
+       │
+       ├── (Concurrent Agents read JSON files, update current_state in-place)
+       │
+       ├── (RAG query on collection, updates current_state.policy_context in-place)
+       │
+       └── (Decision logic, updates current_state.decision, current_state.reason in-place)
+       │ (returns modified current_state)
+       ▼
+main() receives modified current_state
+       │
+       ▼
+print(current_state) -> Final output
+```
+
+====================================================================
+5. Function Call Trace
+====================================================================
+
+This section details the sequence of function calls.
+
+**1. `python dispute_processor.py`**
+    *   Global scope execution starts.
+    *   Imports run.
+    *   Global constants are defined.
+    *   Classes and functions are defined.
+    *   `EMBEDDING_FUNCTION_GEMINI = customEmbeddingFunction()` is called.
+        *   **Caller**: Global scope
+        *   **Arguments**: None
+        *   **Parameter mapping**: `self` (new object)
+        *   **Return value**: `customEmbeddingFunction` instance
+        *   **Caller receives**: `EMBEDDING_FUNCTION_GEMINI` assigned to the instance.
+    *   `if __name__ == "__main__":` condition is true.
+    *   `main()` is called.
+
+**2. `main()`**
+    *   **Caller**: Global scope
+    *   **Arguments**: None (default `ORIG_TRXN_ID` is not explicitly used in the current flow, but it's defined as a parameter).
+    *   **Parameter mapping**: None
+    *   `start_tee(__file__)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `__file__` (e.g., `"dispute_processor.py"`)
+        *   **Return value**: `tee_stream` object
+        *   **Caller receives**: `tee_stream` local variable is assigned the stream object.
+    *   `input("Dispute ID = ")` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `"Dispute ID = "`
+        *   **Return value**: User's input string (e.g., `"DIS005"`)
+        *   **Caller receives**: `dispute_user_input` local variable is assigned the string.
+    *   `initiate_chromadb_instance()` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: None
+        *   **`initiate_chromadb_instance()` execution**:
+            *   `print(...)` executes.
+            *   `chromadb.PersistentClient(path=DB_PATH)` is called.
+                *   **Caller**: `initiate_chromadb_instance()`
+                *   **Arguments**: `path=DB_PATH` (e.g., `"./local_vectordb"`)
+                *   **Return value**: `chromadb.PersistentClient` object
+                *   **Caller receives**: The `initiate_chromadb_instance()` returns this client object.
+        *   **Return value**: `chromadb.PersistentClient` object
+        *   **Caller receives**: `chroma_client` local variable is assigned the client object.
+    *   `open(DISPUTE_POLICYFILE_FULL_PATH, "r")` is called (implicitly by `with` statement).
+        *   **Caller**: `main()`
+        *   **Arguments**: `DISPUTE_POLICYFILE_FULL_PATH`, `"r"`
+        *   **Return value**: File object
+        *   **Caller receives**: `file` local variable is assigned the file object.
+    *   `file.read()` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: None
+        *   **Return value**: String content of the policy file
+        *   **Caller receives**: `policy_text` local variable is assigned the string.
+    *   `build_knowledge_base(chroma_client, policy_text, EMBEDDING_FUNCTION_GEMINI)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `chroma_client`, `policy_text`, `EMBEDDING_FUNCTION_GEMINI`
+        *   **`build_knowledge_base()` execution**:
+            *   `client.get_or_create_collection(...)` is called.
+                *   **Caller**: `build_knowledge_base()`
+                *   **Arguments**: `name=COLLECTION_NAME`, `metadata={"hnsw:space": "cosine"}`, `embedding_function=EMBEDDING_FUNCTION_GEMINI`
+                *   **Return value**: `chromadb.Collection` object
+                *   **Caller receives**: `collection` local variable is assigned the collection object.
+            *   `collection.count()` is called.
+            *   If `collection.count() == 0`:
+                *   `chunks_by_section(inputStr)` is called.
+                    *   **Caller**: `build_knowledge_base()`
+                    *   **Arguments**: `inputStr` (e.g., `policy_text`)
+                    *   **`chunks_by_section()` execution**:
+                        *   `import re` occurs (local import).
+                        *   `re.split(...)` is called.
+                        *   **Return value**: List of string chunks
+                        *   **Caller receives**: `chunks` local variable is assigned the list.
+                *   **Return value**: List of string chunks
+                *   **Caller receives**: `chunks` local variable is assigned the list.
+                *   Loop `for i, chunk in enumerate(chunks):` starts.
+                    *   `collection.add(ids=[f"chunks_{i}"], documents=[chunk])` is called for each chunk.
+                        *   **Caller**: `build_knowledge_base()`
+                        *   **Arguments**: `ids=[...]`, `documents=[...]`
+                        *   **Behind the Scenes (ChromaDB internal call)**: `EMBEDDING_FUNCTION_GEMINI.__call__([chunk])` is called.
+                            *   **Caller**: ChromaDB internal logic
+                            *   **Arguments**: `input=[chunk]`
+                            *   **`EMBEDDING_FUNCTION_GEMINI.__call__()` execution**:
+                                *   `self.client.models.embed_content(model=self.model_name, contents=text)` is called.
+                                    *   **Caller**: `EMBEDDING_FUNCTION_GEMINI.__call__()`
+                                    *   **Arguments**: `model=self.model_name`, `contents=text`
+                                    *   **Return value**: Embedding response object
+                                    *   **Caller receives**: `response` local variable is assigned the response.
+                                *   **Return value**: List of embedding vectors
+                                *   **Caller receives**: ChromaDB receives the embeddings.
+                        *   **Return value**: None
+                        *   **Caller receives**: None (side effect of adding to collection)
+            *   `print(...)` executes.
+            *   **Return value**: `chromadb.Collection` object (`collection`)
+            *   **Caller receives**: `main()` receives the `collection` object.
+        *   **Return value**: `chromadb.Collection` object
+        *   **Caller receives**: `collection` local variable is assigned the collection object.
+    *   `initialize_state_by_dispute_id(dispute_user_input, DISPUTE_FILE_FULL_PATH)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `dispute_user_input`, `DISPUTE_FILE_FULL_PATH`
+        *   **`initialize_state_by_dispute_id()` execution**:
+            *   `open(disputrdbFile, "r", encoding='utf-8')` is called.
+            *   `json.load(file)` is called.
+            *   Loop `for record in data:` starts.
+                *   `record.get("dispute_id")` is called.
+                *   If `record.get("dispute_id") == disputeId`:
+                    *   `print(...)` executes.
+                    *   `DisputeState(...)` constructor is called.
+                        *   **Caller**: `initialize_state_by_dispute_id()`
+                        *   **Arguments**: Various keyword arguments from `record.get()` calls.
+                        *   **Behind the Scenes (Pydantic)**: Validation occurs for each field.
+                        *   **Return value**: `DisputeState` object
+                        *   **Caller receives**: The `initialize_state_by_dispute_id()` returns this `DisputeState` object.
+            *   **Return value**: `DisputeState` object (or `None` if not found/error)
+            *   **Caller receives**: `current_state` local variable is assigned the `DisputeState` object.
+    *   `if current_state:` condition is true.
+    *   `print(...)` executes.
+    *   `print(current_state)` executes (uses `DisputeState.__repr__`).
+    *   `agent_get_transaction(current_state, TRN_FILE_FULL_PATH)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `current_state`, `TRN_FILE_FULL_PATH`
+        *   **`agent_get_transaction()` execution**:
+            *   `open(db_file_path, "r", encoding='utf-8')` is called.
+            *   `json.load(file)` is called.
+            *   Loop `for record in data:` starts.
+                *   `record.get("transaction_id")` is called.
+                *   If `record.get("transaction_id") == state.transaction_id`:
+                    *   `print(...)` executes.
+                    *   `state.transaction_data = {...}` (in-place modification of `current_state`).
+                    *   **Return value**: `state` (reference to `current_state`)
+                    *   **Caller receives**: `agent_get_transaction()` returns the `state` object.
+        *   **Return value**: `DisputeState` object (reference to `current_state`)
+        *   **Caller receives**: `transaction_state` local variable is assigned the object (points to `current_state`).
+    *   `print(transaction_state)` executes.
+    *   `agent_fraud_signal(current_state, FRD_FILE_FULL_PATH)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `current_state`, `FRD_FILE_FULL_PATH`
+        *   **`agent_fraud_signal()` execution**:
+            *   (Similar file open/read/loop as `agent_get_transaction`).
+            *   `state.fraud_data = {...}` (in-place modification of `current_state`).
+            *   **Return value**: `state` (reference to `current_state`)
+            *   **Caller receives**: `fraud_state` local variable is assigned the object (points to `current_state`).
+    *   `print(fraud_state)` executes.
+    *   `Agent_merchant_details(current_state, MRCHNT_FILE_FULL_PATH)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `current_state`, `MRCHNT_FILE_FULL_PATH`
+        *   **`Agent_merchant_details()` execution**:
+            *   (Similar file open/read/loop as previous agents).
+            *   `state.merchant_data = {...}` (in-place modification of `current_state`).
+            *   **Return value**: `state` (reference to `current_state`)
+            *   **Caller receives**: `merchant_data` local variable is assigned the object (points to `current_state`).
+    *   `print(merchant_data)` executes.
+    *   `supervisor(current_state, collection)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `current_state`, `collection`
+        *   **`supervisor()` execution**:
+            *   `initializationResponse(...)` constructor is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: Keyword arguments from `state`
+                *   **Behind the Scenes (Pydantic)**: Validation occurs.
+                *   **Return value**: `initializationResponse` object
+                *   **Caller receives**: `initial_results_validated` local variable is assigned the object.
+            *   `concurrent.futures.ThreadPoolExecutor()` is called (implicitly by `with`).
+            *   `executor.submit(agent_get_transaction, state, TRN_FILE_FULL_PATH)` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: `agent_get_transaction`, `state` (reference to `current_state`), `TRN_FILE_FULL_PATH`
+                *   **Return value**: `Future` object
+                *   **Caller receives**: `transx_state` local variable is assigned the `Future`.
+            *   `executor.submit(agent_fraud_signal, state, FRD_FILE_FULL_PATH)` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: `agent_fraud_signal`, `state`, `FRD_FILE_FULL_PATH`
+                *   **Return value**: `Future` object
+                *   **Caller receives**: `fraudx_state` local variable is assigned the `Future`.
+            *   `executor.submit(Agent_merchant_details, state, MRCHNT_FILE_FULL_PATH)` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: `Agent_merchant_details`, `state`, `MRCHNT_FILE_FULL_PATH`
+                *   **Return value**: `Future` object
+                *   **Caller receives**: `mercht_state` local variable is assigned the `Future`.
+            *   `transx_state.result()` is called (waits for `agent_get_transaction` to finish).
+            *   `fraudx_state.result()` is called (waits for `agent_fraud_signal` to finish).
+            *   `mercht_state.result()` is called (waits for `Agent_merchant_details` to finish).
+            *   `transactionResponse(**state.transaction_data)` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: Keyword arguments from `state.transaction_data`
+                *   **Behind the Scenes (Pydantic)**: Validation occurs.
+                *   **Return value**: `transactionResponse` object
+                *   **Caller receives**: `transxx_state_validated` local variable is assigned the object.
+            *   `transxx_state_validated.model_dump()` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: None
+                *   **Return value**: Dictionary representation of the model.
+                *   **Caller receives**: `state.transaction_data` is reassigned this dictionary.
+            *   (Similar calls for `fraudResponse` and `merchantResponse`).
+            *   `state.fraud_data.get(...)`, `state.merchant_data.get(...)` are called.
+            *   `state.decision = ...`, `state.reason = ...` (in-place modifications of `current_state`).
+            *   `collection.query(query_texts=[...], n_results=2)` is called.
+                *   **Caller**: `supervisor()`
+                *   **Arguments**: `query_texts=[f"{state.dispute_reason} {state.dispute_amount}"]`, `n_results=2`
+                *   **Behind the Scenes (ChromaDB internal call)**: `EMBEDDING_FUNCTION_GEMINI.__call__([query_text])` is called.
+                *   **Return value**: Query results dictionary
+                *   **Caller receives**: `policy_results` local variable is assigned the dictionary.
+            *   `policy_results.get("documents")` is called.
+            *   `len(policy_results["documents"])` is called.
+            *   `"\n".join(policy_results["documents"][0])` is called.
+            *   `state.policy_context = ...` (in-place modification of `current_state`).
+            *   **Return value**: `state` (reference to `current_state`)
+            *   **Caller receives**: `supervisor()` returns the `state` object.
+        *   **Return value**: `DisputeState` object (reference to `current_state`)
+        *   **Caller receives**: `suoervisor_data` local variable is assigned the object (points to `current_state`).
+    *   `print(suoervisor_data)` executes.
+    *   `stop_tee(tee_stream)` is called.
+        *   **Caller**: `main()`
+        *   **Arguments**: `tee_stream`
+        *   **Return value**: None
+        *   **Caller receives**: None
+    *   `main()` finishes.
+
+**3. Program Termination**
+    *   The global execution frame is cleaned up.
+    *   The program exits.
+
+====================================================================
+6. Object Creation
+====================================================================
+
+Let's detail the creation lifecycle for significant objects.
+
+1.  **`pathlib.Path` objects (e.g., `CURR_DIR`, `TRN_FILE_FULL_PATH`)**
+    *   **When `__new__` runs**: When `Path(...)` or `Path(...).parent` or `Path(...).joinpath(...)` is called (e.g., `CURR_DIR = Path(__file__).parent`).
+        *   **Action**: Python's `Path` class's `__new__` method is invoked. It allocates memory for the new `Path` object.
+    *   **When `__init__` runs**: Immediately after `__new__`.
+        *   **Action**: The `Path` object is initialized with its internal representation of the file system path string.
+    *   **Attributes created**: Internal attributes to store the path components and provide path manipulation methods.
+    *   **Memory reference**: These objects are created on the heap. `CURR_DIR` and other full path variables hold references to these objects in the global namespace.
+    *   **Object lifecycle**: They are created once at the start of the script and persist until the program terminates, as they are globally referenced.
+
+2.  **`customEmbeddingFunction` object (`EMBEDDING_FUNCTION_GEMINI`)**
+    *   **When `__new__` runs**: When `customEmbeddingFunction()` is called.
+        *   **Action**: Python's default `object.__new__` is invoked (as `customEmbeddingFunction` doesn't define its own `__new__`). It allocates memory for the new `customEmbeddingFunction` instance.
+    *   **When `__init__` runs**: Immediately after `__new__`.
+        *   **Action**:
+            *   `self.client = genai.Client(api_key = api_key)`:
+                *   A `genai.Client` object is created (its `__new__` and `__init__` are called internally by the `genai` library).
+                *   This `genai.Client` object is stored as an instance attribute `client` on the `customEmbeddingFunction` instance.
+            *   `self.model_name = os.getenv("GEMINI_EMBEDDING_MODEL")`:
+                *   The string value from the environment variable is retrieved and stored as an instance attribute `model_name`.
+    *   **Attributes created**: `client` (a `genai.Client` instance) and `model_name` (a string).
+    *   **Memory reference**: The `customEmbeddingFunction` object is created on the heap. The global variable `EMBEDDING_FUNCTION_GEMINI` holds a reference to it.
+    *   **Object lifecycle**: Created once at script startup, persists globally until program termination.
+
+3.  **Pydantic `BaseModel` instances (e.g., `DisputeState`, `initializationResponse`, `transactionResponse`)**
+    *   **When `__new__` runs**: When a model is instantiated (e.g., `DisputeState(...)`, `initializationResponse(...)`).
+        *   **Action**: Pydantic's internal `BaseModel.__new__` (or a metaclass hook) is invoked. This allocates memory for the new Pydantic model instance.
+    *   **When `__init__` runs**: Immediately after `__new__`.
+        *   **Action**: This is where Pydantic's core validation and assignment logic takes over (`__pydantic_init__` or similar internal methods).
+            *   It iterates through the keyword arguments provided to the constructor (e.g., `dispute_id="DIS005"`).
+            *   For each argument, it checks the type annotation defined in the `BaseModel` class (e.g., `dispute_id: str`).
+            *   It attempts to coerce the input value to the declared type if necessary (e.g., converting an integer to a float for `dispute_amount`).
+            *   It applies any `Field` configurations, like `validation_alias`.
+            *   If all validations pass, the value is assigned as an attribute to the instance (e.g., `self.dispute_id = "DIS005"`).
+            *   If validation fails, a `ValidationError` is raised.
+    *   **Attributes created**: Attributes corresponding to the fields defined in the `BaseModel` (e.g., `dispute_id`, `customer_id`, `transaction_data`, `decision`). For fields with `default_factory`, the factory function is called to provide the initial value (e.g., `{}` for `transaction_data`).
+    *   **Memory reference**: These objects are created on the heap. Local variables like `current_state`, `initial_results_validated`, `transxx_state_validated` hold references to them.
+    *   **Object lifecycle**:
+        *   `current_state`: Created in `initialize_state_by_dispute_id`, returned to `main`, and persists until `main` finishes. It's modified in-place by multiple functions.
+        *   `initial_results_validated`, `transxx_state_validated`, etc.: Created within `supervisor` for validation purposes. They are short-lived, used to validate incoming dictionaries, and then their `model_dump()` is often used to update the `DisputeState`'s internal dictionaries. They go out of scope when `supervisor` returns.
+
+4.  **`chromadb.PersistentClient` object (`chroma_client`)**
+    *   **When `__new__` runs**: When `chromadb.PersistentClient(...)` is called.
+        *   **Action**: Allocates memory for the client object.
+    *   **When `__init__` runs**: Initializes the client, setting up connections or references to the local database path.
+    *   **Attributes created**: Internal attributes to manage the ChromaDB client's state and connection.
+    *   **Memory reference**: Created on the heap. `chroma_client` in `main()` holds a reference.
+    *   **Object lifecycle**: Created once in `main()`, persists until `main()` finishes.
+
+5.  **`chromadb.Collection` object (`collection`)**
+    *   **When `__new__` runs**: When `client.get_or_create_collection(...)` is called.
+        *   **Action**: Allocates memory for the collection object.
+    *   **When `__init__` runs**: Initializes the collection object, linking it to the specific named collection within the ChromaDB client.
+    *   **Attributes created**: Internal attributes for managing documents, embeddings, and metadata within that collection.
+    *   **Memory reference**: Created on the heap. `collection` in `main()` and `supervisor()` holds a reference.
+    *   **Object lifecycle**: Created once in `build_knowledge_base()` (and returned), persists until `main()` finishes.
+
+6.  **`concurrent.futures.ThreadPoolExecutor` object (`executor`)**
+    *   **When `__new__` runs**: When `ThreadPoolExecutor()` is called (implicitly by the `with` statement).
+        *   **Action**: Allocates memory for the executor object.
+    *   **When `__init__` runs**: Initializes the thread pool, creating a set of worker threads ready to execute tasks.
+    *   **Attributes created**: Internal attributes to manage the thread pool (e.g., number of workers, queue for tasks).
+    *   **Memory reference**: Created on the heap. `executor` in `supervisor()` holds a reference.
+    *   **Object lifecycle**: Short-lived, created at the start of the `with` block in `supervisor()` and automatically shut down and garbage collected when the `with` block exits.
+
+7.  **`concurrent.futures.Future` objects (e.g., `transx_state`)**
+    *   **When `__new__` runs**: When `executor.submit(...)` is called.
+        *   **Action**: Allocates memory for the `Future` object.
+    *   **When `__init__` runs**: Initializes the `Future` object, linking it to the submitted task and setting its initial state (e.g., `PENDING`).
+    *   **Attributes created**: Internal attributes to track the task's state, result, or exception.
+    *   **Memory reference**: Created on the heap. `transx_state`, `fraudx_state`, `mercht_state` in `supervisor()` hold references.
+    *   **Object lifecycle**: Created when a task is submitted, persists until `supervisor()` finishes execution (after their `result()` method has been called and they are no longer needed).
+
+====================================================================
+7. Pydantic Explanation
+====================================================================
+
+Pydantic is a data validation and settings management library using Python type hints. It allows you to define data schemas as Python classes and automatically validates data against these schemas.
+
+Let's look at `DisputeState` as an example:
+
+```python
+class DisputeState(BaseModel):
+    dispute_id:               str
+    customer_id:              str
+    transaction_id:           str
+    dispute_amount:       float
+    dispute_reason:       str
+    transaction_date:     str
+    merchant:             str
+    # Storage slots for three agents and supervisor (agent memory)
+    transaction_data: dict = Field(default_factory= dict) # From Agent 1
+    fraud_data:       dict = Field(default_factory= dict) # from agent 2
+    merchant_data:    dict = Field(default_factory= dict) # from agent 3
+    policy_context:   str  = " "              # from RAG
+    decision:         str  = "pending"        # Supervisior decision
+    reason:           str  = ""               # Supervisior decision
+    policy_ref:      str   = ""               # Supervisior decision
+```
+
+**1. Model Creation (`class DisputeState(BaseModel):`)**
+*   When Python encounters `class DisputeState(BaseModel):`, Pydantic's metaclass (a special class that creates other classes) steps in.
+*   It inspects the class definition, specifically the type hints (`str`, `float`, `dict`) and `Field` declarations.
+*   It generates internal validation methods and an optimized `__init__` method for `DisputeState`. This happens *once* when the script starts, not every time an object is created.
+
+**2. Field Validation and Type Conversion**
+*   **Example**: When `DisputeState` is instantiated in `initialize_state_by_dispute_id`:
+    ```python
+    return DisputeState (
+        dispute_id = record.get("dispute_id"),
+        customer_id=record.get("customer_id"),
+        transaction_id = record.get("transaction_id"),
+        dispute_amount = record.get("disputed_amount"), # could be string or int from JSON
+        dispute_reason = record.get("dispute_reason"),
+        transaction_date = record.get("transaction_date"),
+        merchant = record.get("merchant")
+    )
+    ```
+*   Pydantic's generated `__init__` method takes these keyword arguments.
+*   For `dispute_id: str`, it checks if `record.get("dispute_id")` is a string. If it's an integer or float, Pydantic will try to convert it to a string. If it's an unsupported type, it will raise a `ValidationError`.
+*   For `dispute_amount: float`, if `record.get("disputed_amount")` comes as an integer (e.g., `1200`) or a string (e.g., `"1200.50"`), Pydantic will *automatically convert* it to a `float` (`1200.0` or `1200.50`). If it's "abc", it will raise a `ValidationError`.
+*   This automatic validation and type coercion happens for all fields based on their type hints.
+
+**3. Default Values and `Field`**
+*   `transaction_data: dict = Field(default_factory= dict)`:
+    *   This sets a default value for `transaction_data`.
+    *   **Why `default_factory=dict` instead of `={}`?** If you used `transaction_data: dict = {}`, all `DisputeState` instances would share the *same* empty dictionary object. If one instance modified it, all others would see the change (a mutable default argument trap). `default_factory=dict` tells Pydantic to call the `dict` constructor *every time a new `DisputeState` instance is created* (if `transaction_data` is not provided), ensuring each instance gets its own independent empty dictionary.
+*   `policy_context: str = " "`, `decision: str = "pending"`, `reason: str = ""`, `policy_ref: str = ""`:
+    *   These are simple default values. If these fields are not provided during instantiation, they will automatically be assigned these string values.
+
+**4. `Field(validation_alias="transaction_id")` in `transactionResponse`**
+*   ```python
+    class transactionResponse(BaseModel):
+        id_transaction:           str= Field(validation_alias="transaction_id")
+        # ... other fields
+    ```
+*   When you create `transactionResponse(**state.transaction_data)`:
+    *   Pydantic looks for a key named `"transaction_id"` in the input dictionary (`state.transaction_data`).
+    *   It then maps the value of `"transaction_id"` from the input dictionary to the `id_transaction` attribute of the `transactionResponse` model.
+    *   This is useful when your internal model's attribute name is different from the key name in the external data source (e.g., a JSON file or API response).
+
+**5. `model_dump()`**
+*   **Example**: `state.transaction_data = transxx_state_validated.model_dump()`
+*   The `model_dump()` method is called on a Pydantic model instance (`transxx_state_validated`).
+*   **Action**: It serializes the Pydantic model instance back into a standard Python dictionary.
+*   This dictionary will contain the validated and potentially type-converted values of all the model's attributes. It's a clean, canonical representation of the data according to the model's schema.
+*   It's used here to update the `DisputeState`'s internal dictionary (`transaction_data`) with the validated data from the `transactionResponse` model.
+
+**6. Validation Errors**
+*   If, at any point during instantiation (e.g., `transactionResponse(**state.transaction_data)`), the input data does not conform to the model's type hints or constraints (e.g., `amount_transaction` is "hello" instead of a number), Pydantic will raise a `pydantic.ValidationError`. This helps catch data quality issues early. The current code doesn't explicitly `try...except ValidationError` during agent data validation, so an invalid input could crash the program at that point.
+
+**In summary**: Pydantic acts as a guardian for your data. It ensures that data entering your system (like from JSON files) conforms to expected shapes and types, automatically converting what it can and raising errors for invalid data. This makes your code more robust and easier to reason about.
+
+====================================================================
+8. Agent / LangChain / LangGraph Flow
+====================================================================
+
+This system uses an "agent-like" architecture but is custom-built, not directly using frameworks like LangChain or LangGraph. The "agents" are simply Python functions, and the "supervisor" is another Python function that orchestrates them. The central communication mechanism is the shared, mutable `DisputeState` object.
+
+Here's the flow, tracing the interaction:
+
+**1. User Prompt / Initial Dispute Input**
+*   The `main()` function prompts the user for a `Dispute ID` (e.g., `DIS005`). This acts as the initial "prompt" to the system.
+
+**2. Initial State Creation**
+*   `main()` calls `initialize_state_by_dispute_id()` with the `Dispute ID`.
+*   This function reads `dispute_db.json` and finds the initial details (customer ID, transaction ID, amount, reason, merchant, date).
+*   It creates an initial `DisputeState` Pydantic object, populating its core fields. The agent-specific data fields (`transaction_data`, `fraud_data`, `merchant_data`) are initialized as empty dictionaries.
+*   This `DisputeState` object (`current_state`) is returned to `main()`.
+
+**3. Supervisor Orchestration (within `supervisor()` function)**
+*   The `main()` function calls `supervisor(current_state, collection)`. The `current_state` object is passed by reference.
+*   **Supervisor's Role**: The `supervisor` function takes charge.
+    *   It first performs an initial Pydantic validation of the core dispute fields (`initializationResponse`) just to ensure they are valid against the expected structure.
+    *   It then sets up a `concurrent.futures.ThreadPoolExecutor`. This is crucial for parallelizing data collection.
+
+**4. Concurrent Agent Execution**
+*   The `supervisor` "delegates" tasks to its sub-agents by submitting them to the `ThreadPoolExecutor`:
+    *   `executor.submit(agent_get_transaction, state, TRN_FILE_FULL_PATH)`
+    *   `executor.submit(agent_fraud_signal, state, FRD_FILE_FULL_PATH)`
+    *   `executor.submit(Agent_merchant_details, state, MRCHNT_FILE_FULL_PATH)`
+
+    **Each Agent's Internal Flow (executed in parallel threads):**
+    *   **`agent_get_transaction` (Agent 1 - Transaction Agent)**
+        *   **Input**: `state` (the `DisputeState` object), `TRN_FILE_FULL_PATH`.
+        *   **Action**: Reads `transactions_db.json`. Searches for the `state.transaction_id`.
+        *   **Tool/Data Source**: `transactions_db.json` (a simulated database).
+        *   **Tool Result**: Finds the transaction record.
+        *   **State Change**: Updates `state.transaction_data` with a dictionary containing transaction details (amount, device, payment type) and fraud signals (is_fraud, risk_score).
+        *   **Output**: Returns the (modified) `state` object.
+
+    *   **`agent_fraud_signal` (Agent 2 - Fraud Agent)**
+        *   **Input**: `state` (the `DisputeState` object), `FRD_FILE_FULL_PATH`.
+        *   **Action**: Reads `fraud_patterns_db.json`. Searches for the `state.customer_id`.
+        *   **Tool/Data Source**: `fraud_patterns_db.json`.
+        *   **Tool Result**: Finds the customer's fraud history. If none, provides defaults.
+        *   **State Change**: Updates `state.fraud_data` with a dictionary containing `fraud_score`, `prev_dispute_counts`, `suspecious_flag`.
+        *   **Output**: Returns the (modified) `state` object.
+
+    *   **`Agent_merchant_details` (Agent 3 - Merchant Agent)**
+        *   **Input**: `state` (the `DisputeState` object), `MRCHNT_FILE_FULL_PATH`.
+        *   **Action**: Reads `merchant_db.json`. Searches for the `state.merchant` name.
+        *   **Tool/Data Source**: `merchant_db.json`.
+        *   **Tool Result**: Finds the merchant's details.
+        *   **State Change**: Updates `state.merchant_data` with a dictionary containing `merchant_name`, `dispute_rate`, `trusted_status`, `fraud_complaint_count`.
+        *   **Output**: Returns the (modified) `state` object.
+
+*   The `supervisor` then calls `.result()` on each submitted task's `Future` object. This causes the `supervisor` to wait until all three agents have completed their execution and updated the `state` object.
+
+**5. Data Validation (Post-Agent Collection)**
+*   After all agents have run, the `supervisor` performs Pydantic validation on the collected data:
+    *   `transactionResponse(**state.transaction_data)`
+    *   `fraudResponse(**state.fraud_data)`
+    *   `merchantResponse(**state.merchant_data)`
+*   The `model_dump()` of these validated objects is then used to *re-assign* the dictionaries within `state.transaction_data`, `state.fraud_data`, and `state.merchant_data`. This ensures that the data in the `DisputeState` is strictly type-checked and clean according to the Pydantic schemas.
+
+**6. RAG (Retrieval-Augmented Generation) for Policy Context**
+*   The `supervisor` needs to consult company policies.
+*   **Query**: It constructs a query string: `f"{state.dispute_reason} {state.dispute_amount}"`.
+*   **Tool Selection**: It implicitly uses the ChromaDB `collection` (which is configured with `EMBEDDING_FUNCTION_GEMINI`) as its "knowledge base tool."
+*   **Tool Execution**: `collection.query()` is called with the query string.
+*   **Tool Result**: ChromaDB performs a semantic search using Gemini embeddings to find the most relevant policy sections from `dispute_policies.txt`. It returns these as `policy_results`.
+*   **State Change**: The `supervisor` extracts the relevant documents from `policy_results` and concatenates them into a single string. This string is then assigned to `state.policy_context`.
+
+**7. Final Decision Logic**
+*   The `supervisor` now has all the information: initial dispute, transaction data, fraud data, merchant data, and relevant policy context.
+*   It applies a series of `if/elif` conditions based on thresholds:
+    *   `state.dispute_amount > 50000` (high value)
+    *   `state.fraud_data.get("prev_dispute_counts", 0) > 3` (frequent disputer)
+    *   `state.merchant_data.get("dispute_rate", 0) > 0.05` (untrustworthy merchant)
+    *   `state.fraud_data.get("fraud_score", 0) > 0.7` (high fraud risk)
+*   **State Change**: Based on the first matching condition, `state.decision` is set (e.g., "escalated", "rejected", "refund"), and `state.reason` is updated with an explanation. If no specific conditions are met, it defaults to "refund".
+
+**8. Final Response**
+*   The `supervisor` returns the fully populated and decided `DisputeState` object (`state`) to the `main()` function.
+*   The `main()` function prints this final `DisputeState`, providing a complete audit trail and the system's recommendation.
+
+This flow mimics an agentic system where specialized "agents" gather information, and a "supervisor" orchestrates them, integrates their findings, consults a knowledge base, and makes a final decision, all while maintaining and updating a central `DisputeState`.
+
+====================================================================
+9. Data Flow Diagram
+====================================================================
+
+This diagram illustrates how data moves through the system, from input to final decision.
+
+```mermaid
+graph TD
+    subgraph Initialization & Setup
+        A[User Input: Dispute ID] --> B(main() function)
+        B --> C{Load Env Vars: GEMINI_API_KEY}
+        B --> D{Init ChromaDB Client}
+        B --> E{Read dispute_policies.txt}
+        E --> F{Build Knowledge Base (chunks_by_section, customEmbeddingFunction)}
+        F --> G(ChromaDB Collection: disputeCollection)
+    end
+
+    subgraph Dispute Processing
+        B --> H(initialize_state_by_dispute_id(Dispute ID, dispute_db.json))
+        H -- Initial Dispute Details --> I(DisputeState Object)
+
+        I -- Pass by Reference --> J(supervisor(DisputeState, ChromaDB Collection))
+
+        subgraph Concurrent Data Collection (in supervisor)
+            J --> K1(Agent 1: agent_get_transaction)
+            K1 -- Reads transaction_db.json --> L1{Transaction Data}
+            L1 -- Updates in-place --> I
+
+            J --> K2(Agent 2: agent_fraud_signal)
+            K2 -- Reads fraud_patterns_db.json --> L2{Fraud Data}
+            L2 -- Updates in-place --> I
+
+            J --> K3(Agent 3: Agent_merchant_details)
+            K3 -- Reads merchant_db.json --> L3{Merchant Data}
+            L3 -- Updates in-place --> I
+        end
+
+        J -- Awaits Agent Completion --> M{Pydantic Validation (transactionResponse, fraudResponse, merchantResponse)}
+        M -- Validated Data --> I
+
+        J -- Query: dispute_reason, dispute_amount --> G
+        G -- Relevant Policy Chunks --> N{RAG Result}
+        N -- Updates in-place --> I
+
+        J -- Apply Decision Logic --> O{Decision & Reason}
+        O -- Updates in-place --> I
+    end
+
+    subgraph Final Output
+        J -- Returns Final DisputeState --> B
+        B --> P(Print Final DisputeState to Console/Log)
+    end
+```
+
+**Simplified ASCII Diagram:**
+
+```
+User
+  ↓
+  (Provides Dispute ID)
+  ↓
+main()
+  ↓
+  (Initializes ChromaDB, loads policies)
+  ↓
+  (Creates initial DisputeState object)
+  ↓
+DisputeState (initial)
+  ↓ (Passed by reference)
+supervisor()
+  ↓
+  ┌─────────────────────────────────────────────────────────┐
+  │  Concurrent Agent Calls (Threads)                       │
+  │                                                         │
+  ├──► Agent 1 (Transaction) ─┐                             │
+  │      Reads transactions_db.json                         │
+  │      Updates DisputeState.transaction_data              │
+  │                                                         │
+  ├──► Agent 2 (Fraud) ───────┐                             │
+  │      Reads fraud_patterns_db.json                       │
+  │      Updates DisputeState.fraud_data                    │
+  │                                                         │
+  ├──► Agent 3 (Merchant) ────┐                             │
+  │      Reads merchant_db.json                             │
+  │      Updates DisputeState.merchant_data                 │
+  │                                                         │
+  └───────────────────────────┴─────────────────────────────┘
+  ↓ (All agents complete, DisputeState is updated)
+  ↓
+  (Pydantic Validation of agent data)
+  ↓
+  (Query ChromaDB with dispute reason/amount)
+  ↓
+ChromaDB Collection (Policy Knowledge Base)
+  ↓ (Returns relevant policy text)
+  ↓
+  (Updates DisputeState.policy_context)
+  ↓
+  (Applies decision logic: checks amount, fraud score, dispute rates, etc.)
+  ↓
+  (Updates DisputeState.decision, DisputeState.reason)
+  ↓ (Returns final DisputeState)
+  ↓
+main()
+  ↓
+  (Prints final DisputeState)
+  ↓
+Console / Log File
+```
+
+====================================================================
+10. Internal Python Concepts
+====================================================================
+
+Let's explore some fundamental Python concepts at play.
+
+1.  **Stack Frames**
+    *   **Concept**: When a function is called in Python, a new "stack frame" is created on the call stack. This frame acts like a temporary workspace for that specific function call. It holds:
+        *   Local variables defined within the function.
+        *   Parameters passed to the function.
+        *   Information about where to return to in the calling code.
+    *   **In this code**:
+        *   When `main()` is called, its stack frame is created.
+        *   When `main()` calls `initiate_chromadb_instance()`, a new stack frame for `initiate_chromadb_instance()` is pushed on top of `main()`'s frame.
+        *   When `initiate_chromadb_instance()` finishes and returns, its stack frame is popped off, and execution resumes in `main()`'s frame.
+        *   This happens for every function call, including methods like `file.read()`, `json.load()`, and especially for the agent functions and `supervisor()`.
+
+2.  **Heap Objects**
+    *   **Concept**: Unlike stack frames which are temporary and tied to function calls, "heap objects" are pieces of data (like lists, dictionaries, class instances, strings, numbers) that live in a larger memory area called the heap. Their lifetime is not tied to a function call; they persist as long as there are references pointing to them.
+    *   **In this code**:
+        *   Instances of `Path` (e.g., `CURR_DIR`).
+        *   Strings (e.g., `TRN_DB_FILE`, `policy_text`, `dispute_user_input`).
+        *   Lists (e.g., `chunks` in `build_knowledge_base`).
+        *   Dictionaries (e.g., `data` in agent functions, and the internal `transaction_data`, `fraud_data`, `merchant_data` within `DisputeState`).
+        *   Pydantic model instances (e.g., `current_state`, `initial_results_validated`).
+        *   `chromadb.PersistentClient` and `chromadb.Collection` objects.
+        *   `customEmbeddingFunction` and `genai.Client` instances.
+        *   `concurrent.futures.ThreadPoolExecutor` and `Future` objects.
+    *   All these are created on the heap.
+
+3.  **Namespaces**
+    *   **Concept**: A namespace is a mapping from names (variables, functions, classes) to objects. Python uses namespaces to organize code and prevent naming conflicts.
+        *   **Global/Module Namespace**: Holds all names defined at the top level of a module (e.g., `CURR_DIR`, `main`, `DisputeState`).
+        *   **Local/Function Namespace**: Created for each function call, holding names local to that function (e.g., `dispute_user_input` in `main()`, `state` in `supervisor()`).
+        *   **Built-in Namespace**: Contains Python's built-in functions and exceptions (e.g., `print`, `input`).
+    *   **In this code**: `CURR_DIR` is in the global namespace. `dispute_user_input` is in `main()`'s local namespace. `state` is in `supervisor()`'s local namespace. When `state.transaction_data` is accessed, Python first looks in `supervisor()`'s local namespace for `state`, then in the object `state` points to for `transaction_data`.
+
+4.  **References**
+    *   **Concept**: In Python, variables don't directly "contain" objects; they "refer" to objects in memory (on the heap). When you assign `a = [1, 2, 3]`, `a` is a reference to the list object `[1, 2, 3]`. When you then do `b = a`, `b` becomes another reference to the *same* list object.
+    *   **In this code**:
+        *   `current_state = initialize_state_by_dispute_id(...)`: `current_state` refers to the `DisputeState` object.
+        *   When `supervisor(current_state, collection)` is called, the `state` parameter inside `supervisor()` becomes a *new reference* pointing to the *same `DisputeState` object* that `current_state` refers to.
+        *   When `state.transaction_data = {...}` occurs inside `agent_get_transaction()`, the `DisputeState` object itself (the one `current_state` and `state` both point to) is modified. This is why changes made by agents are visible to `main()` and the `supervisor`.
+
+5.  **Garbage Collection**
+    *   **Concept**: Python automatically reclaims memory occupied by objects that are no longer referenced by any part of the program. This prevents memory leaks.
+    *   **In this code**: Local variables like `chunks` (in `build_knowledge_base`) or `policy_results` (in `supervisor`) become eligible for garbage collection once their respective functions finish and no other references to those objects exist. The `ThreadPoolExecutor` and `Future` objects are also cleaned up after the `with` block exits.
+
+6.  **Mutability**
+    *   **Concept**: Objects in Python can be either mutable (their state can be changed after creation, e.g., lists, dictionaries, custom class instances like `DisputeState`) or immutable (their state cannot be changed, e.g., numbers, strings, tuples).
+    *   **In this code**:
+        *   `DisputeState` is a **mutable** object. This is essential because agents and the supervisor *need* to update its fields in-place.
+        *   The dictionaries `transaction_data`, `fraud_data`, `merchant_data` within `DisputeState` are also **mutable**.
+        *   Strings like `dispute_user_input` are **immutable**. If you wanted to change `dispute_user_input`, you'd have to assign a *new* string object to the variable, not modify the existing one.
+
+7.  **Context Managers (`with` statement)**
+    *   **Concept**: The `with` statement ensures that resources are properly managed (e.g., files are closed, locks are released). It works with objects that implement the context manager protocol (`__enter__` and `__exit__` methods).
+    *   **In this code**:
+        *   `with open(..., "r") as file:`:
+            *   `open()` returns a file object. Its `__enter__` method is called, which essentially does nothing but return `self`.
+            *   The code inside the `with` block executes.
+            *   When the block is exited (normally or due to an exception), the file object's `__exit__` method is called. This method *guarantees* that `file.close()` is invoked, preventing resource leaks.
+        *   `with concurrent.futures.ThreadPoolExecutor() as executor:`:
+            *   `ThreadPoolExecutor()` creates an executor object. Its `__enter__` method prepares the thread pool.
+            *   When the block is exited, its `__exit__` method is called, which handles the graceful shutdown of the thread pool, ensuring all submitted tasks are completed or cancelled and threads are properly terminated.
+
+8.  **`async/await` (Not directly used but relevant for concurrency)**
+    *   **Concept**: `async/await` is Python's syntax for asynchronous programming, designed for *cooperative multitasking* (event loop based concurrency), typically for I/O-bound operations without using multiple threads/processes.
+    *   **Comparison to `ThreadPoolExecutor`**: This code uses `ThreadPoolExecutor` which employs *actual operating system threads* for *parallel execution*. While threads can also handle I/O-bound tasks concurrently, they involve more overhead than `async/await` and are subject to the Global Interpreter Lock (GIL) for CPU-bound tasks (though I/O releases the GIL). For file I/O operations (which are I/O-bound), `ThreadPoolExecutor` is a valid approach to achieve concurrency. If this were a network-heavy application, `async/await` might be a more common choice.
+
+====================================================================
+11. Behind-the-Scenes Explanation
+====================================================================
+
+Here's a look at some of the hidden work Python and libraries perform.
+
+1.  **Import System**
+    *   When `import os` is encountered, Python follows a specific procedure:
+        1.  **Search**: It looks for the `os` module in `sys.modules` (a cache of already-imported modules). If not found, it searches `sys.path` (a list of directories) for `os.py` or `os/__init__.py`.
+        2.  **Load**: Once found, it loads the module's code.
+        3.  **Execute**: It executes all the top-level statements within `os.py` (or `os/__init__.py`). This creates `os`'s own namespace.
+        4.  **Cache**: The loaded and executed module object is added to `sys.modules`.
+        5.  **Bind**: A reference to the `os` module object is placed in the current module's (global) namespace.
+    *   `from tee_logger import start_tee, stop_tee` is similar, but instead of binding the entire `tee_logger` module object, it directly binds `start_tee` and `stop_tee` function objects into the current module's namespace.
+
+2.  **`Path(__file__).parent`**
+    *   `__file__`: This is a special variable created by the Python interpreter itself. When a module is loaded, `__file__` is set to the absolute path of the module's source file.
+    *   `Path(__file__)`: The `pathlib.Path` constructor takes this string path and parses it into an object-oriented representation. This involves OS-specific parsing (e.g., handling `/` vs `\` separators).
+    *   `.parent`: This is a property of the `Path` object. When accessed, it doesn't just do a simple string manipulation. It intelligently navigates the path structure to return a *new* `Path` object representing the parent directory. For example, `Path('/a/b/c.py').parent` returns `Path('/a/b')`.
+
+3.  **`os.getenv("VARIABLE_NAME")`**
+    *   This function interacts with the underlying operating system. It makes a system call (e.g., `getenv()` on Unix-like systems, `GetEnvironmentVariable()` on Windows) to retrieve the value associated with the specified environment variable from the current process's environment block.
+
+4.  **Pydantic Validation Pipeline (`BaseModel(...)`)**
+    *   When you call `Model(**data)`:
+        1.  **`__new__`**: Standard object creation.
+        2.  **`__init__` (Pydantic's custom one)**:
+            *   **Field Iteration**: Pydantic iterates through the fields defined in the `BaseModel` class.
+            *   **Raw Value Retrieval**: For each field, it tries to get the value from the input `data` dictionary. If `validation_alias` is used, it first looks for the alias, then the field name.
+            *   **Validators**: It applies any custom validators (e.g., `@validator` decorators, though not explicitly used in this code, Pydantic has many built-in ones).
+            *   **Type Coercion**: This is a key step. Pydantic tries to convert the raw input value to the declared type. For example, `"123"` for an `int` field becomes `123`. `1` for a `bool` field becomes `True`. This is done safely, raising errors if conversion is impossible.
+            *   **Default Values**: If a field is missing from `data` and has a default value or `default_factory`, that value is used.
+            *   **Assignment**: The validated and coerced value is assigned to the corresponding attribute of the new model instance.
+            *   **Error Aggregation**: If multiple validation errors occur, Pydantic collects them all and raises a single `ValidationError` containing details for each failure.
+
+5.  **`json.load(file)`**
+    *   This isn't just a simple text read.
+    *   `file.read()` would return a single string.
+    *   `json.load()` takes the file object, reads its content incrementally (or fully, depending on implementation), and *parses* the JSON string into corresponding Python data structures (dictionaries, lists, strings, numbers, booleans, `None`). This involves tokenizing the JSON, building a parse tree, and then constructing Python objects.
+
+6.  **`concurrent.futures.ThreadPoolExecutor`**
+    *   **`__enter__`**: When the `with` block is entered, the `ThreadPoolExecutor`'s `__enter__` method is called. It initializes a pool of worker threads (defaulting to `min(32, os.cpu_count() + 4)` in Python 3.8+, or configurable). These threads are typically created and waiting.
+    *   **`submit(fn, *args, **kwargs)`**: When `submit` is called, it places the function `fn` and its arguments `args`/`kwargs` into an internal queue. One of the idle worker threads picks up a task from the queue, executes `fn(*args, **kwargs)` in its own thread, and stores the result (or exception) in a `Future` object.
+    *   **`Future.result()`**: This method blocks the calling thread (the `supervisor` in this case) until the task associated with that `Future` object has completed. If the task raised an exception, `result()` re-raises that exception in the calling thread. If the task completed successfully, `result()` returns the task's return value.
+    *   **`__exit__`**: When the `with` block is exited, the `ThreadPoolExecutor`'s `__exit__` method is called. This method initiates a graceful shutdown: it waits for all currently executing tasks to complete and then terminates all worker threads. This prevents resources from being held indefinitely.
+
+7.  **ChromaDB `collection.add()` and `collection.query()`**
+    *   **`add()`**: When `collection.add(documents=[chunk], ...)` is called:
+        1.  ChromaDB takes the `chunk` string.
+        2.  It implicitly calls the `embedding_function` provided during collection creation (`EMBEDDING_FUNCTION_GEMINI.__call__([chunk])`).
+        3.  The `customEmbeddingFunction` then makes an HTTP request to the Google Gemini API (using `genai.Client`) to get the vector embedding.
+        4.  The returned embedding vector is stored internally in ChromaDB alongside the `chunk` text and its `id`.
+    *   **`query()`**: When `collection.query(query_texts=[...], ...)` is called:
+        1.  ChromaDB takes the `query_texts` string.
+        2.  It again implicitly calls the `embedding_function` (`EMBEDDING_FUNCTION_GEMINI.__call__([query_text])`) to convert the query into a vector embedding.
+        3.  It then performs a highly optimized vector similarity search (using algorithms like HNSW, configured by `hnsw:space`) to find the stored document embeddings that are most similar to the query embedding.
+        4.  It retrieves the `n_results` most similar documents (and their associated IDs, distances, etc.) and returns them.
+
+These behind-the-scenes actions highlight the complexity abstracted away by Python and its powerful libraries, allowing developers to focus on application logic.
+
+====================================================================
+12. Debugger View
+====================================================================
+
+Let's imagine stepping through the code with a debugger at two critical points.
+
+**Debugger Snapshot 1: After `initialize_state_by_dispute_id` in `main()`**
+
+Current Function: `main()`
+Line: `if current_state:` (just before this line)
+
+Variables (local to `main()`):
+*   `tee_stream`: `<_io.TextIOWrapper name='dispute_processor.log' mode='w' encoding='utf-8'>`
+*   `dispute_user_input`: `"DIS005"`
+*   `chroma_client`: `<chromadb.api.client.PersistentClient object at 0x...>`
+*   `policy_text`: `"Section 1: General Dispute Policy...\nSection 2: High Value Transactions..."`
+*   `collection`: `<chromadb.api.models.Collection object at 0x...>`
+*   `current_state`: `<DisputeState object at 0x...>`
+    *   `dispute_id`: `"DIS005"`
+    *   `customer_id`: `"CUST005"`
+    *   `transaction_id`: `"TXN100005"`
+    *   `dispute_amount`: `1200.50`
+    *   `dispute_reason`: `"Unauthorized transaction"`
+    *   `transaction_date`: `"2023-01-15"`
+    *   `merchant`: `"GlobalMart"`
+    *   `transaction_data`: `{}` (Empty dict, as agents haven't run yet)
+    *   `fraud_data`: `{}` (Empty dict)
+    *   `merchant_data`: `{}` (Empty dict)
+    *   `policy_context`: `" "`
+    *   `decision`: `"pending"`
+    *   `reason`: `""`
+    *   `policy_ref`: `""`
+*   `transaction_id_toget_details`: (Not yet created)
+*   `transaction_state`: (Not yet created)
+*   `fraud_state`: (Not yet created)
+*   `merchant_data`: (Not yet created)
+*   `suoervisor_data`: (Not yet created)
+
+Call Stack:
+`main()`
+
+---
+
+**Debugger Snapshot 2: Inside `supervisor()` after concurrent agents finish and before decision logic**
+
+Current Function: `supervisor()`
+Line: `fraud_score = state.fraud_data.get("fraud_score", 0)` (just before this line)
+
+Variables (local to `supervisor()`):
+*   `state`: `<DisputeState object at 0x...>` (This is the *same* object that `current_state` in `main()` refers to)
+    *   `dispute_id`: `"DIS005"`
+    *   `customer_id`: `"CUST005"`
+    *   `transaction_id`: `"TXN100005"`
+    *   `dispute_amount`: `1200.50`
+    *   `dispute_reason`: `"Unauthorized transaction"`
+    *   `transaction_date`: `"2023-01-15"`
+    *   `merchant`: `"GlobalMart"`
+    *   `transaction_data`: `{'transaction_id': 'TXN100005', 'customer_id': 'CUST005', 'amount_transaction': 1200.5, 'merchant_name': 'GlobalMart', 'merchant_transaction': 'GlobalMart', 'device_used': 'Mobile', 'payment_tran_type': 'Credit Card', 'fraud_signal': False, 'fraud_risk_score': 0.15}` (Populated by `agent_get_transaction` and then validated)
+    *   `fraud_data`: `{'customer_id': 'CUST005', 'fraud_score': 0.25, 'prev_dispute_counts': 1, 'suspecious_flag': False}` (Populated by `agent_fraud_signal` and then validated)
+    *   `merchant_data`: `{'merchant_name': 'GlobalMart', 'merchant_id': 'MCHT001', 'dispute_rate': 0.02, 'trusted_status': True, 'fraud_complaint_count': 5}` (Populated by `Agent_merchant_details` and then validated)
+    *   `policy_context`: `" "` (Still default, RAG hasn't run yet)
+    *   `decision`: `"pending"` (Still default)
+    *   `reason`: `""` (Still default)
+    *   `policy_ref`: `""` (Still default)
+*   `collection`: `<chromadb.api.models.Collection object at 0x...>`
+*   `initial_results_validated`: `<initializationResponse object at 0x...>`
+*   `executor`: `<ThreadPoolExecutor object at 0x...>`
+*   `transx_state`: `<Future at 0x... state=finished returned_value=<DisputeState object at 0x...>>`
+*   `fraudx_state`: `<Future at 0x... state=finished returned_value=<DisputeState object at 0x...>>`
+*   `mercht_state`: `<Future at 0x... state=finished returned_value=<DisputeState object at 0x...>>`
+*   `transxx_state_validated`: `<transactionResponse object at 0x...>`
+*   `fraudxx_state_validated`: `<fraudResponse object at 0x...>`
+*   `merchtx_state_validated`: `<merchantResponse object at 0x...>`
+*   `fraud_score`: (Not yet created)
+*   `dispute_rate`: (Not yet created)
+*   `prev_dispute`: (Not yet created)
+*   `policy_results`: (Not yet created)
+
+Call Stack:
+`supervisor()`
+`main()`
+
+====================================================================
+13. Visual Flowcharts
+====================================================================
+
+**Overall Program Flow**
+
+```mermaid
+graph TD
+    A[Start: python dispute_processor.py] --> B{Load Modules & Globals}
+    B --> C{Initialize Custom Embedding Function}
+    C --> D{main() function starts}
+    D --> E[Start Tee Logger]
+    E --> F[Prompt User for Dispute ID]
+    F --> G{Initialize ChromaDB Client}
+    G --> H[Read Dispute Policies File]
+    H --> I{Build & Populate ChromaDB Knowledge Base}
+    I --> J{Initialize DisputeState (from dispute_db.json)}
+    J --> K{If DisputeState Found}
+    K -- Yes --> L[Print Initial State & Agents Sequentially (Demo)]
+    L --> M{Call supervisor(DisputeState, Collection)}
+    M --> N[Print Final DisputeState]
+    N --> O[Stop Tee Logger]
+    O --> P[End Program]
+    K -- No --> P
+```
+
+**Supervisor Agent Orchestration Flow**
+
+```mermaid
+graph TD
+    A[supervisor(state, collection) starts] --> B{Validate Initial Dispute Details (Pydantic)}
+    B --> C{Initialize ThreadPoolExecutor}
+    C --> D{Submit Agent 1: agent_get_transaction}
+    C --> E{Submit Agent 2: agent_fraud_signal}
+    C --> F{Submit Agent 3: Agent_merchant_details}
+    D & E & F --> G{Wait for all Agents to complete (Future.result())}
+    G --> H{Agents update 'state' object in parallel}
+    H --> I{Validate Agent Data (Pydantic: transactionResponse, fraudResponse, merchantResponse)}
+    I --> J{Update 'state' with validated data (model_dump())}
+    J --> K{Retrieve key metrics from 'state' (fraud_score, dispute_rate, prev_dispute)}
+    K --> L{Apply Decision Logic (if/elif/else)}
+    L --> M{Update 'state.decision' and 'state.reason'}
+    M --> N{Query ChromaDB (RAG) with dispute reason/amount}
+    N --> O{Retrieve relevant policy context}
+    O --> P{Update 'state.policy_context'}
+    P --> Q[Return updated 'state' object]
+```
