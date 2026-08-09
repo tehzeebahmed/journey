@@ -1,0 +1,52 @@
+[
+  {
+    "dispute_id": "DIS001",
+    "customer_id": "CUST0074",
+    "transaction_id": "TXN100002",
+    "disputed_amount": 14515.98,
+    "dispute_reason": "unauthorized_transaction",
+    "transaction_date": "2026-08-01",
+    "merchant": "Amazon India",
+    "dispute_status": "OPEN"
+  },
+  {
+    "dispute_id": "DIS002",
+    "customer_id": "CUST0042",
+    "transaction_id": "TXN100342",
+    "disputed_amount": 3200.00,
+    "dispute_reason": "merchandise_not_received",
+    "transaction_date": "2026-07-28",
+    "merchant": "Flipkart",
+    "dispute_status": "UNDER_REVIEW"
+  },
+  {
+    "dispute_id": "DIS003",
+    "customer_id": "CUST0089",
+    "transaction_id": "TXN100511",
+    "disputed_amount": 1850.50,
+    "dispute_reason": "incorrect_amount_charged",
+    "transaction_date": "2026-07-30",
+    "merchant": "Zomato",
+    "dispute_status": "RESOLVED"
+  },
+  {
+    "dispute_id": "DIS004",
+    "customer_id": "CUST0112",
+    "transaction_id": "TXN100789",
+    "disputed_amount": 890.00,
+    "dispute_reason": "duplicate_charge",
+    "transaction_date": "2026-07-31",
+    "merchant": "Blinkit",
+    "dispute_status": "OPEN"
+  },
+  {
+    "dispute_id": "DIS005",
+    "customer_id": "CUST0015",
+    "transaction_id": "TXN100902",
+    "disputed_amount": 12400.00,
+    "dispute_reason": "defective_goods",
+    "transaction_date": "2026-07-25",
+    "merchant": "Croma",
+    "dispute_status": "RESOLVED"
+  }
+]

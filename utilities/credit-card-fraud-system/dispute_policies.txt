@@ -1,0 +1,24 @@
+POLICY: Credit Card Dispute Resolution Guidelines
+
+Section 1 - Unauthorized Transactions
+Transactions made on new devices between 11pm and 5am 
+are classified as high-risk unauthorized disputes.
+Refund must be processed within 7 working days if 
+fraud score exceeds 0.7 and customer has no prior 
+dispute history in last 90 days.
+
+Section 2 - Merchant Error Disputes  
+If merchant dispute rate exceeds 5%, automatically 
+rule in customer's favour without further investigation.
+Amounts below INR 5000 are auto-refunded immediately.
+
+Section 3 - Escalation Rules
+All disputes above INR 50,000 require human review 
+regardless of fraud score.
+Customers with more than 3 disputes in 90 days are 
+flagged for enhanced verification before any refund.
+
+Section 4 - Resolution Timeframes
+Standard disputes resolved within 30 days per RBI guidelines.
+High-value disputes above INR 1 lakh resolved within 7 days.
+Customer must be notified within 24 hours of dispute receipt.
