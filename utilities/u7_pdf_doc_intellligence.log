@@ -1,0 +1,372 @@
+The Extracted data is - 
+ applicant_name='Priya Suresh Malhotra' pan_number='BSXPM4421K' aadhaar_number='7782 5531 9204' mobile='+91 98201 45678' email='priya.malhotra@gmail.com' employer_name='Infosys Limited' monthly_income=142500.0 loan_amount=7500000.0 loan_tenure_years=20 property_address='Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076' property_value=10850000.0 ltv_ratio=69.1 cibil_score=771 co_applicant='Mr. Rahul Malhotra (Spouse)'
+FIRST NATIONAL BANK OF INDIA
+Home Loan Application Form
+Retail Lending Division | Application No: HLA-2026-00847
+SECTION 1 — APPLICANT PERSONAL DETAILS
+Full Name Priya Suresh Malhotra
+Date of Birth 14-March-1988
+Gender Female
+Marital Status Married
+PAN Number BSXPM4421K
+Aadhaar Number 7782 5531 9204
+Mobile Number +91 98201 45678
+Email Address priya.malhotra@gmail.com
+Current Address Flat 4B, Greenview Apartments, Bandra West, Mumbai - 400050
+Permanent Address Same as current address
+Residence Type Rented
+Years at Current Address 3 years 6 months
+SECTION 2 — EMPLOYMENT AND INCOME DETAILS
+Employment Type Salaried — Private Sector
+Employer Name Infosys Limited
+Designation Senior Software Engineer
+Department Financial Services Unit
+Date of Joining 06-August-2015
+Years of Experience 11 years
+Office Address Infosys BPO, Plot C-22, MIDC, Andheri East, Mumbai - 400093
+Monthly Gross Salary INR 1,85,000
+Monthly Net Salary INR 1,42,500
+Other Monthly Income INR 12,000 (rental income)
+Total Monthly Income INR 1,54,500
+Annual Bonus INR 3,20,000 (last financial year)
+SECTION 3 — LOAN REQUIREMENT DETAILS
+Loan Purpose Purchase of residential property
+Loan Amount Requested INR 75,00,000
+Loan Tenure Requested 20 years (240 months)
+Property Address Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076Property Type Residential Apartment — Under Construction
+Developer Name Hiranandani Developers Pvt Ltd
+Property Area 1,450 sq ft (Super Built-up)
+Agreement Value INR 1,12,00,000
+Market Valuation INR 1,08,50,000
+LTV Ratio 69.1% (within permissible limit)
+EMI Requested INR 58,500 per month (approx)
+Co-Applicant Mr. Rahul Malhotra (Spouse)
+SECTION 4 — EXISTING LIABILITIES
+Loan Type Lender Outstanding Amount Monthly EMI Remaining Tenure
+Car Loan HDFC Bank INR 4,20,000 INR 12,500 36 months
+Personal Loan Bajaj Finance INR 85,000 INR 4,200 22 months
+Credit Card ICICI Bank INR 32,000 Minimum due Revolving
+SECTION 5 — DOCUMENTS SUBMITTED
+Identity Proof Aadhaar Card (self-attested)
+Address Proof Electricity Bill — October 2025
+Income Proof Last 3 months salary slips
+Bank Statement 6 months — HDFC Bank Savings A/C
+Form 16 FY 2024-25 (employer issued)
+Property Documents Agreement to Sale, NOC from developer
+Valuation Report Submitted — dated 15-July-2026
+CIBIL Report Score: 771 — dated 01-August-2026
+Photographs 2 passport size photographs attached
+SECTION 6 — DECLARATION
+I/We hereby declare that the information provided in this application form is true, correct and complete to the best of my/our
+knowledge and belief. I/We authorise the bank to verify any information provided herein and to obtain credit information from CIBIL or
+any other credit bureau. I/We understand that submission of this form does not guarantee loan approval.
+Applicant Signature Co-Applicant Signature Date
+Priya Suresh Malhotra Rahul Malhotra 09-August-2026
+FOR BANK USE ONLY — Application received by: ____________ Branch: ____________ Date: ____________
+	he Extracted data is - 
+ applicant_name='Priya Suresh Malhotra' pan_number='BSXPM4421K' aadhaar_number='7782 5531 9204' mobile='+91 98201 45678' email='priya.malhotra@gmail.com' employer_name='Infosys Limited' monthly_income=142500.0 loan_amount=7500000.0 loan_tenure_years=20 property_address='Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076' property_value=10850000.0 ltv_ratio=69.1 cibil_score=771 co_applicant='Mr. Rahul Malhotra (Spouse)'
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+FIRST NATIONAL BANK OF INDIA
+Home Loan Application Form
+Retail Lending Division | Application No: HLA-2026-00847
+SECTION 1 — APPLICANT PERSONAL DETAILS
+Full Name Priya Suresh Malhotra
+Date of Birth 14-March-1988
+Gender Female
+Marital Status Married
+PAN Number BSXPM4421K
+Aadhaar Number 7782 5531 9204
+Mobile Number +91 98201 45678
+Email Address priya.malhotra@gmail.com
+Current Address Flat 4B, Greenview Apartments, Bandra West, Mumbai - 400050
+Permanent Address Same as current address
+Residence Type Rented
+Years at Current Address 3 years 6 months
+SECTION 2 — EMPLOYMENT AND INCOME DETAILS
+Employment Type Salaried — Private Sector
+Employer Name Infosys Limited
+Designation Senior Software Engineer
+Department Financial Services Unit
+Date of Joining 06-August-2015
+Years of Experience 11 years
+Office Address Infosys BPO, Plot C-22, MIDC, Andheri East, Mumbai - 400093
+Monthly Gross Salary INR 1,85,000
+Monthly Net Salary INR 1,42,500
+Other Monthly Income INR 12,000 (rental income)
+Total Monthly Income INR 1,54,500
+Annual Bonus INR 3,20,000 (last financial year)
+SECTION 3 — LOAN REQUIREMENT DETAILS
+Loan Purpose Purchase of residential property
+Loan Amount Requested INR 75,00,000
+Loan Tenure Requested 20 years (240 months)
+Property Address Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076Property Type Residential Apartment — Under Construction
+Developer Name Hiranandani Developers Pvt Ltd
+Property Area 1,450 sq ft (Super Built-up)
+Agreement Value INR 1,12,00,000
+Market Valuation INR 1,08,50,000
+LTV Ratio 69.1% (within permissible limit)
+EMI Requested INR 58,500 per month (approx)
+Co-Applicant Mr. Rahul Malhotra (Spouse)
+SECTION 4 — EXISTING LIABILITIES
+Loan Type Lender Outstanding Amount Monthly EMI Remaining Tenure
+Car Loan HDFC Bank INR 4,20,000 INR 12,500 36 months
+Personal Loan Bajaj Finance INR 85,000 INR 4,200 22 months
+Credit Card ICICI Bank INR 32,000 Minimum due Revolving
+SECTION 5 — DOCUMENTS SUBMITTED
+Identity Proof Aadhaar Card (self-attested)
+Address Proof Electricity Bill — October 2025
+Income Proof Last 3 months salary slips
+Bank Statement 6 months — HDFC Bank Savings A/C
+Form 16 FY 2024-25 (employer issued)
+Property Documents Agreement to Sale, NOC from developer
+Valuation Report Submitted — dated 15-July-2026
+CIBIL Report Score: 771 — dated 01-August-2026
+Photographs 2 passport size photographs attached
+SECTION 6 — DECLARATION
+I/We hereby declare that the information provided in this application form is true, correct and complete to the best of my/our
+knowledge and belief. I/We authorise the bank to verify any information provided herein and to obtain credit information from CIBIL or
+any other credit bureau. I/We understand that submission of this form does not guarantee loan approval.
+Applicant Signature Co-Applicant Signature Date
+Priya Suresh Malhotra Rahul Malhotra 09-August-2026
+FOR BANK USE ONLY — Application received by: ____________ Branch: ____________ Date: ____________
+	he Extracted data is - 
+ applicant_name='Priya Suresh Malhotra' pan_number='BSXPM4421K' aadhaar_number='7782 5531 9204' mobile='+91 98201 45678' email='priya.malhotra@gmail.com' employer_name='Infosys Limited' monthly_income=142500.0 loan_amount=7500000.0 loan_tenure_years=20 property_address='Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076' property_value=10850000.0 ltv_ratio=69.1 cibil_score=771 co_applicant='Mr. Rahul Malhotra (Spouse)'
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:20:26.774835
+	he Extracted data is - 
+ applicant_name='Priya Suresh Malhotra' pan_number='BSXPM4421K' aadhaar_number='7782 5531 9204' mobile='+91 98201 45678' email='priya.malhotra@gmail.com' employer_name='Infosys Limited' monthly_income=142500.0 loan_amount=7500000.0 loan_tenure_years=20 property_address='Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076' property_value=10850000.0 ltv_ratio=69.1 cibil_score=771 co_applicant='Mr. Rahul Malhotra (Spouse)'
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:21:02.304023
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:30:02.576738
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:31:11.436786
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:32:16.409053
+
+[Cache] PAN BSXPM4421K - application already processed
+already processed - loading from cache
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra (Spouse)"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:51:28.432001
+
+[Cache] PAN BSXPM4421K - application already processed
+
+already processed - loading from cache
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:52:33.349772
+
+[Cache] PAN BSXPM4421K - application already processed
+
+already processed - loading from cache
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "778255319204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 09:53:25.165554
+
+New application — saving...
+{'applicant_name': 'Priya Suresh Malhotra', 'pan_number': 'BSXPM4421K', 'aadhaar_number': '778255319204', 'mobile': '+91 98201 45678', 'email': 'priya.malhotra@gmail.com', 'employer_name': 'Infosys Limited', 'monthly_income': 142500.0, 'loan_amount': 7500000.0, 'loan_tenure_years': 20, 'property_address': 'Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076', 'property_value': 10850000.0, 'ltv_ratio': 69.1, 'cibil_score': 771, 'co_applicant': 'Mr. Rahul Malhotra'}
+============================================================
+Script Execution Ended at - 2026-08-10 10:01:56.507746
+
+[Cache] PAN BSXPM4421K - application already processed
+
+already processed - loading from cache
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "778255319204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 10:02:16.215624
+
+New application — saving...
+
+[Cache] PAN BSXPM4421K - application already processed
+
+already processed - loading from cache
+{
+    "applicant_name": "Priya Suresh Malhotra",
+    "pan_number": "BSXPM4421K",
+    "aadhaar_number": "7782 5531 9204",
+    "mobile": "+91 98201 45678",
+    "email": "priya.malhotra@gmail.com",
+    "employer_name": "Infosys Limited",
+    "monthly_income": 142500.0,
+    "loan_amount": 7500000.0,
+    "loan_tenure_years": 20,
+    "property_address": "Plot 12, Hiranandani Gardens, Powai, Mumbai - 400076",
+    "property_value": 10850000.0,
+    "ltv_ratio": 69.1,
+    "cibil_score": 771,
+    "co_applicant": "Mr. Rahul Malhotra"
+}
+============================================================
+Script Execution Ended at - 2026-08-10 10:03:31.580973
