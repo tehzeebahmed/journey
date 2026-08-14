@@ -1,0 +1,281 @@
+============================================================
+
+ Script execution ended @ - 2026-08-10 18:28:22.826699
+============================================================
+
+ Script execution ended @ - 2026-08-10 18:28:46.934841
+============================================================
+
+ Script execution started @ - 2026-08-10 18:29:18.731495
+============================================================
+
+ Script execution ended @ - 2026-08-10 18:29:18.731549
+============================================================
+
+ Script execution started @ - 2026-08-14 09:40:00.637499
+============================================================
+
+ Script execution started @ - 2026-08-14 09:43:32.931523
+============================================================
+
+ Script execution started @ - 2026-08-14 09:48:11.936556
+============================================================
+
+ Script execution started @ - 2026-08-14 09:50:47.115487
+============================================================
+
+ Script execution started @ - 2026-08-14 09:52:27.966093
+============================================================
+
+ Script execution started @ - 2026-08-14 09:52:56.543574
+CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 09:53:17.706036
+CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 09:53:34.260193
+CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 09:54:06.287895
+CUST101
+	he customer id inside the agent is - CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 09:59:15.386879
+============================================================
+
+ Script execution started @ - 2026-08-14 09:59:34.135728
+CUST101
+	he customer id inside the agent is - CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 10:00:43.033436
+CUST101
+	he customer id inside the agent is - CUST101
+============================================================
+
+ Script execution started @ - 2026-08-14 10:01:15.315131
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+============================================================
+
+ Script execution started @ - 2026-08-14 10:01:28.556464
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+0.2
+claim_id='CLM001' customer_id='CUST101' claim_type='vehicle_accident' amount=45000 description='Car rear-ended at signal. Damage to bumper and boot.' fraud_score=None policy_limit=None decision=None
+CUST202
+	he customer id inside the agent is - CUST202
+
+ the fraud Score for customer CUST202 is 0.85
+0.85
+claim_id='CLM002' customer_id='CUST202' claim_type='theft' amount=180000 description='Laptop and jewellery stolen from home. FIR filed.' fraud_score=None policy_limit=None decision=None
+CUST303
+	he customer id inside the agent is - CUST303
+
+ the fraud Score for customer CUST303 is 0.4
+0.4
+claim_id='CLM003' customer_id='CUST303' claim_type='medical' amount=12000 description='Hospitalised for 2 days. Fever and dehydration.' fraud_score=None policy_limit=None decision=None
+============================================================
+
+ Script execution ended @ - 2026-08-14 10:01:28.556653
+============================================================
+
+ Script execution started @ - 2026-08-14 10:52:51.167741
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+
+ the tmaximum amount for vehicle_accident is 50000
+0.2
+claim_id='CLM001' customer_id='CUST101' claim_type='vehicle_accident' amount=45000 description='Car rear-ended at signal. Damage to bumper and boot.' fraud_score=None policy_limit=None decision=None
+CUST202
+	he customer id inside the agent is - CUST202
+
+ the fraud Score for customer CUST202 is 0.85
+
+ the tmaximum amount for theft is 100000
+0.85
+claim_id='CLM002' customer_id='CUST202' claim_type='theft' amount=180000 description='Laptop and jewellery stolen from home. FIR filed.' fraud_score=None policy_limit=None decision=None
+CUST303
+	he customer id inside the agent is - CUST303
+
+ the fraud Score for customer CUST303 is 0.4
+
+ the tmaximum amount for medical is 25000
+0.4
+claim_id='CLM003' customer_id='CUST303' claim_type='medical' amount=12000 description='Hospitalised for 2 days. Fever and dehydration.' fraud_score=None policy_limit=None decision=None
+============================================================
+
+ Script execution ended @ - 2026-08-14 10:52:51.168452
+============================================================
+
+ Script execution started @ - 2026-08-14 10:59:09.790713
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+
+ the tmaximum amount for vehicle_accident is 50000
+0.2
+claim_id='CLM001' customer_id='CUST101' claim_type='vehicle_accident' amount=45000 description='Car rear-ended at signal. Damage to bumper and boot.' fraud_score=None policy_limit=None decision=None
+============================================================
+
+ Script execution started @ - 2026-08-14 11:01:13.153187
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+
+ the tmaximum amount for vehicle_accident is 50000
+0.2
+claim_id='CLM001' customer_id='CUST101' claim_type='vehicle_accident' amount=45000 description='Car rear-ended at signal. Damage to bumper and boot.' fraud_score=None policy_limit=None decision=None
+None
+45000
+50000
+============================================================
+
+ Script execution started @ - 2026-08-14 11:01:45.924955
+CUST101
+	he customer id inside the agent is - CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+
+ the tmaximum amount for vehicle_accident is 50000
+0.2
+claim_id='CLM001' customer_id='CUST101' claim_type='vehicle_accident' amount=45000 description='Car rear-ended at signal. Damage to bumper and boot.' fraud_score=None policy_limit=None decision=None
+0.2
+45000
+50000
+Claim passed - Approved
+CUST202
+	he customer id inside the agent is - CUST202
+
+ the fraud Score for customer CUST202 is 0.85
+
+ the tmaximum amount for theft is 100000
+0.85
+claim_id='CLM002' customer_id='CUST202' claim_type='theft' amount=180000 description='Laptop and jewellery stolen from home. FIR filed.' fraud_score=None policy_limit=None decision=None
+0.85
+180000
+100000
+Rejected
+CUST303
+	he customer id inside the agent is - CUST303
+
+ the fraud Score for customer CUST303 is 0.4
+
+ the tmaximum amount for medical is 25000
+0.4
+claim_id='CLM003' customer_id='CUST303' claim_type='medical' amount=12000 description='Hospitalised for 2 days. Fever and dehydration.' fraud_score=None policy_limit=None decision=None
+0.4
+12000
+25000
+Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:01:45.925195
+============================================================
+
+ Script execution started @ - 2026-08-14 11:02:25.864600
+CUST101
+
+ the fraud Score for customer CUST101 is 0.2
+
+ the tmaximum amount for vehicle_accident is 50000
+0.2
+45000
+50000
+Claim passed - Approved
+CUST202
+
+ the fraud Score for customer CUST202 is 0.85
+
+ the tmaximum amount for theft is 100000
+0.85
+180000
+100000
+Rejected
+CUST303
+
+ the fraud Score for customer CUST303 is 0.4
+
+ the tmaximum amount for medical is 25000
+0.4
+12000
+25000
+Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:02:25.865050
+============================================================
+
+ Script execution started @ - 2026-08-14 11:03:05.585520
+CUST101
+Claim passed - Approved
+CUST202
+Rejected
+CUST303
+Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:03:05.585651
+============================================================
+
+ Script execution started @ - 2026-08-14 11:05:12.599776
+CUST101
+
+ Cusomer - CUST101 's claim CLM001 - Claim passed - Approved
+CUST202
+
+ Cusomer - CUST202 's claim CLM002 - Rejected
+CUST303
+
+ Cusomer - CUST303 's claim CLM003 - Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:05:12.600227
+============================================================
+
+ Script execution started @ - 2026-08-14 11:05:42.008528
+
+ Cusomer - CUST101 's claim CLM001 for amount 45000 - Claim passed - Approved
+
+ Cusomer - CUST202 's claim CLM002 for amount 180000 - Rejected
+
+ Cusomer - CUST303 's claim CLM003 for amount 12000 - Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:05:42.008645
+============================================================
+
+ Script execution started @ - 2026-08-14 11:08:17.422635
+
+ Cusomer - CUST101 's claim CLM001 for amount 45000 - All good boy - Claim passed - Approved
+
+ Cusomer - CUST202 's claim CLM002 for amount 180000 - Rejected - the claim amount 180000 exceeds policy limit 100000
+
+ Cusomer - CUST303 's claim CLM003 for amount 12000 - All good boy - Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:08:17.423201
+============================================================
+
+ Script execution started @ - 2026-08-14 11:10:53.674571
+
+ Cusomer - CUST101 's claim CLM001 for amount 45000 - All good boy - Claim passed - Approved
+
+ Cusomer - CUST202 's claim CLM002 for amount 180000 - Rejected - the claim amount 180000 exceeds policy limit 100000 and fraud score is 0.85
+
+ Cusomer - CUST303 's claim CLM003 for amount 12000 - All good boy - Claim passed - Approved
+============================================================
+
+ Script execution ended @ - 2026-08-14 11:10:53.675170
