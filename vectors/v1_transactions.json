@@ -1,0 +1,8002 @@
+[
+  {
+    "txn_id": "T001",
+    "account": "ACC001",
+    "amount": 450000,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T002",
+    "account": "ACC002",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T003",
+    "account": "ACC003",
+    "amount": 12500000,
+    "currency": "USD",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T001",
+    "account": "ACC001",
+    "amount": 450000,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T004",
+    "account": "ACC004",
+    "amount": -85000,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T005",
+    "account": "ACC146",
+    "amount": 1749521,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T006",
+    "account": "ACC059",
+    "amount": 214653,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T007",
+    "account": "ACC095",
+    "amount": 15651,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T008",
+    "account": "ACC022",
+    "amount": 155803,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T009",
+    "account": "ACC027",
+    "amount": 1143033,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T010",
+    "account": "ACC131",
+    "amount": 1437189,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T011",
+    "account": "ACC098",
+    "amount": 1286396,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T012",
+    "account": "ACC086",
+    "amount": 1633709,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T013",
+    "account": "ACC023",
+    "amount": 56016,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T014",
+    "account": "ACC058",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T015",
+    "account": "ACC068",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T016",
+    "account": "ACC005",
+    "amount": 918930,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T017",
+    "account": "ACC026",
+    "amount": 881504,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T018",
+    "account": "ACC145",
+    "amount": 296668,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T019",
+    "account": "ACC053",
+    "amount": 1032314,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T020",
+    "account": "ACC015",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T021",
+    "account": "ACC002",
+    "amount": 1976059,
+    "currency": "GBP",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T022",
+    "account": "ACC051",
+    "amount": 1790964,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T023",
+    "account": "ACC071",
+    "amount": 1872416,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T024",
+    "account": "ACC072",
+    "amount": 1342718,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T025",
+    "account": "ACC141",
+    "amount": 221535,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T026",
+    "account": "ACC057",
+    "amount": 362939,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T027",
+    "account": "ACC095",
+    "amount": 377680,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T028",
+    "account": "ACC063",
+    "amount": 351152,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T029",
+    "account": "ACC074",
+    "amount": 119985,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T030",
+    "account": "ACC105",
+    "amount": 373411,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T031",
+    "account": "ACC003",
+    "amount": 172267,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T032",
+    "account": "ACC050",
+    "amount": 586222,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T033",
+    "account": "ACC097",
+    "amount": 1870134,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T034",
+    "account": "ACC130",
+    "amount": 1897690,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T035",
+    "account": "ACC037",
+    "amount": 1585943,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T036",
+    "account": "ACC019",
+    "amount": 281399,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T037",
+    "account": "ACC124",
+    "amount": 1693414,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T038",
+    "account": "ACC064",
+    "amount": 252023,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T039",
+    "account": "ACC109",
+    "amount": 525391,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T040",
+    "account": "ACC071",
+    "amount": 81779,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T041",
+    "account": "ACC102",
+    "amount": 262243,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T042",
+    "account": "ACC106",
+    "amount": 1251959,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T043",
+    "account": "ACC093",
+    "amount": 1076322,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T044",
+    "account": "ACC129",
+    "amount": 988005,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T045",
+    "account": "ACC047",
+    "amount": 340631,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T046",
+    "account": "ACC095",
+    "amount": 1452879,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T047",
+    "account": "ACC107",
+    "amount": 562130,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T048",
+    "account": "ACC132",
+    "amount": 957750,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T049",
+    "account": "ACC054",
+    "amount": 1918949,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T050",
+    "account": "ACC038",
+    "amount": 1898659,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T051",
+    "account": "ACC116",
+    "amount": 99549,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T052",
+    "account": "ACC026",
+    "amount": 554736,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T053",
+    "account": "ACC071",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T054",
+    "account": "ACC064",
+    "amount": 1752924,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T055",
+    "account": "ACC124",
+    "amount": 999196,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T056",
+    "account": "ACC103",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T057",
+    "account": "ACC049",
+    "amount": 639960,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T058",
+    "account": "ACC021",
+    "amount": 1215450,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T059",
+    "account": "ACC014",
+    "amount": 1222817,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T060",
+    "account": "ACC139",
+    "amount": 639282,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T061",
+    "account": "ACC046",
+    "amount": 1591051,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T062",
+    "account": "ACC061",
+    "amount": 1181418,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T063",
+    "account": "ACC016",
+    "amount": 466509,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T064",
+    "account": "ACC091",
+    "amount": 1204569,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T065",
+    "account": "ACC011",
+    "amount": 1830984,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T066",
+    "account": "ACC141",
+    "amount": 903538,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T067",
+    "account": "ACC101",
+    "amount": 1555027,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T068",
+    "account": "ACC116",
+    "amount": 984495,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T069",
+    "account": "ACC091",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T070",
+    "account": "ACC054",
+    "amount": 997963,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T071",
+    "account": "ACC125",
+    "amount": 1748277,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T072",
+    "account": "ACC135",
+    "amount": 397449,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T073",
+    "account": "ACC145",
+    "amount": 1739044,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T074",
+    "account": "ACC133",
+    "amount": 1304584,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T075",
+    "account": "ACC079",
+    "amount": 262818,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T076",
+    "account": "ACC039",
+    "amount": 872317,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T077",
+    "account": "ACC081",
+    "amount": 594886,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T078",
+    "account": "ACC040",
+    "amount": 428633,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T079",
+    "account": "ACC015",
+    "amount": 809700,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T080",
+    "account": "ACC142",
+    "amount": 1667661,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T081",
+    "account": "ACC024",
+    "amount": 252042,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T082",
+    "account": "ACC092",
+    "amount": 436269,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T083",
+    "account": "ACC068",
+    "amount": 420114,
+    "currency": "NOK",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T084",
+    "account": "ACC037",
+    "amount": 202398,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T085",
+    "account": "ACC083",
+    "amount": 1146835,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T086",
+    "account": "ACC133",
+    "amount": 1838770,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T087",
+    "account": "ACC149",
+    "amount": 1176342,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T088",
+    "account": "ACC086",
+    "amount": 1388501,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T089",
+    "account": "ACC047",
+    "amount": 530032,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T090",
+    "account": "ACC082",
+    "amount": 1040989,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T091",
+    "account": "ACC005",
+    "amount": 1835216,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T092",
+    "account": "ACC024",
+    "amount": 1640925,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T093",
+    "account": "ACC118",
+    "amount": 1681388,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T094",
+    "account": "ACC006",
+    "amount": 1220078,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T095",
+    "account": "ACC020",
+    "amount": 183369,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T096",
+    "account": "ACC022",
+    "amount": 1540220,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T097",
+    "account": "ACC147",
+    "amount": 1274097,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T098",
+    "account": "ACC102",
+    "amount": 1634505,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T099",
+    "account": "ACC039",
+    "amount": 103093,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T100",
+    "account": "ACC046",
+    "amount": 659324,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T101",
+    "account": "ACC140",
+    "amount": 1340723,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T102",
+    "account": "ACC046",
+    "amount": 541002,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T103",
+    "account": "ACC069",
+    "amount": 1996808,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T104",
+    "account": "ACC038",
+    "amount": 1537223,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T105",
+    "account": "ACC120",
+    "amount": 1991493,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T106",
+    "account": "ACC013",
+    "amount": 1918530,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T107",
+    "account": "ACC139",
+    "amount": 1322850,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T108",
+    "account": "ACC097",
+    "amount": 1020766,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T109",
+    "account": "ACC081",
+    "amount": 865890,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T110",
+    "account": "ACC033",
+    "amount": 515167,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T111",
+    "account": "ACC009",
+    "amount": 372860,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T112",
+    "account": "ACC103",
+    "amount": 1062297,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T113",
+    "account": "ACC117",
+    "amount": 249564,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T114",
+    "account": "ACC029",
+    "amount": 412684,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T115",
+    "account": "ACC073",
+    "amount": 1668080,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T116",
+    "account": "ACC128",
+    "amount": 1373734,
+    "currency": "USD",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T117",
+    "account": "ACC088",
+    "amount": 1143297,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T118",
+    "account": "ACC025",
+    "amount": 351662,
+    "currency": "EUR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T119",
+    "account": "ACC026",
+    "amount": 1561485,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T120",
+    "account": "ACC092",
+    "amount": 1673777,
+    "currency": "NOK",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T121",
+    "account": "ACC111",
+    "amount": 1376199,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T122",
+    "account": "ACC108",
+    "amount": 1184860,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T123",
+    "account": "ACC125",
+    "amount": 781677,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T124",
+    "account": "ACC046",
+    "amount": 333366,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T125",
+    "account": "ACC067",
+    "amount": 1293320,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T126",
+    "account": "ACC131",
+    "amount": 1727142,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T127",
+    "account": "ACC043",
+    "amount": 1130768,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T128",
+    "account": "ACC001",
+    "amount": 1525943,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T129",
+    "account": "ACC015",
+    "amount": 370281,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T130",
+    "account": "ACC002",
+    "amount": 1055963,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T131",
+    "account": "ACC073",
+    "amount": 1752048,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T132",
+    "account": "ACC111",
+    "amount": 1807851,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T133",
+    "account": "ACC036",
+    "amount": 1041028,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T134",
+    "account": "ACC137",
+    "amount": 304128,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T135",
+    "account": "ACC131",
+    "amount": 851474,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T136",
+    "account": "ACC025",
+    "amount": 1332359,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T137",
+    "account": "ACC027",
+    "amount": 324687,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T138",
+    "account": "ACC122",
+    "amount": 157771,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T139",
+    "account": "ACC110",
+    "amount": 961073,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T140",
+    "account": "ACC124",
+    "amount": 18346,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T141",
+    "account": "ACC078",
+    "amount": 1791110,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T142",
+    "account": "ACC033",
+    "amount": 118299,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T143",
+    "account": "ACC093",
+    "amount": 999341,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T144",
+    "account": "ACC012",
+    "amount": 16054,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T145",
+    "account": "ACC007",
+    "amount": 1989184,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T146",
+    "account": "ACC057",
+    "amount": 1015355,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T147",
+    "account": "ACC107",
+    "amount": 798345,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T148",
+    "account": "ACC066",
+    "amount": -61322,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T149",
+    "account": "ACC071",
+    "amount": 1049808,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T150",
+    "account": "ACC057",
+    "amount": 996790,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T151",
+    "account": "ACC114",
+    "amount": 392357,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T152",
+    "account": "ACC065",
+    "amount": 1669937,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T153",
+    "account": "ACC141",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T154",
+    "account": "ACC058",
+    "amount": 850604,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T155",
+    "account": "ACC034",
+    "amount": 1637416,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T156",
+    "account": "ACC023",
+    "amount": 1971711,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T157",
+    "account": "ACC111",
+    "amount": 823281,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T158",
+    "account": "ACC036",
+    "amount": 1888563,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T159",
+    "account": "ACC044",
+    "amount": 1019282,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T160",
+    "account": "ACC067",
+    "amount": 1360580,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T161",
+    "account": "ACC119",
+    "amount": 170975,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T162",
+    "account": "ACC017",
+    "amount": 362961,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T163",
+    "account": "ACC001",
+    "amount": 1828449,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T164",
+    "account": "ACC061",
+    "amount": 1857646,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T165",
+    "account": "ACC021",
+    "amount": 140575,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T166",
+    "account": "ACC066",
+    "amount": 1206122,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T167",
+    "account": "ACC126",
+    "amount": 1657803,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T168",
+    "account": "ACC005",
+    "amount": 1582377,
+    "currency": "GBP",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T169",
+    "account": "ACC101",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T170",
+    "account": "ACC127",
+    "amount": 1175054,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T171",
+    "account": "ACC049",
+    "amount": 122956,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T172",
+    "account": "ACC139",
+    "amount": 1487797,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T173",
+    "account": "ACC075",
+    "amount": 1064068,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T174",
+    "account": "ACC118",
+    "amount": 153585,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T175",
+    "account": "ACC083",
+    "amount": 1118017,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T176",
+    "account": "ACC001",
+    "amount": 2056,
+    "currency": "NOK",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T177",
+    "account": "ACC129",
+    "amount": 1102622,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T178",
+    "account": "ACC138",
+    "amount": 537995,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T179",
+    "account": "ACC031",
+    "amount": 1912563,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T180",
+    "account": "ACC002",
+    "amount": 744161,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T181",
+    "account": "ACC067",
+    "amount": 938991,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T182",
+    "account": "ACC005",
+    "amount": 873342,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T183",
+    "account": "ACC009",
+    "amount": 1881331,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T184",
+    "account": "ACC005",
+    "amount": 1666732,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T185",
+    "account": "ACC020",
+    "amount": 182266,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T186",
+    "account": "ACC110",
+    "amount": 378672,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T187",
+    "account": "ACC027",
+    "amount": 1133086,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T188",
+    "account": "ACC030",
+    "amount": 1187606,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T189",
+    "account": "ACC113",
+    "amount": 1595664,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T190",
+    "account": "ACC112",
+    "amount": 1479902,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T191",
+    "account": "ACC044",
+    "amount": 1158345,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T192",
+    "account": "ACC051",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T193",
+    "account": "ACC026",
+    "amount": 619323,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T194",
+    "account": "ACC120",
+    "amount": 1548099,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T195",
+    "account": "ACC007",
+    "amount": 1084607,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T196",
+    "account": "ACC129",
+    "amount": 1619968,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T197",
+    "account": "ACC013",
+    "amount": 703633,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T198",
+    "account": "ACC097",
+    "amount": 85798,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T199",
+    "account": "ACC014",
+    "amount": -50866,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T200",
+    "account": "ACC145",
+    "amount": 927603,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T201",
+    "account": "ACC130",
+    "amount": 1160908,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T202",
+    "account": "ACC105",
+    "amount": 1731427,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T203",
+    "account": "ACC007",
+    "amount": 698980,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T204",
+    "account": "ACC119",
+    "amount": 413975,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T205",
+    "account": "ACC080",
+    "amount": 1188859,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T206",
+    "account": "ACC020",
+    "amount": 653059,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T207",
+    "account": "ACC018",
+    "amount": 117314,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T208",
+    "account": "ACC002",
+    "amount": 348655,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T209",
+    "account": "ACC032",
+    "amount": 1874,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T210",
+    "account": "ACC001",
+    "amount": 1865535,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T211",
+    "account": "ACC004",
+    "amount": 479520,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T212",
+    "account": "ACC146",
+    "amount": 1071521,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T213",
+    "account": "ACC084",
+    "amount": 180503,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T214",
+    "account": "ACC148",
+    "amount": 314385,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T215",
+    "account": "ACC096",
+    "amount": 683052,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T216",
+    "account": "ACC136",
+    "amount": 1967182,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T217",
+    "account": "ACC130",
+    "amount": 1576489,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T218",
+    "account": "ACC143",
+    "amount": 1906703,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T219",
+    "account": "ACC147",
+    "amount": 758245,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T220",
+    "account": "ACC122",
+    "amount": 1134906,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T221",
+    "account": "ACC006",
+    "amount": 887525,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T222",
+    "account": "ACC070",
+    "amount": 1512061,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T223",
+    "account": "ACC026",
+    "amount": 1354989,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T224",
+    "account": "ACC059",
+    "amount": 88026,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T225",
+    "account": "ACC122",
+    "amount": 140242,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T226",
+    "account": "ACC100",
+    "amount": 1935603,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T227",
+    "account": "ACC122",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T228",
+    "account": "ACC006",
+    "amount": 817552,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T229",
+    "account": "ACC143",
+    "amount": 1117001,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T230",
+    "account": "ACC074",
+    "amount": 380892,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T231",
+    "account": "ACC018",
+    "amount": 615661,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T232",
+    "account": "ACC144",
+    "amount": 1676976,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T233",
+    "account": "ACC048",
+    "amount": 1219440,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T234",
+    "account": "ACC071",
+    "amount": 1029288,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T235",
+    "account": "ACC130",
+    "amount": 410893,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T236",
+    "account": "ACC071",
+    "amount": 1979829,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T237",
+    "account": "ACC126",
+    "amount": 924161,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T238",
+    "account": "ACC058",
+    "amount": 609075,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T239",
+    "account": "ACC128",
+    "amount": 772037,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T240",
+    "account": "ACC145",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T241",
+    "account": "ACC040",
+    "amount": 1313323,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T242",
+    "account": "ACC032",
+    "amount": 1525706,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T243",
+    "account": "ACC086",
+    "amount": 3825,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T244",
+    "account": "ACC027",
+    "amount": 498286,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T245",
+    "account": "ACC092",
+    "amount": 811296,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T246",
+    "account": "ACC096",
+    "amount": 729666,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T247",
+    "account": "ACC143",
+    "amount": 1088377,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T248",
+    "account": "ACC106",
+    "amount": 1269280,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T249",
+    "account": "ACC085",
+    "amount": 1109968,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T250",
+    "account": "ACC014",
+    "amount": 1383878,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T251",
+    "account": "ACC019",
+    "amount": 456831,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T252",
+    "account": "ACC143",
+    "amount": 868645,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T253",
+    "account": "ACC090",
+    "amount": 1952888,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T254",
+    "account": "ACC018",
+    "amount": 1290798,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T255",
+    "account": "ACC132",
+    "amount": 1248626,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T256",
+    "account": "ACC092",
+    "amount": 668709,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T257",
+    "account": "ACC128",
+    "amount": 1807513,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T258",
+    "account": "ACC036",
+    "amount": 909882,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T259",
+    "account": "ACC146",
+    "amount": 1590961,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T260",
+    "account": "ACC092",
+    "amount": 563458,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T261",
+    "account": "ACC105",
+    "amount": 1391506,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T262",
+    "account": "ACC020",
+    "amount": 836305,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T263",
+    "account": "ACC071",
+    "amount": 1803019,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T264",
+    "account": "ACC113",
+    "amount": 1643396,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T265",
+    "account": "ACC121",
+    "amount": 988287,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T266",
+    "account": "ACC098",
+    "amount": 1972697,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T267",
+    "account": "ACC067",
+    "amount": 1650550,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T268",
+    "account": "ACC094",
+    "amount": 1412381,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T269",
+    "account": "ACC115",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T270",
+    "account": "ACC071",
+    "amount": 1978836,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T271",
+    "account": "ACC097",
+    "amount": 1455945,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T272",
+    "account": "ACC059",
+    "amount": 1209652,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T273",
+    "account": "ACC144",
+    "amount": 1242981,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T274",
+    "account": "ACC054",
+    "amount": 1770806,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T275",
+    "account": "ACC147",
+    "amount": 1726648,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T276",
+    "account": "ACC052",
+    "amount": 687864,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T277",
+    "account": "ACC082",
+    "amount": 1066607,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T278",
+    "account": "ACC092",
+    "amount": 238432,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T279",
+    "account": "ACC014",
+    "amount": 1274363,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T280",
+    "account": "ACC038",
+    "amount": 456360,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T281",
+    "account": "ACC149",
+    "amount": 1046761,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T282",
+    "account": "ACC019",
+    "amount": 1653495,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T283",
+    "account": "ACC080",
+    "amount": 311622,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T284",
+    "account": "ACC013",
+    "amount": 1679038,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T285",
+    "account": "ACC010",
+    "amount": 1811202,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T286",
+    "account": "ACC115",
+    "amount": 652198,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T287",
+    "account": "ACC007",
+    "amount": 922412,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T288",
+    "account": "ACC071",
+    "amount": 1504593,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T289",
+    "account": "ACC138",
+    "amount": 1353255,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T290",
+    "account": "ACC001",
+    "amount": 779934,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T291",
+    "account": "ACC055",
+    "amount": 283032,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T292",
+    "account": "ACC105",
+    "amount": 10594,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T293",
+    "account": "ACC119",
+    "amount": 834249,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T294",
+    "account": "ACC031",
+    "amount": 1160745,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T295",
+    "account": "ACC002",
+    "amount": 633472,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T296",
+    "account": "ACC119",
+    "amount": 215783,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T297",
+    "account": "ACC148",
+    "amount": 961856,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T298",
+    "account": "ACC096",
+    "amount": 1897745,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T299",
+    "account": "ACC145",
+    "amount": 1880704,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T300",
+    "account": "ACC019",
+    "amount": 23350,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T301",
+    "account": "ACC027",
+    "amount": 1274989,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T302",
+    "account": "ACC048",
+    "amount": -7921,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T303",
+    "account": "ACC100",
+    "amount": 830619,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T304",
+    "account": "ACC064",
+    "amount": 256403,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T305",
+    "account": "ACC148",
+    "amount": 300230,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T306",
+    "account": "ACC047",
+    "amount": 1148478,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T307",
+    "account": "ACC005",
+    "amount": 654782,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T308",
+    "account": "ACC119",
+    "amount": 382596,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T309",
+    "account": "ACC042",
+    "amount": 1850933,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T310",
+    "account": "ACC038",
+    "amount": 1284121,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T311",
+    "account": "ACC061",
+    "amount": 406916,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T312",
+    "account": "ACC108",
+    "amount": 408076,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T313",
+    "account": "ACC128",
+    "amount": 1849339,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T314",
+    "account": "ACC060",
+    "amount": 698497,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T315",
+    "account": "ACC144",
+    "amount": 205377,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T316",
+    "account": "ACC033",
+    "amount": 1154539,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T317",
+    "account": "ACC011",
+    "amount": 1472998,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T318",
+    "account": "ACC054",
+    "amount": 1960638,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T319",
+    "account": "ACC142",
+    "amount": 89205,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T320",
+    "account": "ACC030",
+    "amount": 62201,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T321",
+    "account": "ACC051",
+    "amount": 798542,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T322",
+    "account": "ACC002",
+    "amount": 303395,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T323",
+    "account": "ACC117",
+    "amount": 1515394,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T324",
+    "account": "ACC036",
+    "amount": 746787,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T325",
+    "account": "ACC027",
+    "amount": 861549,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T326",
+    "account": "ACC146",
+    "amount": 1284810,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T327",
+    "account": "ACC049",
+    "amount": 128687,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T328",
+    "account": "ACC028",
+    "amount": 1287448,
+    "currency": "NOK",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T329",
+    "account": "ACC014",
+    "amount": 1519404,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T330",
+    "account": "ACC148",
+    "amount": 223950,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T331",
+    "account": "ACC136",
+    "amount": 227502,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T332",
+    "account": "ACC143",
+    "amount": 927179,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T333",
+    "account": "ACC094",
+    "amount": 1489833,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T334",
+    "account": "ACC020",
+    "amount": 1189227,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T335",
+    "account": "ACC011",
+    "amount": 523994,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T336",
+    "account": "ACC007",
+    "amount": 815821,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T337",
+    "account": "ACC077",
+    "amount": 405915,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T338",
+    "account": "ACC005",
+    "amount": 1118982,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T339",
+    "account": "ACC042",
+    "amount": 555254,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T340",
+    "account": "ACC003",
+    "amount": 362656,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T341",
+    "account": "ACC134",
+    "amount": 1804945,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T342",
+    "account": "ACC078",
+    "amount": 1927405,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T343",
+    "account": "ACC057",
+    "amount": 31206,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T344",
+    "account": "ACC044",
+    "amount": 734546,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T345",
+    "account": "ACC079",
+    "amount": 1117349,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T346",
+    "account": "ACC028",
+    "amount": 1266337,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T347",
+    "account": "ACC057",
+    "amount": 447053,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T348",
+    "account": "ACC016",
+    "amount": 899753,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T349",
+    "account": "ACC095",
+    "amount": 1066652,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T350",
+    "account": "ACC067",
+    "amount": 376955,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T351",
+    "account": "ACC074",
+    "amount": 1283799,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T352",
+    "account": "ACC058",
+    "amount": 1430323,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T353",
+    "account": "ACC058",
+    "amount": 224597,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T354",
+    "account": "ACC074",
+    "amount": 1625864,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T355",
+    "account": "ACC050",
+    "amount": 341858,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T356",
+    "account": "ACC010",
+    "amount": 796328,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T357",
+    "account": "ACC127",
+    "amount": 326844,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T358",
+    "account": "ACC060",
+    "amount": 162052,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T359",
+    "account": "ACC013",
+    "amount": 997686,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T360",
+    "account": "ACC055",
+    "amount": 1335974,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T361",
+    "account": "ACC148",
+    "amount": 106424,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T362",
+    "account": "ACC054",
+    "amount": 513041,
+    "currency": "USD",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T363",
+    "account": "ACC081",
+    "amount": 590170,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T364",
+    "account": "ACC031",
+    "amount": 512280,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T365",
+    "account": "ACC118",
+    "amount": 201249,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T366",
+    "account": "ACC039",
+    "amount": 977079,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T367",
+    "account": "ACC011",
+    "amount": 744931,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T368",
+    "account": "ACC082",
+    "amount": 31598,
+    "currency": "USD",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T369",
+    "account": "ACC080",
+    "amount": 544180,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T370",
+    "account": "ACC080",
+    "amount": 1384772,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T371",
+    "account": "ACC025",
+    "amount": 1927459,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T372",
+    "account": "ACC073",
+    "amount": 1974986,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T373",
+    "account": "ACC077",
+    "amount": 206998,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T374",
+    "account": "ACC037",
+    "amount": 1450262,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T375",
+    "account": "ACC105",
+    "amount": 160830,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T376",
+    "account": "ACC137",
+    "amount": 1388998,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T377",
+    "account": "ACC004",
+    "amount": 1611094,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T378",
+    "account": "ACC075",
+    "amount": 1053612,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T379",
+    "account": "ACC029",
+    "amount": 205747,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T380",
+    "account": "ACC024",
+    "amount": 587707,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T381",
+    "account": "ACC070",
+    "amount": 1031351,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T382",
+    "account": "ACC067",
+    "amount": 1826703,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T383",
+    "account": "ACC122",
+    "amount": 129034,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T384",
+    "account": "ACC016",
+    "amount": 1848800,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T385",
+    "account": "ACC049",
+    "amount": 675324,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T386",
+    "account": "ACC009",
+    "amount": 1460857,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T387",
+    "account": "ACC141",
+    "amount": 812373,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T388",
+    "account": "ACC033",
+    "amount": 948789,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T389",
+    "account": "ACC028",
+    "amount": -13809,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T390",
+    "account": "ACC013",
+    "amount": 1393030,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T391",
+    "account": "ACC056",
+    "amount": 309068,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T392",
+    "account": "ACC079",
+    "amount": 139401,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T393",
+    "account": "ACC128",
+    "amount": 1523169,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T394",
+    "account": "ACC100",
+    "amount": 1440916,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T395",
+    "account": "ACC146",
+    "amount": 1432978,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T396",
+    "account": "ACC144",
+    "amount": 71594,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T397",
+    "account": "ACC025",
+    "amount": 811151,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T398",
+    "account": "ACC087",
+    "amount": 1272819,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T399",
+    "account": "ACC031",
+    "amount": 216384,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T400",
+    "account": "ACC125",
+    "amount": 1493731,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T401",
+    "account": "ACC094",
+    "amount": 187316,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T402",
+    "account": "ACC005",
+    "amount": 1652049,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T403",
+    "account": "ACC099",
+    "amount": 327968,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T404",
+    "account": "ACC081",
+    "amount": 1139386,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T405",
+    "account": "ACC044",
+    "amount": 543657,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T406",
+    "account": "ACC031",
+    "amount": 1756004,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T407",
+    "account": "ACC115",
+    "amount": 964221,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T408",
+    "account": "ACC099",
+    "amount": 1698169,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T409",
+    "account": "ACC137",
+    "amount": 1208019,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T410",
+    "account": "ACC117",
+    "amount": 48233,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T411",
+    "account": "ACC046",
+    "amount": 49295,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T412",
+    "account": "ACC081",
+    "amount": 755554,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T413",
+    "account": "ACC148",
+    "amount": 1263645,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T414",
+    "account": "ACC018",
+    "amount": 212781,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T415",
+    "account": "ACC111",
+    "amount": 1146137,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T416",
+    "account": "ACC027",
+    "amount": 877968,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T417",
+    "account": "ACC118",
+    "amount": 1251314,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T418",
+    "account": "ACC052",
+    "amount": 599198,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T419",
+    "account": "ACC080",
+    "amount": 634666,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T420",
+    "account": "ACC149",
+    "amount": 1685309,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T421",
+    "account": "ACC034",
+    "amount": 165559,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T422",
+    "account": "ACC048",
+    "amount": 1266807,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T423",
+    "account": "ACC049",
+    "amount": 637348,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T424",
+    "account": "ACC106",
+    "amount": 633915,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T425",
+    "account": "ACC012",
+    "amount": 118150,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T426",
+    "account": "ACC132",
+    "amount": 563286,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T427",
+    "account": "ACC053",
+    "amount": 102547,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T428",
+    "account": "ACC046",
+    "amount": 13647,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T429",
+    "account": "ACC022",
+    "amount": 981004,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T430",
+    "account": "ACC055",
+    "amount": -6271,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T431",
+    "account": "ACC089",
+    "amount": 324727,
+    "currency": "GBP",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T432",
+    "account": "ACC042",
+    "amount": 1064151,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T433",
+    "account": "ACC142",
+    "amount": 725966,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T434",
+    "account": "ACC122",
+    "amount": 646391,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T435",
+    "account": "ACC054",
+    "amount": 93894,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T436",
+    "account": "ACC100",
+    "amount": 1094441,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T437",
+    "account": "ACC004",
+    "amount": 1088382,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T438",
+    "account": "ACC121",
+    "amount": 900714,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T439",
+    "account": "ACC123",
+    "amount": 1501045,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T440",
+    "account": "ACC135",
+    "amount": 273502,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T441",
+    "account": "ACC084",
+    "amount": 996757,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T442",
+    "account": "ACC053",
+    "amount": 966589,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T443",
+    "account": "ACC117",
+    "amount": 417462,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T444",
+    "account": "ACC143",
+    "amount": 916163,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T445",
+    "account": "ACC060",
+    "amount": 1108199,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T446",
+    "account": "ACC018",
+    "amount": 285624,
+    "currency": "EUR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T447",
+    "account": "ACC106",
+    "amount": 1110419,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T448",
+    "account": "ACC096",
+    "amount": 1511382,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T449",
+    "account": "ACC121",
+    "amount": -45979,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T450",
+    "account": "ACC097",
+    "amount": 302222,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T451",
+    "account": "ACC147",
+    "amount": 1336344,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T452",
+    "account": "ACC124",
+    "amount": 891244,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T453",
+    "account": "ACC138",
+    "amount": 270868,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T454",
+    "account": "ACC119",
+    "amount": 424160,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T455",
+    "account": "ACC012",
+    "amount": 241141,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T456",
+    "account": "ACC058",
+    "amount": 1734490,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T457",
+    "account": "ACC117",
+    "amount": 1921741,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T458",
+    "account": "ACC124",
+    "amount": 1924590,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T459",
+    "account": "ACC077",
+    "amount": 979535,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T460",
+    "account": "ACC116",
+    "amount": 1385276,
+    "currency": "USD",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T461",
+    "account": "ACC126",
+    "amount": 224671,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T462",
+    "account": "ACC087",
+    "amount": 703911,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T463",
+    "account": "ACC062",
+    "amount": 541977,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T464",
+    "account": "ACC100",
+    "amount": 1566872,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T465",
+    "account": "ACC047",
+    "amount": 1764703,
+    "currency": "USD",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T466",
+    "account": "ACC136",
+    "amount": 1650636,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T467",
+    "account": "ACC128",
+    "amount": 71053,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T468",
+    "account": "ACC149",
+    "amount": 1431258,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T469",
+    "account": "ACC006",
+    "amount": 624705,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T470",
+    "account": "ACC087",
+    "amount": 342648,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T471",
+    "account": "ACC117",
+    "amount": 572143,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T472",
+    "account": "ACC028",
+    "amount": 1373505,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T473",
+    "account": "ACC065",
+    "amount": 873775,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T474",
+    "account": "ACC147",
+    "amount": 578631,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T475",
+    "account": "ACC126",
+    "amount": 1168661,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T476",
+    "account": "ACC006",
+    "amount": 593215,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T477",
+    "account": "ACC005",
+    "amount": 1751703,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T478",
+    "account": "ACC041",
+    "amount": 1149620,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T479",
+    "account": "ACC082",
+    "amount": 750328,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T480",
+    "account": "ACC052",
+    "amount": 1931131,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T481",
+    "account": "ACC052",
+    "amount": 1376756,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T482",
+    "account": "ACC052",
+    "amount": 230559,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T483",
+    "account": "ACC064",
+    "amount": 1228716,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T484",
+    "account": "ACC003",
+    "amount": 1044076,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T485",
+    "account": "ACC040",
+    "amount": 963957,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T486",
+    "account": "ACC123",
+    "amount": 901126,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T487",
+    "account": "ACC090",
+    "amount": 306973,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T488",
+    "account": "ACC040",
+    "amount": 1649313,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T489",
+    "account": "ACC081",
+    "amount": 1085459,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T490",
+    "account": "ACC146",
+    "amount": 1174751,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T491",
+    "account": "ACC101",
+    "amount": 68479,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T492",
+    "account": "ACC027",
+    "amount": 1957281,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T493",
+    "account": "ACC040",
+    "amount": 1566651,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T494",
+    "account": "ACC110",
+    "amount": 304307,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T495",
+    "account": "ACC016",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T496",
+    "account": "ACC045",
+    "amount": 705302,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T497",
+    "account": "ACC149",
+    "amount": 1026469,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T498",
+    "account": "ACC025",
+    "amount": 455437,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T499",
+    "account": "ACC075",
+    "amount": 156478,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T500",
+    "account": "ACC137",
+    "amount": 162106,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T501",
+    "account": "ACC050",
+    "amount": 1826558,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T502",
+    "account": "ACC017",
+    "amount": 1647951,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T503",
+    "account": "ACC060",
+    "amount": 157955,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T504",
+    "account": "ACC030",
+    "amount": 1820280,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T505",
+    "account": "ACC078",
+    "amount": 564728,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T506",
+    "account": "ACC133",
+    "amount": 872202,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T507",
+    "account": "ACC035",
+    "amount": 563944,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T508",
+    "account": "ACC091",
+    "amount": 753975,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T509",
+    "account": "ACC018",
+    "amount": 1734953,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T510",
+    "account": "ACC054",
+    "amount": 24066,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T511",
+    "account": "ACC075",
+    "amount": 669612,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T512",
+    "account": "ACC058",
+    "amount": 301312,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T513",
+    "account": "ACC082",
+    "amount": 926078,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T514",
+    "account": "ACC098",
+    "amount": 561392,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T515",
+    "account": "ACC054",
+    "amount": 1710671,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T516",
+    "account": "ACC116",
+    "amount": 425912,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T517",
+    "account": "ACC141",
+    "amount": 1806592,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T518",
+    "account": "ACC012",
+    "amount": 1492208,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T519",
+    "account": "ACC080",
+    "amount": 236651,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T520",
+    "account": "ACC040",
+    "amount": 138832,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T521",
+    "account": "ACC008",
+    "amount": 58769,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T522",
+    "account": "ACC140",
+    "amount": 1986077,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T523",
+    "account": "ACC087",
+    "amount": 906162,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T524",
+    "account": "ACC058",
+    "amount": 1330898,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T525",
+    "account": "ACC018",
+    "amount": 1416106,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T526",
+    "account": "ACC029",
+    "amount": 827091,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T527",
+    "account": "ACC066",
+    "amount": -53334,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T528",
+    "account": "ACC054",
+    "amount": 284035,
+    "currency": "EUR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T529",
+    "account": "ACC119",
+    "amount": 977625,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T530",
+    "account": "ACC027",
+    "amount": 1268191,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T531",
+    "account": "ACC032",
+    "amount": 354130,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T532",
+    "account": "ACC118",
+    "amount": 1099969,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T533",
+    "account": "ACC061",
+    "amount": 1161406,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T534",
+    "account": "ACC045",
+    "amount": 132466,
+    "currency": "USD",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T535",
+    "account": "ACC087",
+    "amount": 403312,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T536",
+    "account": "ACC034",
+    "amount": 145557,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T537",
+    "account": "ACC121",
+    "amount": 1267857,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T538",
+    "account": "ACC100",
+    "amount": -92959,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T539",
+    "account": "ACC127",
+    "amount": 1896406,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T540",
+    "account": "ACC025",
+    "amount": 36043,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T541",
+    "account": "ACC019",
+    "amount": 1951340,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T542",
+    "account": "ACC084",
+    "amount": 1654599,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T543",
+    "account": "ACC082",
+    "amount": 478764,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T544",
+    "account": "ACC070",
+    "amount": 489923,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T545",
+    "account": "ACC121",
+    "amount": 1188129,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T546",
+    "account": "ACC094",
+    "amount": 229652,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T547",
+    "account": "ACC032",
+    "amount": 989246,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T548",
+    "account": "ACC050",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T549",
+    "account": "ACC132",
+    "amount": 1177230,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T550",
+    "account": "ACC130",
+    "amount": 526576,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T551",
+    "account": "ACC136",
+    "amount": 1277220,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T552",
+    "account": "ACC123",
+    "amount": 998522,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T553",
+    "account": "ACC030",
+    "amount": 210450,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T554",
+    "account": "ACC119",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T555",
+    "account": "ACC098",
+    "amount": 1602759,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T556",
+    "account": "ACC035",
+    "amount": 1268144,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T557",
+    "account": "ACC148",
+    "amount": 988075,
+    "currency": "GBP",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T558",
+    "account": "ACC103",
+    "amount": 157499,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T559",
+    "account": "ACC080",
+    "amount": 255019,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T560",
+    "account": "ACC105",
+    "amount": 1411879,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T561",
+    "account": "ACC047",
+    "amount": 1586065,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T562",
+    "account": "ACC036",
+    "amount": 830576,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T563",
+    "account": "ACC146",
+    "amount": 1526765,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T564",
+    "account": "ACC038",
+    "amount": 1241200,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T565",
+    "account": "ACC135",
+    "amount": 87036,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T566",
+    "account": "ACC025",
+    "amount": 1772544,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T567",
+    "account": "ACC033",
+    "amount": 1896201,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T568",
+    "account": "ACC015",
+    "amount": 209298,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T569",
+    "account": "ACC104",
+    "amount": 635317,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T570",
+    "account": "ACC088",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T571",
+    "account": "ACC019",
+    "amount": 823271,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T572",
+    "account": "ACC050",
+    "amount": 799193,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T573",
+    "account": "ACC111",
+    "amount": 1451355,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T574",
+    "account": "ACC012",
+    "amount": 1495522,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T575",
+    "account": "ACC011",
+    "amount": 738914,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T576",
+    "account": "ACC026",
+    "amount": 1897461,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T577",
+    "account": "ACC031",
+    "amount": 1437934,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T578",
+    "account": "ACC083",
+    "amount": 313509,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T579",
+    "account": "ACC017",
+    "amount": 468430,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T580",
+    "account": "ACC011",
+    "amount": 8754,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T581",
+    "account": "ACC025",
+    "amount": 1942127,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T582",
+    "account": "ACC059",
+    "amount": 1666161,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T583",
+    "account": "ACC088",
+    "amount": 664461,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T584",
+    "account": "ACC122",
+    "amount": 1510360,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T585",
+    "account": "ACC017",
+    "amount": 399867,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T586",
+    "account": "ACC129",
+    "amount": 540338,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T587",
+    "account": "ACC118",
+    "amount": 1937840,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T588",
+    "account": "ACC100",
+    "amount": 1744576,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T589",
+    "account": "ACC108",
+    "amount": 1731556,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T590",
+    "account": "ACC019",
+    "amount": 1395042,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T591",
+    "account": "ACC128",
+    "amount": 1594780,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T592",
+    "account": "ACC117",
+    "amount": 837459,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T593",
+    "account": "ACC144",
+    "amount": 855384,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T594",
+    "account": "ACC132",
+    "amount": 724016,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T595",
+    "account": "ACC032",
+    "amount": 861849,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T596",
+    "account": "ACC030",
+    "amount": 1513752,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T597",
+    "account": "ACC051",
+    "amount": 1433034,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T598",
+    "account": "ACC090",
+    "amount": 1988186,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T599",
+    "account": "ACC088",
+    "amount": 384061,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T600",
+    "account": "ACC036",
+    "amount": 369658,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T601",
+    "account": "ACC007",
+    "amount": 307973,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T602",
+    "account": "ACC101",
+    "amount": 33338,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T603",
+    "account": "ACC003",
+    "amount": 1804900,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T604",
+    "account": "ACC006",
+    "amount": 1925018,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T605",
+    "account": "ACC013",
+    "amount": 558415,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T606",
+    "account": "ACC094",
+    "amount": 1238614,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T607",
+    "account": "ACC126",
+    "amount": 1675787,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T608",
+    "account": "ACC137",
+    "amount": 1635969,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T609",
+    "account": "ACC060",
+    "amount": 1069002,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T610",
+    "account": "ACC045",
+    "amount": 414313,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T611",
+    "account": "ACC024",
+    "amount": 1951939,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T612",
+    "account": "ACC124",
+    "amount": 587558,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T613",
+    "account": "ACC074",
+    "amount": 1196303,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T614",
+    "account": "ACC071",
+    "amount": 946918,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T615",
+    "account": "ACC089",
+    "amount": 75547,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T616",
+    "account": "ACC053",
+    "amount": 577225,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T617",
+    "account": "ACC088",
+    "amount": 1180739,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T618",
+    "account": "ACC147",
+    "amount": 1481658,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T619",
+    "account": "ACC082",
+    "amount": 526246,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T620",
+    "account": "ACC024",
+    "amount": 374190,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T621",
+    "account": "ACC121",
+    "amount": 1596134,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T622",
+    "account": "ACC135",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T623",
+    "account": "ACC133",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T624",
+    "account": "ACC091",
+    "amount": 1267183,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T625",
+    "account": "ACC096",
+    "amount": 1090606,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T626",
+    "account": "ACC012",
+    "amount": 1768467,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T627",
+    "account": "ACC049",
+    "amount": 617447,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T628",
+    "account": "ACC111",
+    "amount": 1861846,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T629",
+    "account": "ACC119",
+    "amount": 1426850,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T630",
+    "account": "ACC019",
+    "amount": 467810,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T631",
+    "account": "ACC034",
+    "amount": 179502,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T632",
+    "account": "ACC010",
+    "amount": 1172893,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T633",
+    "account": "ACC058",
+    "amount": 1939308,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T634",
+    "account": "ACC029",
+    "amount": 1846270,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T635",
+    "account": "ACC124",
+    "amount": 756118,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T636",
+    "account": "ACC035",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T637",
+    "account": "ACC106",
+    "amount": 1831458,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T638",
+    "account": "ACC036",
+    "amount": 194575,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T639",
+    "account": "ACC118",
+    "amount": 1726144,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T640",
+    "account": "ACC064",
+    "amount": 1767127,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T641",
+    "account": "ACC031",
+    "amount": 1555921,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T642",
+    "account": "ACC046",
+    "amount": 323172,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T643",
+    "account": "ACC040",
+    "amount": 745020,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T644",
+    "account": "ACC005",
+    "amount": 1542036,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T645",
+    "account": "ACC019",
+    "amount": 608738,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T646",
+    "account": "ACC119",
+    "amount": 425286,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T647",
+    "account": "ACC102",
+    "amount": 923549,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T648",
+    "account": "ACC052",
+    "amount": 1954309,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T649",
+    "account": "ACC016",
+    "amount": 309363,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T650",
+    "account": "ACC094",
+    "amount": 171605,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T651",
+    "account": "ACC034",
+    "amount": 873780,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T652",
+    "account": "ACC130",
+    "amount": 1025328,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T653",
+    "account": "ACC115",
+    "amount": 880846,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T654",
+    "account": "ACC070",
+    "amount": 185195,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T655",
+    "account": "ACC129",
+    "amount": 524529,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T656",
+    "account": "ACC032",
+    "amount": 845369,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T657",
+    "account": "ACC058",
+    "amount": 1231612,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T658",
+    "account": "ACC022",
+    "amount": 126996,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T659",
+    "account": "ACC131",
+    "amount": 1515370,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T660",
+    "account": "ACC125",
+    "amount": 53390,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T661",
+    "account": "ACC121",
+    "amount": 1253695,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T662",
+    "account": "ACC029",
+    "amount": 1466151,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T663",
+    "account": "ACC051",
+    "amount": 1933988,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T664",
+    "account": "ACC067",
+    "amount": 711064,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T665",
+    "account": "ACC086",
+    "amount": 634596,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T666",
+    "account": "ACC045",
+    "amount": 1469179,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T667",
+    "account": "ACC108",
+    "amount": 304856,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T668",
+    "account": "ACC057",
+    "amount": 16019,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T669",
+    "account": "ACC099",
+    "amount": 1639583,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T670",
+    "account": "ACC089",
+    "amount": 1920101,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T671",
+    "account": "ACC014",
+    "amount": 1023549,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T672",
+    "account": "ACC055",
+    "amount": 45152,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T673",
+    "account": "ACC035",
+    "amount": 1969373,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T674",
+    "account": "ACC086",
+    "amount": 1267754,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T675",
+    "account": "ACC036",
+    "amount": 790649,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T676",
+    "account": "ACC109",
+    "amount": 1538999,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T677",
+    "account": "ACC108",
+    "amount": 1723131,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T678",
+    "account": "ACC049",
+    "amount": 317337,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T679",
+    "account": "ACC004",
+    "amount": 1541358,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T680",
+    "account": "ACC085",
+    "amount": 1145169,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T681",
+    "account": "ACC108",
+    "amount": 123115,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T682",
+    "account": "ACC100",
+    "amount": 1230597,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T683",
+    "account": "ACC120",
+    "amount": 1312075,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T684",
+    "account": "ACC136",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T685",
+    "account": "ACC002",
+    "amount": 1808087,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T686",
+    "account": "ACC013",
+    "amount": 1240772,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T687",
+    "account": "ACC069",
+    "amount": 1770023,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T688",
+    "account": "ACC001",
+    "amount": 446156,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T689",
+    "account": "ACC044",
+    "amount": 170696,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T690",
+    "account": "ACC118",
+    "amount": 1400737,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T691",
+    "account": "ACC042",
+    "amount": 1679931,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T692",
+    "account": "ACC070",
+    "amount": 337850,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T693",
+    "account": "ACC101",
+    "amount": 772641,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T694",
+    "account": "ACC063",
+    "amount": 1675700,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T695",
+    "account": "ACC084",
+    "amount": 1218948,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T696",
+    "account": "ACC027",
+    "amount": 200906,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T697",
+    "account": "ACC030",
+    "amount": 1184337,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T698",
+    "account": "ACC131",
+    "amount": 21265,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T699",
+    "account": "ACC041",
+    "amount": 279812,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T700",
+    "account": "ACC102",
+    "amount": 1242574,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T701",
+    "account": "ACC147",
+    "amount": 603191,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T702",
+    "account": "ACC097",
+    "amount": 921024,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T703",
+    "account": "ACC028",
+    "amount": 486735,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T704",
+    "account": "ACC045",
+    "amount": 1050818,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T705",
+    "account": "ACC112",
+    "amount": 730746,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T706",
+    "account": "ACC073",
+    "amount": 858950,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T707",
+    "account": "ACC005",
+    "amount": 1830069,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T708",
+    "account": "ACC015",
+    "amount": 405487,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T709",
+    "account": "ACC095",
+    "amount": 582040,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T710",
+    "account": "ACC043",
+    "amount": 1908138,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T711",
+    "account": "ACC120",
+    "amount": 295300,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T712",
+    "account": "ACC075",
+    "amount": 1550659,
+    "currency": "NOK",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T713",
+    "account": "ACC133",
+    "amount": 1207536,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T714",
+    "account": "ACC068",
+    "amount": 1865035,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T715",
+    "account": "ACC015",
+    "amount": 90337,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T716",
+    "account": "ACC110",
+    "amount": 976785,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T717",
+    "account": "ACC030",
+    "amount": 923742,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T718",
+    "account": "ACC039",
+    "amount": 177241,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T719",
+    "account": "ACC126",
+    "amount": 184809,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T720",
+    "account": "ACC023",
+    "amount": 1990656,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T721",
+    "account": "ACC014",
+    "amount": 1645052,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T722",
+    "account": "ACC105",
+    "amount": 23455,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T723",
+    "account": "ACC079",
+    "amount": 490052,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T724",
+    "account": "ACC038",
+    "amount": 1438066,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T725",
+    "account": "ACC034",
+    "amount": -29885,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T726",
+    "account": "ACC046",
+    "amount": 1837592,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T727",
+    "account": "ACC107",
+    "amount": 6619,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T728",
+    "account": "ACC069",
+    "amount": 1453180,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T729",
+    "account": "ACC026",
+    "amount": 388134,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T730",
+    "account": "ACC062",
+    "amount": 941796,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T731",
+    "account": "ACC079",
+    "amount": 1986100,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T732",
+    "account": "ACC100",
+    "amount": 1590759,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T733",
+    "account": "ACC101",
+    "amount": 765996,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T734",
+    "account": "ACC013",
+    "amount": 1651462,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T735",
+    "account": "ACC004",
+    "amount": 990968,
+    "currency": "EUR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T736",
+    "account": "ACC041",
+    "amount": 790879,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T737",
+    "account": "ACC081",
+    "amount": 1752513,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T738",
+    "account": "ACC104",
+    "amount": 1620921,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T739",
+    "account": "ACC003",
+    "amount": 1395613,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T740",
+    "account": "ACC030",
+    "amount": 621464,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T741",
+    "account": "ACC030",
+    "amount": 91285,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T742",
+    "account": "ACC148",
+    "amount": 343374,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T743",
+    "account": "ACC055",
+    "amount": 200602,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T744",
+    "account": "ACC115",
+    "amount": 259274,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T745",
+    "account": "ACC001",
+    "amount": 1681807,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T746",
+    "account": "ACC048",
+    "amount": 1759310,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T747",
+    "account": "ACC015",
+    "amount": 1823426,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T748",
+    "account": "ACC011",
+    "amount": 1778164,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T749",
+    "account": "ACC085",
+    "amount": 1195393,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T750",
+    "account": "ACC040",
+    "amount": 815480,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T751",
+    "account": "ACC145",
+    "amount": 720981,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T752",
+    "account": "ACC096",
+    "amount": 1205143,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T753",
+    "account": "ACC118",
+    "amount": 143402,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T754",
+    "account": "ACC057",
+    "amount": 1745493,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T755",
+    "account": "ACC014",
+    "amount": 631814,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T756",
+    "account": "ACC044",
+    "amount": 1104667,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T757",
+    "account": "ACC083",
+    "amount": 1044278,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T758",
+    "account": "ACC138",
+    "amount": 533046,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T759",
+    "account": "ACC060",
+    "amount": 1427436,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T760",
+    "account": "ACC078",
+    "amount": 1156012,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T761",
+    "account": "ACC112",
+    "amount": 1628511,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T762",
+    "account": "ACC095",
+    "amount": 56075,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T763",
+    "account": "ACC129",
+    "amount": 172923,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T764",
+    "account": "ACC097",
+    "amount": 1596469,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T765",
+    "account": "ACC069",
+    "amount": 931932,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T766",
+    "account": "ACC065",
+    "amount": 1366954,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T767",
+    "account": "ACC011",
+    "amount": 975735,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T768",
+    "account": "ACC119",
+    "amount": 201961,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T769",
+    "account": "ACC134",
+    "amount": 1693716,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T770",
+    "account": "ACC041",
+    "amount": 296524,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T771",
+    "account": "ACC007",
+    "amount": 1788792,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T772",
+    "account": "ACC090",
+    "amount": 80448,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T773",
+    "account": "ACC001",
+    "amount": 1342787,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T774",
+    "account": "ACC111",
+    "amount": 1101876,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T775",
+    "account": "ACC043",
+    "amount": 579445,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T776",
+    "account": "ACC094",
+    "amount": 1406381,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T777",
+    "account": "ACC026",
+    "amount": 1782695,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T778",
+    "account": "ACC119",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T779",
+    "account": "ACC107",
+    "amount": 837893,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T780",
+    "account": "ACC101",
+    "amount": 1412784,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T781",
+    "account": "ACC135",
+    "amount": 1384918,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T782",
+    "account": "ACC129",
+    "amount": 1285956,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T783",
+    "account": "ACC074",
+    "amount": 351761,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T784",
+    "account": "ACC031",
+    "amount": 313248,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T785",
+    "account": "ACC078",
+    "amount": 477259,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T786",
+    "account": "ACC057",
+    "amount": 616745,
+    "currency": "USD",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T787",
+    "account": "ACC020",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T788",
+    "account": "ACC058",
+    "amount": 613793,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T789",
+    "account": "ACC062",
+    "amount": 324008,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T790",
+    "account": "ACC049",
+    "amount": 1937766,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T791",
+    "account": "ACC025",
+    "amount": 165754,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T792",
+    "account": "ACC132",
+    "amount": 1265875,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T793",
+    "account": "ACC039",
+    "amount": 776976,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T794",
+    "account": "ACC120",
+    "amount": 957013,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T795",
+    "account": "ACC108",
+    "amount": 1275265,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T796",
+    "account": "ACC041",
+    "amount": 1402334,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T797",
+    "account": "ACC127",
+    "amount": 1615852,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T798",
+    "account": "ACC063",
+    "amount": 254601,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T799",
+    "account": "ACC022",
+    "amount": 712054,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T800",
+    "account": "ACC104",
+    "amount": 1283714,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T801",
+    "account": "ACC044",
+    "amount": 803539,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T802",
+    "account": "ACC029",
+    "amount": 11730,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T803",
+    "account": "ACC076",
+    "amount": 1503923,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T804",
+    "account": "ACC138",
+    "amount": 194314,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T805",
+    "account": "ACC056",
+    "amount": 841067,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T806",
+    "account": "ACC149",
+    "amount": 1929107,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T807",
+    "account": "ACC038",
+    "amount": 597014,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T808",
+    "account": "ACC128",
+    "amount": 812435,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T809",
+    "account": "ACC061",
+    "amount": 1790848,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T810",
+    "account": "ACC116",
+    "amount": 443480,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T811",
+    "account": "ACC097",
+    "amount": 726392,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T812",
+    "account": "ACC137",
+    "amount": 1516526,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T813",
+    "account": "ACC037",
+    "amount": 358218,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T814",
+    "account": "ACC091",
+    "amount": 1941741,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T815",
+    "account": "ACC100",
+    "amount": 1886337,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T816",
+    "account": "ACC078",
+    "amount": 1559869,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T817",
+    "account": "ACC015",
+    "amount": 499103,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T818",
+    "account": "ACC102",
+    "amount": 1400451,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T819",
+    "account": "ACC138",
+    "amount": 656925,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T820",
+    "account": "ACC060",
+    "amount": 1799645,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T821",
+    "account": "ACC074",
+    "amount": 526251,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T822",
+    "account": "ACC035",
+    "amount": 593743,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T823",
+    "account": "ACC044",
+    "amount": 1190515,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T824",
+    "account": "ACC003",
+    "amount": 1243656,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T825",
+    "account": "ACC041",
+    "amount": 1033722,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T826",
+    "account": "ACC097",
+    "amount": 1827922,
+    "currency": "EUR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T827",
+    "account": "ACC035",
+    "amount": 1386110,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T828",
+    "account": "ACC012",
+    "amount": 1277428,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T829",
+    "account": "ACC112",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T830",
+    "account": "ACC028",
+    "amount": 992068,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T831",
+    "account": "ACC038",
+    "amount": 575869,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T832",
+    "account": "ACC076",
+    "amount": 1534927,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T833",
+    "account": "ACC098",
+    "amount": 1681471,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T834",
+    "account": "ACC120",
+    "amount": 949330,
+    "currency": "GBP",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T835",
+    "account": "ACC147",
+    "amount": 159541,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T836",
+    "account": "ACC009",
+    "amount": 1920377,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T837",
+    "account": "ACC065",
+    "amount": 1325611,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T838",
+    "account": "ACC130",
+    "amount": 1102647,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T839",
+    "account": "ACC059",
+    "amount": 159625,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T840",
+    "account": "ACC125",
+    "amount": 1198318,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T841",
+    "account": "ACC022",
+    "amount": 33784,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T842",
+    "account": "ACC003",
+    "amount": 950964,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T843",
+    "account": "ACC131",
+    "amount": 1993797,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T844",
+    "account": "ACC006",
+    "amount": 670984,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T845",
+    "account": "ACC054",
+    "amount": 1962435,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T846",
+    "account": "ACC133",
+    "amount": 234807,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T847",
+    "account": "ACC092",
+    "amount": 1595749,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T848",
+    "account": "ACC087",
+    "amount": 1328204,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T849",
+    "account": "ACC111",
+    "amount": 913874,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T850",
+    "account": "ACC120",
+    "amount": 1964359,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T851",
+    "account": "ACC126",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T852",
+    "account": "ACC049",
+    "amount": 1126175,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T853",
+    "account": "ACC005",
+    "amount": 26593,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T854",
+    "account": "ACC062",
+    "amount": 682580,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T855",
+    "account": "ACC142",
+    "amount": 1828425,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T856",
+    "account": "ACC052",
+    "amount": 1285053,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T857",
+    "account": "ACC051",
+    "amount": 841018,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T858",
+    "account": "ACC060",
+    "amount": 49427,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T859",
+    "account": "ACC107",
+    "amount": 1922838,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T860",
+    "account": "ACC028",
+    "amount": 1853107,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T861",
+    "account": "ACC015",
+    "amount": 864738,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T862",
+    "account": "ACC069",
+    "amount": 691354,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T863",
+    "account": "ACC051",
+    "amount": 965646,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T864",
+    "account": "ACC023",
+    "amount": 834507,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T865",
+    "account": "ACC030",
+    "amount": 426349,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T866",
+    "account": "ACC137",
+    "amount": 396756,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T867",
+    "account": "ACC057",
+    "amount": 1245549,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T868",
+    "account": "ACC088",
+    "amount": 717124,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T869",
+    "account": "ACC141",
+    "amount": 1259601,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T870",
+    "account": "ACC131",
+    "amount": 173995,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T871",
+    "account": "ACC112",
+    "amount": 532484,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T872",
+    "account": "ACC017",
+    "amount": 861576,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T873",
+    "account": "ACC120",
+    "amount": 956706,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T874",
+    "account": "ACC002",
+    "amount": 197802,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T875",
+    "account": "ACC006",
+    "amount": 1559015,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T876",
+    "account": "ACC110",
+    "amount": 1371110,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T877",
+    "account": "ACC028",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T878",
+    "account": "ACC047",
+    "amount": 420965,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T879",
+    "account": "ACC070",
+    "amount": 476391,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T880",
+    "account": "ACC013",
+    "amount": 438864,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T881",
+    "account": "ACC091",
+    "amount": 7041,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T882",
+    "account": "ACC048",
+    "amount": 1701261,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T883",
+    "account": "ACC108",
+    "amount": 925285,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T884",
+    "account": "ACC096",
+    "amount": 1442301,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T885",
+    "account": "ACC104",
+    "amount": 750906,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T886",
+    "account": "ACC128",
+    "amount": 379509,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T887",
+    "account": "ACC111",
+    "amount": 1735856,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T888",
+    "account": "ACC082",
+    "amount": 1459017,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T889",
+    "account": "ACC006",
+    "amount": 1467725,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T890",
+    "account": "ACC029",
+    "amount": 355930,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T891",
+    "account": "ACC083",
+    "amount": 457791,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T892",
+    "account": "ACC137",
+    "amount": -83257,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T893",
+    "account": "ACC045",
+    "amount": null,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T894",
+    "account": "ACC008",
+    "amount": 1630575,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T895",
+    "account": "ACC059",
+    "amount": 662357,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T896",
+    "account": "ACC051",
+    "amount": 392156,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T897",
+    "account": "ACC064",
+    "amount": 1188763,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T898",
+    "account": "ACC063",
+    "amount": 1846753,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T899",
+    "account": "ACC118",
+    "amount": 1743258,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T900",
+    "account": "ACC074",
+    "amount": 301389,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T901",
+    "account": "ACC030",
+    "amount": 1980810,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T902",
+    "account": "ACC131",
+    "amount": 1581183,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T903",
+    "account": "ACC003",
+    "amount": 621049,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T904",
+    "account": "ACC066",
+    "amount": 1415027,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T905",
+    "account": "ACC021",
+    "amount": 278195,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T906",
+    "account": "ACC088",
+    "amount": 538162,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T907",
+    "account": "ACC086",
+    "amount": 1599201,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T908",
+    "account": "ACC088",
+    "amount": 217745,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T909",
+    "account": "ACC032",
+    "amount": 325027,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T910",
+    "account": "ACC068",
+    "amount": 661133,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T911",
+    "account": "ACC104",
+    "amount": 1999562,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T912",
+    "account": "ACC101",
+    "amount": 1525562,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T913",
+    "account": "ACC066",
+    "amount": 1558291,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T914",
+    "account": "ACC004",
+    "amount": 803915,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T915",
+    "account": "ACC138",
+    "amount": 1558311,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T916",
+    "account": "ACC008",
+    "amount": 538219,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T917",
+    "account": "ACC113",
+    "amount": 1567278,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T918",
+    "account": "ACC009",
+    "amount": 1676494,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T919",
+    "account": "ACC124",
+    "amount": 18545,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T920",
+    "account": "ACC106",
+    "amount": 1573542,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T921",
+    "account": "ACC001",
+    "amount": 932564,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T922",
+    "account": "ACC065",
+    "amount": 277125,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T923",
+    "account": "ACC116",
+    "amount": 431702,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T924",
+    "account": "ACC138",
+    "amount": 1167807,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T925",
+    "account": "ACC071",
+    "amount": 1962149,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T926",
+    "account": "ACC057",
+    "amount": 1087656,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T927",
+    "account": "ACC074",
+    "amount": 1744802,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T928",
+    "account": "ACC039",
+    "amount": 1728388,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T929",
+    "account": "ACC006",
+    "amount": 1598379,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T930",
+    "account": "ACC098",
+    "amount": 1358595,
+    "currency": "USD",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T931",
+    "account": "ACC119",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T932",
+    "account": "ACC050",
+    "amount": 1404644,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T933",
+    "account": "ACC084",
+    "amount": 1582900,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T934",
+    "account": "ACC109",
+    "amount": 1008312,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T935",
+    "account": "ACC051",
+    "amount": 1002228,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T936",
+    "account": "ACC078",
+    "amount": 184003,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T937",
+    "account": "ACC062",
+    "amount": 422546,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T938",
+    "account": "ACC060",
+    "amount": null,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T939",
+    "account": "ACC030",
+    "amount": 1788386,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T940",
+    "account": "ACC124",
+    "amount": 1952803,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T941",
+    "account": "ACC004",
+    "amount": 1322752,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T942",
+    "account": "ACC026",
+    "amount": 1713030,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T943",
+    "account": "ACC121",
+    "amount": 1877672,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T944",
+    "account": "ACC112",
+    "amount": 1760990,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T945",
+    "account": "ACC005",
+    "amount": 1062718,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T946",
+    "account": "ACC034",
+    "amount": 1001665,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T947",
+    "account": "ACC145",
+    "amount": 945587,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T948",
+    "account": "ACC081",
+    "amount": 1367521,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T949",
+    "account": "ACC058",
+    "amount": 465814,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T950",
+    "account": "ACC009",
+    "amount": 805779,
+    "currency": "EUR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T951",
+    "account": "ACC039",
+    "amount": 534716,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T952",
+    "account": "ACC116",
+    "amount": 613613,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T953",
+    "account": "ACC146",
+    "amount": 1489909,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T954",
+    "account": "ACC124",
+    "amount": 972195,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T955",
+    "account": "ACC073",
+    "amount": 17809,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T956",
+    "account": "ACC101",
+    "amount": 340839,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T957",
+    "account": "ACC014",
+    "amount": 1437144,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T958",
+    "account": "ACC027",
+    "amount": 1255860,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T959",
+    "account": "ACC053",
+    "amount": 1462871,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T960",
+    "account": "ACC063",
+    "amount": 209187,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T961",
+    "account": "ACC080",
+    "amount": 510305,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T962",
+    "account": "ACC114",
+    "amount": 857540,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T963",
+    "account": "ACC132",
+    "amount": 43217,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T964",
+    "account": "ACC030",
+    "amount": 1869323,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T965",
+    "account": "ACC056",
+    "amount": 718620,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T966",
+    "account": "ACC145",
+    "amount": 1123405,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T967",
+    "account": "ACC065",
+    "amount": 1651165,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T968",
+    "account": "ACC033",
+    "amount": 57600,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T969",
+    "account": "ACC108",
+    "amount": 1093342,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T970",
+    "account": "ACC041",
+    "amount": 907968,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T971",
+    "account": "ACC031",
+    "amount": 1290168,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T972",
+    "account": "ACC064",
+    "amount": 54889,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T973",
+    "account": "ACC045",
+    "amount": 1134543,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T974",
+    "account": "ACC047",
+    "amount": 713954,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T975",
+    "account": "ACC109",
+    "amount": 1119067,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T976",
+    "account": "ACC071",
+    "amount": 800837,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T977",
+    "account": "ACC051",
+    "amount": 161777,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T978",
+    "account": "ACC052",
+    "amount": 122820,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T979",
+    "account": "ACC034",
+    "amount": 250070,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T980",
+    "account": "ACC010",
+    "amount": 1184040,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-12"
+  },
+  {
+    "txn_id": "T981",
+    "account": "ACC003",
+    "amount": 1821771,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T982",
+    "account": "ACC046",
+    "amount": 1964175,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T983",
+    "account": "ACC032",
+    "amount": 1277182,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T984",
+    "account": "ACC113",
+    "amount": 733549,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T985",
+    "account": "ACC028",
+    "amount": 1881128,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T986",
+    "account": "ACC073",
+    "amount": -13624,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T987",
+    "account": "ACC015",
+    "amount": 161088,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T988",
+    "account": "ACC104",
+    "amount": 1059502,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T989",
+    "account": "ACC117",
+    "amount": 1259060,
+    "currency": "NOK",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T990",
+    "account": "ACC119",
+    "amount": 599473,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-14"
+  },
+  {
+    "txn_id": "T991",
+    "account": "ACC012",
+    "amount": 787099,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  },
+  {
+    "txn_id": "T992",
+    "account": "ACC095",
+    "amount": 71443,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T993",
+    "account": "ACC064",
+    "amount": 585549,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T994",
+    "account": "ACC028",
+    "amount": 1431252,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T995",
+    "account": "ACC123",
+    "amount": 942059,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T996",
+    "account": "ACC081",
+    "amount": 1450847,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T997",
+    "account": "ACC074",
+    "amount": 1878654,
+    "currency": "INR",
+    "type": "debit",
+    "date": "2026-08-13"
+  },
+  {
+    "txn_id": "T998",
+    "account": "ACC011",
+    "amount": 829687,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-10"
+  },
+  {
+    "txn_id": "T999",
+    "account": "ACC017",
+    "amount": 32462,
+    "currency": "INR",
+    "type": "credit",
+    "date": "2026-08-11"
+  }
+]
