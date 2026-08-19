@@ -1,0 +1,22 @@
+======================================================================
+Copilot started @2026-08-19 20:44:52.174955
+======================================================================
+
+ Enter customer response please : Customer refused to pay and this case to be handed over to legal
+
+User query: Customer refused to pay and this case to be handed over to legal 
+Intent: escalate
+======================================================================
+Copilot quit @2026-08-19 20:45:21.122821
+======================================================================
+======================================================================
+Copilot started @2026-08-19 20:45:50.023349
+======================================================================
+
+ Enter customer response please : what is the account history for Sanjay Verma 
+
+User query: what is the account history for Sanjay Verma  
+Intent: payment_history
+======================================================================
+Copilot quit @2026-08-19 20:46:04.335417
+======================================================================
