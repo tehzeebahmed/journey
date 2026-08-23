@@ -1,0 +1,25 @@
+COLLECTIONS POLICY AND SCRIPTS
+
+Section 1 - Contact Strategy
+Accounts overdue 1-30 days: SMS and email reminder only.
+No outbound calls before 10am or after 6pm.
+Maximum 3 contact attempts per day per account.
+
+Section 2 - Settlement Authority
+Call centre agents can offer maximum 5% waiver on overdue interest.
+Settlement above 5% requires relationship manager approval.
+Principal waiver not permitted at call centre level.
+
+Section 3 - Promise to Pay
+All promise-to-pay commitments must be logged within 30 minutes of call.
+If promise broken twice, account escalated to legal team automatically.
+Follow-up call mandatory within 24 hours of missed promise date.
+
+Section 4 - Escalation Rules
+Accounts overdue more than 90 days referred to legal team.
+Customers with 3+ broken promises flagged as high risk.
+Home loan accounts require RM notification within 24 hours of contact.
+
+Section 5 - Legal Escalation
+Legal referral requires: overdue amount above INR 50,000 AND
+overdue days above 90 AND minimum 2 contact attempts made.

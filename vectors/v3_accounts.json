@@ -1,0 +1,202 @@
+[
+  {
+    "account_id": "ACC001",
+    "customer_name": "Rajesh Kumar",
+    "phone": "9876543210",
+    "overdue_amount": 42000,
+    "overdue_days": 67,
+    "last_payment_date": "2026-06-15",
+    "last_payment_amount": 5000,
+    "product": "personal_loan"
+  },
+  {
+    "account_id": "ACC002",
+    "customer_name": "Priya Sharma",
+    "phone": "9123456789",
+    "overdue_amount": 128000,
+    "overdue_days": 92,
+    "last_payment_date": "2026-05-20",
+    "last_payment_amount": 12000,
+    "product": "home_loan"
+  },
+  {
+    "account_id": "ACC003",
+    "customer_name": "Mohammed Iqbal",
+    "phone": "9988776655",
+    "overdue_amount": 8500,
+    "overdue_days": 31,
+    "last_payment_date": "2026-07-28",
+    "last_payment_amount": 8500,
+    "product": "credit_card"
+  },
+  {
+    "account_id": "ACC004",
+    "customer_name": "Vikram Singh",
+    "phone": "9812345670",
+    "overdue_amount": 95000,
+    "overdue_days": 110,
+    "last_payment_date": "2026-04-10",
+    "last_payment_amount": 10000,
+    "product": "car_loan"
+  },
+  {
+    "account_id": "ACC005",
+    "customer_name": "Sneha Reddy",
+    "phone": "9701234567",
+    "overdue_amount": 18500,
+    "overdue_days": 45,
+    "last_payment_date": "2026-07-05",
+    "last_payment_amount": 3000,
+    "product": "credit_card"
+  },
+  {
+    "account_id": "ACC006",
+    "customer_name": "Amit Joshi",
+    "phone": "9612345678",
+    "overdue_amount": 62000,
+    "overdue_days": 75,
+    "last_payment_date": "2026-06-01",
+    "last_payment_amount": 6000,
+    "product": "personal_loan"
+  },
+  {
+    "account_id": "ACC007",
+    "customer_name": "Ananya Nair",
+    "phone": "9501234567",
+    "overdue_amount": 340000,
+    "overdue_days": 88,
+    "last_payment_date": "2026-05-18",
+    "last_payment_amount": 25000,
+    "product": "home_loan"
+  },
+  {
+    "account_id": "ACC008",
+    "customer_name": "Rohan Das",
+    "phone": "9412345678",
+    "overdue_amount": 15000,
+    "overdue_days": 35,
+    "last_payment_date": "2026-07-12",
+    "last_payment_amount": 5000,
+    "product": "two_wheeler_loan"
+  },
+  {
+    "account_id": "ACC009",
+    "customer_name": "Kriti Verma",
+    "phone": "9301234567",
+    "overdue_amount": 27500,
+    "overdue_days": 58,
+    "last_payment_date": "2026-06-20",
+    "last_payment_amount": 4500,
+    "product": "personal_loan"
+  },
+  {
+    "account_id": "ACC010",
+    "customer_name": "Sandeep Gupta",
+    "phone": "9212345678",
+    "overdue_amount": 89000,
+    "overdue_days": 105,
+    "last_payment_date": "2026-04-22",
+    "last_payment_amount": 9500,
+    "product": "business_loan"
+  },
+  {
+    "account_id": "ACC011",
+    "customer_name": "Meera Pillai",
+    "phone": "9101234567",
+    "overdue_amount": 12500,
+    "overdue_days": 28,
+    "last_payment_date": "2026-07-20",
+    "last_payment_amount": 2500,
+    "product": "credit_card"
+  },
+  {
+    "account_id": "ACC012",
+    "customer_name": "Arjun Mehta",
+    "phone": "9012345678",
+    "overdue_amount": 54000,
+    "overdue_days": 62,
+    "last_payment_date": "2026-06-11",
+    "last_payment_amount": 8000,
+    "product": "personal_loan"
+  },
+  {
+    "account_id": "ACC013",
+    "customer_name": "Divya Choudhary",
+    "phone": "8901234567",
+    "overdue_amount": 415000,
+    "overdue_days": 118,
+    "last_payment_date": "2026-03-30",
+    "last_payment_amount": 35000,
+    "product": "home_loan"
+  },
+  {
+    "account_id": "ACC014",
+    "customer_name": "Karan Malhotra",
+    "phone": "8812345678",
+    "overdue_amount": 23000,
+    "overdue_days": 42,
+    "last_payment_date": "2026-07-02",
+    "last_payment_amount": 4000,
+    "product": "two_wheeler_loan"
+  },
+  {
+    "account_id": "ACC015",
+    "customer_name": "Nisha Gill",
+    "phone": "8701234567",
+    "overdue_amount": 73000,
+    "overdue_days": 81,
+    "last_payment_date": "2026-05-27",
+    "last_payment_amount": 7000,
+    "product": "car_loan"
+  },
+  {
+    "account_id": "ACC016",
+    "customer_name": "Deepak Mishra",
+    "phone": "8612345678",
+    "overdue_amount": 16500,
+    "overdue_days": 19,
+    "last_payment_date": "2026-08-01",
+    "last_payment_amount": 5000,
+    "product": "credit_card"
+  },
+  {
+    "account_id": "ACC017",
+    "customer_name": "Shweta Tiwari",
+    "phone": "8501234567",
+    "overdue_amount": 48000,
+    "overdue_days": 52,
+    "last_payment_date": "2026-06-25",
+    "last_payment_amount": 4500,
+    "product": "personal_loan"
+  },
+  {
+    "account_id": "ACC018",
+    "customer_name": "Sanjay Rao",
+    "phone": "8412345678",
+    "overdue_amount": 9100,
+    "overdue_days": 25,
+    "last_payment_date": "2026-07-24",
+    "last_payment_amount": 2000,
+    "product": "credit_card"
+  },
+  {
+    "account_id": "ACC019",
+    "customer_name": "Pooja Saxena",
+    "phone": "8301234567",
+    "overdue_amount": 112000,
+    "overdue_days": 95,
+    "last_payment_date": "2026-05-10",
+    "last_payment_amount": 11000,
+    "product": "business_loan"
+  },
+  {
+    "account_id": "ACC020",
+    "customer_name": "Aarti Kumar",
+    "phone": "8212345678",
+    "overdue_amount": 31000,
+    "overdue_days": 69,
+    "last_payment_date": "2026-06-08",
+    "last_payment_amount": 3500,
+    "product": "personal_loan"
+  }
+]
