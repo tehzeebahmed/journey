@@ -1,0 +1,376 @@
+
+script execution started 2026-08-26-09h-54m-59s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'transaction_status', 'currency', 'type', 'date', 'account_id', 'amount', 'transaction_id'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'transaction_status', 'currency', 'type', 'date', 'account_id', 'amount', 'transaction_id'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | column_name-amount           | value - None
+CRITICAL  | duplicate_record | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | column_name-amount           | value - None
+WARNING   | invalid_enum     | column_name-currency         | value - EURO
+WARNING   | new_column       | column_name-branch_code      | value - MUM001
+script execution stopped@ 2026-08-26
+script execution started 2026-08-26-10h-04m-02s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'currency', 'date', 'transaction_status', 'transaction_id', 'type', 'account_id', 'amount'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'currency', 'date', 'transaction_status', 'transaction_id', 'type', 'account_id', 'amount'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -   7 | column_name-amount           | value - None
+script execution started 2026-08-26-10h-04m-22s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'type', 'amount', 'date', 'account_id', 'transaction_status', 'currency', 'transaction_id'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'type', 'amount', 'date', 'account_id', 'transaction_status', 'currency', 'transaction_id'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -   8 | column_name-amount           | value - None
+Okay, here's the alert you can use, framed as an urgent notification:
+
+---
+
+**URGENT ALERT: Potential Autosys Job Failure for `p_load_silver_transactions
+CRITICAL  | duplicate_record | version no -   5 | column_name-transaction_id   | value - T001
+Here's an alert based on the provided information:
+
+---
+
+**SUBJECT: [CRITICAL ALERT] Data Contract Validation Failure - `p_load_silver_transactions` Job Failure
+CRITICAL  | out_of_range     | version no -   8 | column_name-amount           | value - None
+Subject: CRITICAL ALERT: Data Contract Validation Failure - Autosys Job `p_load_silver_transactions` Will Fail
+
+**Team:** Data Engineering / Operations / `p_load_silver_transactions` Owners
+
+This is an urgent notification regarding a critical
+WARNING   | invalid_enum     | version no -   8 | column_name-currency         | value - EURO
+**ALERT: Autosys Job `p_load_silver_transactions` Failure Imminent Due to Data Contract Violation**
+
+**Impact:** The scheduled Autosys job `p_load_silver
+WARNING   | new_column       | version no -   4 | column_name-branch_code      | value - MUM001
+Here's an alert you can use:
+
+---
+
+**SUBJECT: [WARNING] ACTION REQUIRED: Data Contract Validation Failure - `p_load_silver_transactions` Job Failure Imminent**
+
+
+script execution stopped@ 2026-08-26
+script execution started 2026-08-26-10h-05m-08s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'account_id', 'type', 'transaction_status', 'transaction_id', 'amount', 'currency', 'date'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'account_id', 'type', 'transaction_status', 'transaction_id', 'amount', 'currency', 'date'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -   9 | column_name-amount           | value - None
+CRITICAL  | duplicate_record | version no -   6 | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | version no -   9 | column_name-amount           | value - None
+WARNING   | invalid_enum     | version no -   9 | column_name-currency         | value - EURO
+WARNING   | new_column       | version no -   5 | column_name-branch_code      | value - MUM001
+Subject: URGENT ALERT: Autosys Job `p_load_silver_transactions` at Risk - Data Contract Validation Failure (New Column Detected)
+
+Team,
+
+Please be aware that
+script execution stopped@ 2026-08-26
+script execution started 2026-08-26-10h-05m-32s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'date', 'transaction_status', 'type', 'transaction_id', 'currency', 'account_id', 'amount'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'date', 'transaction_status', 'type', 'transaction_id', 'currency', 'account_id', 'amount'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  10 | column_name-amount           | value - None
+CRITICAL  | duplicate_record | version no -   7 | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | version no -  10 | column_name-amount           | value - None
+WARNING   | invalid_enum     | version no -  10 | column_name-currency         | value - EURO
+WARNING   | new_column       | version no -   6 | column_name-branch_code      | value - MUM001
+**URGENT ALERT: Data Contract Validation Failure - `p_load_silver_transactions` Job Failure Imminent**
+
+---
+
+**Severity:** WARNING
+
+**Impact:** The `autosys job p_load_silver_transactions` is at high risk of failure at its scheduled time.
+
+**Reason:** Data Contract Validation Failure - `new_column` violation detected.
+
+**Details:**
+A new column, `branch_code`, has been detected that is not part of version 6 of the current data contract.
+**Column Name:**
+script execution started 2026-08-26-10h-14m-55s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'transaction_status', 'account_id', 'type', 'currency', 'amount', 'transaction_id', 'date'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'transaction_status', 'account_id', 'type', 'currency', 'amount', 'transaction_id', 'date'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  11 | column_name-amount           | value - None
+CRITICAL  | duplicate_record | version no -   8 | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | version no -  11 | column_name-amount           | value - None
+WARNING   | invalid_enum     | version no -  11 | column_name-currency         | value - EURO
+WARNING   | new_column       | version no -   7 | column_name-branch_code      | value - MUM001
+script execution started 2026-08-26-10h-16m-01s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+;;;;;;;;;;;;;;;;;;;;;;;
+daily_transactions
+{'currency', 'date', 'transaction_status', 'type', 'account_id', 'transaction_id', 'amount'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'currency', 'date', 'transaction_status', 'type', 'account_id', 'transaction_id', 'amount'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  12 | column_name-amount           | value - None
+CRITICAL  | duplicate_record | version no -   9 | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | version no -  12 | column_name-amount           | value - None
+WARNING   | invalid_enum     | version no -  12 | column_name-currency         | value - EURO
+WARNING   | new_column       | version no -   8 | column_name-branch_code      | value - MUM001
+script execution started 2026-08-26-10h-19m-46s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+{'account_id', 'currency', 'transaction_id', 'amount', 'transaction_status', 'date', 'type'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'account_id', 'currency', 'transaction_id', 'amount', 'transaction_status', 'date', 'type'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  13 | column_name-amount           | value - None
+CRITICAL  | duplicate_record | version no -  10 | column_name-transaction_id   | value - T001
+CRITICAL  | out_of_range     | version no -  13 | column_name-amount           | value - None
+WARNING   | invalid_enum     | version no -  13 | column_name-currency         | value - EURO
+WARNING   | new_column       | version no -   9 | column_name-branch_code      | value - MUM001
+script execution started 2026-08-26-10h-29m-26s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+{'type', 'date', 'currency', 'amount', 'transaction_status', 'account_id', 'transaction_id'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'type', 'date', 'currency', 'amount', 'transaction_status', 'account_id', 'transaction_id'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  14 | column_name-amount           | value - None
+Subject: **🚨 ALERT: Data Contract Validation Failure - Autosys Job `p_load_silver_transactions` Failure Imminent**
+
+**Severity:** **WARNING**
+
+This is an urgent alert regarding a **Data Contract
+CRITICAL  | duplicate_record | version no -  11 | column_name-transaction_id   | value - T001
+Subject: **CRITICAL ALERT: Data Contract Validation Failure - `p_load_silver_transactions` Job Failure Imminent**
+
+---
+
+**CRITICAL ALERT!**
+
+A critical data contract validation
+CRITICAL  | out_of_range     | version no -  14 | column_name-amount           | value - None
+**[CRITICAL ALERT] Data Contract Validation Failure: `amount` Column Impacting `p_load_silver_transactions` Job**
+
+**Incident:** Data Contract Validation Failure
+**Severity:**
+WARNING   | invalid_enum     | version no -  14 | column_name-currency         | value - EURO
+**[CRITICAL ALERT] Autosys Job p_load_silver_transactions Scheduled Failure - Data Contract Violation (Currency Column)**
+
+**Severity:** HIGH (Promoted from Warning due to
+WARNING   | new_column       | version no -  10 | column_name-branch_code      | value - MUM001
+Subject: ALERT: Data Contract Validation Failure - `p_load_silver_transactions` Job at Risk
+
+**Severity:** WARNING
+
+**Immediate Action Required:** Investigation into upstream data contract change.
+
+---
+
+**Details of Violation:**
+
+An unexpected `
+script execution stopped@ 2026-08-26
+script execution started 2026-08-26-10h-32m-36s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+{'amount', 'transaction_status', 'date', 'type', 'account_id', 'transaction_id', 'currency'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'amount', 'transaction_status', 'date', 'type', 'account_id', 'transaction_id', 'currency'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  15 | column_name-amount           | value - None
+Subject: **[WARNING] [ACTION REQUIRED] Autosys Job p_load_silver_transactions at Risk - Data Contract Violation Detected!**
+
+Team,
+
+This is an urgent alert regarding
+CRITICAL  | duplicate_record | version no -  12 | column_name-transaction_id   | value - T001
+Subject: **CRITICAL ALERT: Data Contract Validation Failure - `p_load_silver_transactions` Autosys Job Will Fail**
+
+**Urgency:** **CRITICAL**
+
+This is an
+CRITICAL  | out_of_range     | version no -  15 | column_name-amount           | value - None
+**CRITICAL ALERT: Autosys Job `p_load_silver_transactions` Expected to Fail - Data Contract Violation**
+
+This is a **CRITICAL ALERT**.
+
+The Autosys
+script execution started 2026-08-26-10h-35m-07s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+{'amount', 'transaction_id', 'date', 'account_id', 'currency', 'transaction_status', 'type'}
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'amount', 'transaction_id', 'date', 'account_id', 'currency', 'transaction_status', 'type'}
+INPUT ROW COUNT: 7
+
+Total violations found: 5
+WARNING   | null_value       | version no -  16 | column_name-amount           | value - None
+Subject: URGENT ALERT: Autosys Job p_load_silver_transactions at Risk - Data Contract Validation Failure (Null Value on 'amount' Column)
+
+Dear Team,
+
+This is an urgent alert regarding a critical data contract validation failure that directly impacts the scheduled execution of the Autosys job `p
+CRITICAL  | duplicate_record | version no -  13 | column_name-transaction_id   | value - T001
+Subject: CRITICAL ALERT: Data Contract Validation Failure - autosys job p_load_silver_transactions Impacted
+
+Dear Data Engineering Team,
+
+This is a critical alert regarding a data contract validation failure that will directly impact the scheduled execution of the `p_load_silver_transactions` autosys job.
+
+**Incident Details:**
+
+*   **Severity:** critical
+*   **Violation Type:** duplicate_record
+*   **Version:** 13
+*   **Column Name:** transaction_id
+*   **Value/Error:** T001
+
+**Impact:**
+Due to this critical data validation failure, the autosys job `p_load_silver_transactions` is expected to fail at its next scheduled run.
+
+**Consumer Agents Impacted:**
+The downstream consumer agents that rely on the output of `p_load_silver_transactions` and will be impacted are:
+*   aml_detector
+*   credit_scorer
+*   collections_agent
+
+**Action Required:**
+Please investigate this `duplicate_record` violation for `transaction_id` 'T001' in version 13 immediately. Swift resolution is necessary to prevent further disruptions to downstream processes and dependent services.
+
+For further details or assistance, please refer to the data quality monitoring dashboard or contact the Data Platform team.
+
+Thank you,
+
+Automated Data Quality Alert System
+Data Engineering Department
+CRITICAL  | out_of_range     | version no -  16 | column_name-amount           | value - None
+**Subject: CRITICAL ALERT: Data Contract Validation Failure - Autosys Job p_load_silver_transactions Failure Imminent**
+
+**To:** Data Engineering Team, Operations Team, Data Quality Team,
+WARNING   | invalid_enum     | version no -  16 | column_name-currency         | value - EURO
+Subject: ALERT: Data Contract Validation Failure - `p_load_silver_transactions` Job Expected to Fail
+
+Hi Team,
+
+This is an automated alert to notify you of a critical data contract validation failure that will impact the scheduled execution of the autosys job `p_load_silver_transactions`.
+
+Due to this data contract violation, the `p_load_silver_transactions` job is expected to fail at its scheduled time.
+
+**Details of the Violation:**
+
+*   **Severity:** Warning
+*   **Violation Type:** invalid_enum
+*   **Version:** 16
+*   **Column Name:** currency
+*   **Value/Error:** EURO (The value 'EURO' was found, which is not a valid enumeration for the 'currency' column based on the current data contract definition.)
+*   **Consumer Agents Impacted:** aml_detector, credit_scorer, collections_agent
+
+**Impact:**
+The presence of the invalid enum value 'EURO' in the `currency` column has violated the defined data contract for version 16. This violation will cause the `p_load_silver_transactions` job to terminate prematurely or fail to process the affected data, leading to incomplete or incorrect data in the silver layer. Consequently, downstream consumer agents such as `aml_detector`, `credit_scorer`, and `collections_agent` are likely to be impacted by delayed or erroneous data.
+
+**Action Required:**
+Please investigate the source of the invalid 'EURO' value in the `currency` column. Immediate action is required to either:
+1.  Correct the source data to conform to the expected enumeration values for the `currency` column.
+2.  Update the data contract definition (Version 16) to include 'EURO' as a valid enumeration if it is an intended value.
+
+Prompt resolution is crucial to ensure the successful execution of `p_
+WARNING   | new_column       | version no -  12 | column_name-branch_code      | value - MUM001
+**Subject: ALERT: Data Contract Validation Failure - p_load_silver_transactions Job Impacted**
+
+Dear Data Engineering Team,
+
+This is an automated alert to inform you of a critical data contract validation failure that will impact the scheduled execution of the `p_load_silver_transactions` autosys job.
+
+Please find the details of the violation below:
+
+*   **Severity:** Warning
+*   **Violation Type:** new_column
+*   **Data Contract Version:** 12
+*   **Column Name:** branch_code
+*   **Detected Value/Error:** MUM001
+*   **Consumer Agents Impacted:** aml_detector, credit_scorer, collections_agent
+
+Due to this data contract validation failure, the autosys job `p_load_silver_transactions` is expected to fail at its next scheduled run time. This will likely lead to delays or inconsistencies in downstream data processing and reporting for the listed consumer agents.
+
+Please investigate this issue immediately to prevent further disruptions.
+
+Best regards,
+
+Automated Data Quality Monitoring System

@@ -1,0 +1,162 @@
+script execution started 2026-08-25-17h-49m-04s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+daily_transactions
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'transaction_status', 'amount', 'type', 'transaction_id', 'date', 'currency', 'account_id'}
+INPUT ROW COUNT: 7
+script execution started 2026-08-25-17h-49m-16s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+daily_transactions
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'currency', 'account_id', 'type', 'transaction_status', 'date', 'amount', 'transaction_id'}
+INPUT ROW COUNT: 7
+script execution started 2026-08-25-17h-49m-23s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+daily_transactions
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'transaction_status', 'account_id', 'amount', 'date', 'transaction_id', 'type', 'currency'}
+INPUT ROW COUNT: 7
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date', 'branch_code'])
+None
+script execution stopped@ 2026-08-25
+script execution started 2026-08-25-17h-53m-12s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'currency', 'transaction_id', 'account_id', 'amount', 'type', 'transaction_status', 'date'}
+INPUT ROW COUNT: 7
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date', 'branch_code'])
+None
+script execution stopped@ 2026-08-25
+script execution started 2026-08-25-17h-54m-47s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+['aml_detector', 'credit_scorer', 'collections_agent']
+-----------------
+
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'currency', 'date', 'transaction_status', 'type', 'transaction_id', 'amount', 'account_id'}
+INPUT ROW COUNT: 7
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date', 'branch_code'])
+None
+script execution stopped@ 2026-08-25
+script execution started 2026-08-25-17h-55m-47s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+script execution started 2026-08-25-17h-56m-24s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'date', 'transaction_id', 'amount', 'transaction_status', 'type', 'account_id', 'currency'}
+INPUT ROW COUNT: 7
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date', 'branch_code'])
+None
+script execution stopped@ 2026-08-25
+script execution started 2026-08-25-17h-57m-20s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+script execution started 2026-08-25-17h-57m-32s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+script execution started 2026-08-25-17h-59m-31s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+[Datacontract(table_name='daily_transactions', owner_team='payments_team', consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'], feed_time='daily_06:00', sla_minutes=30, version='1.0', columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)])]
+-----------------
+
+script execution started 2026-08-25-17h-59m-43s
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_incoming_transactions.json is available*****
+
+***** incoimg transaction file /Users/mustafapasha/LangChain/journey/bfsi_ai_gvnce_mntrg_platform/gm1_contract.json is available*****
+table_name='daily_transactions' owner_team='payments_team' consumer_agents=['aml_detector', 'credit_scorer', 'collections_agent'] feed_time='daily_06:00' sla_minutes=30 version='1.0' columns=[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+[ColumnContract(column_name='transaction_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='T[0-9]{3}'), ColumnContract(column_name='account_id', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern='ACC[0-9]{3}'), ColumnContract(column_name='amount', data_type='float', required=True, min_value=0.01, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='currency', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['INR', 'USD', 'GBP', 'EUR'], regex_pattern=None), ColumnContract(column_name='type', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['credit', 'debit'], regex_pattern=None), ColumnContract(column_name='date', data_type='string', required=True, min_value=None, max_value=None, allowed_values=None, regex_pattern=None), ColumnContract(column_name='transaction_status', data_type='string', required=True, min_value=None, max_value=None, allowed_values=['SUCCESS', 'FAILED', 'PENDING', 'REVERSED'], regex_pattern=None)]
+-----------------
+
+--------------------
+TABLE: daily_transactions
+CONTRACT COLUMNS: {'type', 'date', 'transaction_status', 'amount', 'account_id', 'transaction_id', 'currency'}
+INPUT ROW COUNT: 7
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date'])
+dict_keys(['transaction_id', 'account_id', 'amount', 'currency', 'type', 'date', 'branch_code'])
+None
+script execution stopped@ 2026-08-25

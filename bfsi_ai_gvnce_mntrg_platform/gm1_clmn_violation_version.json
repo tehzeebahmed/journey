@@ -1,0 +1,32 @@
+[
+    {
+        "column_name": "amount",
+        "violation_type": "null_value",
+        "version": 16,
+        "last_seen": "2026-08-26T10:35:07.407079"
+    },
+    {
+        "column_name": "transaction_id",
+        "violation_type": "duplicate_record",
+        "version": 13,
+        "last_seen": "2026-08-26T10:35:07.407088"
+    },
+    {
+        "column_name": "amount",
+        "violation_type": "out_of_range",
+        "version": 16,
+        "last_seen": "2026-08-26T10:35:07.407095"
+    },
+    {
+        "column_name": "currency",
+        "violation_type": "invalid_enum",
+        "version": 16,
+        "last_seen": "2026-08-26T10:35:07.407099"
+    },
+    {
+        "column_name": "branch_code",
+        "violation_type": "new_column",
+        "version": 12,
+        "last_seen": "2026-08-26T10:35:07.407101"
+    }
+]

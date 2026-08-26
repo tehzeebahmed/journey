@@ -1,0 +1,53 @@
+[
+  {
+    "table_name": "daily_transactions",
+    "owner_team": "payments_team",
+    "consumer_agents": ["aml_detector", "credit_scorer", "collections_agent"],
+    "feed_time": "daily_06:00",
+    "sla_minutes": 30,
+    "version": "1.0",
+    "columns": [
+      {
+        "column_name": "transaction_id",
+        "data_type": "string",
+        "required": true,
+        "regex_pattern": "T[0-9]{3}"
+      },
+      {
+        "column_name": "account_id",
+        "data_type": "string",
+        "required": true,
+        "regex_pattern": "ACC[0-9]{3}"
+      },
+      {
+        "column_name": "amount",
+        "data_type": "float",
+        "required": true,
+        "min_value": 0.01
+      },
+      {
+        "column_name": "currency",
+        "data_type": "string",
+        "required": true,
+        "allowed_values": ["INR", "USD", "GBP", "EUR"]
+      },
+      {
+        "column_name": "type",
+        "data_type": "string",
+        "required": true,
+        "allowed_values": ["credit", "debit"]
+      },
+      {
+        "column_name": "date",
+        "data_type": "string",
+        "required": true
+      },
+      {
+        "column_name": "transaction_status",
+        "data_type": "string",
+        "required": true,
+        "allowed_values": ["SUCCESS", "FAILED", "PENDING", "REVERSED"]
+      }
+    ]
+  }
+]
