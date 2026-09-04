@@ -1,0 +1,423 @@
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Executing seeding of data.....
+Connectiosn are doing fine for neo4j+s://ce4f8680.databases.neo4j.io
+Pronting of data.....
+
+--- MAPPED CLINICAL METADATA PATHWAY ---
+Study:        [NN-DIABETES-001]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Screening
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Baseline
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Systolic Blood Pressure
+            └── Standard Term: Systolic blood pressure (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Screening
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Baseline
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 4 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 12 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CV-002]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-RENAL-001]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-DIABETES-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-OBESITY-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
+Study:        [NN-CARDIO-003]
+  └── Visit:  Week 24 Follow-up
+       └── Collects: Body Weight
+            └── Standard Term: Body weight (observable entity) (SNOMED-CT)
