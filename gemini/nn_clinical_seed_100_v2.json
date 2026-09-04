@@ -1,0 +1,3702 @@
+[
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 132,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-01-01",
+      "value": 132,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-01-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 134,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-02-01",
+      "value": 134,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-02-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 136,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-03-01",
+      "value": 136,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-03-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 138,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-04-01",
+      "value": 138,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-04-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 140,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-05-01",
+      "value": 140,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-001",
+      "title": "Type 2 Diabetes Evaluation",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00001",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00001-05-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 135,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-01-01",
+      "value": 135,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-01-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 137,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-02-01",
+      "value": 137,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-02-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 139,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-03-01",
+      "value": 139,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-03-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 141,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-04-01",
+      "value": 141,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 83,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-04-02",
+      "value": 83,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 143,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-05-01",
+      "value": 143,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-002",
+      "title": "Glycemic Control Assessment",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00002",
+      "value": 84,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00002-05-02",
+      "value": 84,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 138,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-01-01",
+      "value": 138,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-01-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 140,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-02-01",
+      "value": 140,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 83,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-02-02",
+      "value": 83,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 142,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-03-01",
+      "value": 142,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 84,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-03-02",
+      "value": 84,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 144,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-04-01",
+      "value": 144,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 85,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-04-02",
+      "value": 85,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 132,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-05-01",
+      "value": 132,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-001",
+      "title": "Obesity Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00003",
+      "value": 86,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00003-05-02",
+      "value": 86,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 141,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-01-01",
+      "value": 141,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 84,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-01-02",
+      "value": 84,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 143,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-02-01",
+      "value": 143,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 85,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-02-02",
+      "value": 85,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 145,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-03-01",
+      "value": 145,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 86,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-03-02",
+      "value": 86,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 133,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-04-01",
+      "value": 133,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-04-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 135,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-05-01",
+      "value": 135,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-002",
+      "title": "Long-Term Weight Management Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00004",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00004-05-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 144,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-01-01",
+      "value": 144,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 86,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-01-02",
+      "value": 86,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 132,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-02-01",
+      "value": 132,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-02-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 134,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-03-01",
+      "value": 134,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-03-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 136,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-04-01",
+      "value": 136,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-04-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 138,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-05-01",
+      "value": 138,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-001",
+      "title": "Cardiovascular Risk Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00005",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00005-05-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 133,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-01-01",
+      "value": 133,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-01-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 135,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-02-01",
+      "value": 135,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-02-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 137,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-03-01",
+      "value": 137,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-03-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 139,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-04-01",
+      "value": 139,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-04-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 141,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-05-01",
+      "value": 141,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CV-002",
+      "title": "Cardiometabolic Outcomes Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00006",
+      "value": 83,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00006-05-02",
+      "value": 83,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 136,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-01-01",
+      "value": 136,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-01-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 138,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-02-01",
+      "value": 138,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-02-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 140,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-03-01",
+      "value": 140,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 83,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-03-02",
+      "value": 83,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 142,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-04-01",
+      "value": 142,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 84,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-04-02",
+      "value": 84,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 144,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-05-01",
+      "value": 144,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-RENAL-001",
+      "title": "Renal Function Assessment",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00007",
+      "value": 85,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00007-05-02",
+      "value": 85,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 139,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-01-01",
+      "value": 139,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 83,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-01-02",
+      "value": 83,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 141,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-02-01",
+      "value": 141,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 84,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-02-02",
+      "value": 84,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 143,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-03-01",
+      "value": 143,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 85,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-03-02",
+      "value": 85,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 145,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-04-01",
+      "value": 145,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 86,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-04-02",
+      "value": 86,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 133,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-05-01",
+      "value": 133,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-DIABETES-003",
+      "title": "Diabetes Treatment Optimization",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-002",
+      "name": "Treatment B",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00008",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00008-05-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 142,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-01-01",
+      "value": 142,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 85,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-01-02",
+      "value": 85,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 144,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-02-01",
+      "value": 144,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 86,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-02-02",
+      "value": 86,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 132,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-03-01",
+      "value": 132,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-03-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 134,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-04-01",
+      "value": 134,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-04-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 136,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-05-01",
+      "value": 136,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-OBESITY-003",
+      "title": "Metabolic Health Evaluation",
+      "phase": "Phase II"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-003",
+      "name": "Placebo",
+      "type": "Comparator"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00009",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00009-05-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 145,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-01-01",
+      "value": 145,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-SCREEN",
+      "name": "Screening",
+      "week": -2
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 78,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-01-02",
+      "value": 78,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 133,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-02-01",
+      "value": 133,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-BASELINE",
+      "name": "Baseline",
+      "week": 0
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 79,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-02-02",
+      "value": 79,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 135,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-03-01",
+      "value": 135,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-04",
+      "name": "Week 4 Follow-up",
+      "week": 4
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 80,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-03-02",
+      "value": 80,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 137,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-04-01",
+      "value": 137,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-12",
+      "name": "Week 12 Follow-up",
+      "week": 12
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 81,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-04-02",
+      "value": 81,
+      "unit": "kg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-SYS-BP",
+      "label": "Systolic Blood Pressure",
+      "variable": "BPSYS"
+    },
+    "term_params": {
+      "code": "271649006",
+      "name": "Systolic blood pressure (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 139,
+      "unit": "mmHg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-05-01",
+      "value": 139,
+      "unit": "mmHg"
+    }
+  },
+  {
+    "study_params": {
+      "id": "NN-CARDIO-003",
+      "title": "Blood Pressure and Metabolic Study",
+      "phase": "Phase III"
+    },
+    "visit_params": {
+      "id": "V-WEEK-24",
+      "name": "Week 24 Follow-up",
+      "week": 24
+    },
+    "treatment_params": {
+      "id": "TRT-001",
+      "name": "Treatment A",
+      "type": "Investigational"
+    },
+    "element_params": {
+      "id": "DE-BODY-WEIGHT",
+      "label": "Body Weight",
+      "variable": "WEIGHT"
+    },
+    "term_params": {
+      "code": "27113001",
+      "name": "Body weight (observable entity)",
+      "system": "SNOMED-CT"
+    },
+    "subject_data": {
+      "usubjid": "SUBJ-00010",
+      "value": 82,
+      "unit": "kg"
+    },
+    "observation_params": {
+      "id": "OBS-00010-05-02",
+      "value": 82,
+      "unit": "kg"
+    }
+  }
+]
