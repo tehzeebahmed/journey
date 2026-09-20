@@ -1,0 +1,29 @@
+Request: Summarize the clinical record for patient P0001
+********************************
+{'gemini-2.5-flash'}
+********************************
+**Patient:** Maria Smith (DOB 1997-05-13, F)
+
+**Recent Encounters:**
+*   **2024-10-03 (ED visit):** Chief complaint: Shortness of breath. (Provider: Dr. Patel)
+*   **2024-10-01 (Outpatient visit):** Chief complaint: Post-op check. (Provider: Dr. Garcia)
+*   **2024-08-22 (Outpatient visit):** Chief complaint: Fatigue. (Provider: Dr. Patel)
+*   **2024-08-05 (Telehealth):** Chief complaint: Abdominal pain. (Provider: Dr. Muller)
+*   **2024-05-26 (Inpatient admission):** Chief complaint: Uncontrolled hypertension. (Provider: Dr. Chen)
+
+**Active Medications:**
+*   No specific active medications are listed in the provided excerpts, though medication adherence was confirmed on 2024-05-26 for uncontrolled hypertension.
+
+**Notable/Abnormal Labs:**
+*   **2024-10-03:**
+    *   LDL Cholesterol: 215.72 mg/dL (ABNORMAL)
+    *   eGFR: 113.08 mL/min/1.73m2 (normal)
+
+**Clinical Notes:**
+*   **2024-10-03:** Patient reported improvement in shortness of breath since the last visit; monitoring to continue.
+*   **2024-10-01:** New complaint of post-op check; additional workup ordered, patient counseled on warning signs.
+*   **2024-08-22:** New complaint of fatigue; additional workup ordered, patient counseled on warning signs.
+*   **2024-08-05:** New complaint of abdominal pain; additional workup ordered, patient counseled on warning signs.
+*   **2024-05-26:** Labs reviewed, uncontrolled hypertension discussed, and medication adherence confirmed. No new concerns were raised.
+
+[audit_id=3 groundedness=0.85 model=gemini-2.5-flash snapshot=1d6c6a9959dd]
