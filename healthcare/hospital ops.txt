@@ -1,0 +1,18 @@
+{'gemini-2.5-flash'}
+********************************
+Based on the provided operational excerpts for the ICU:
+
+**Trending:**
+*   Occupancy has varied, ranging from 70% (2026-09-04, 2026-09-06) to 100% (2026-08-03, 2026-08-11, 2026-08-12, 2026-08-17, 2026-09-14).
+*   Admissions ranged from 2 (2026-09-14) to 8 (2026-09-04).
+*   Discharges ranged from 0 (2026-08-03, 2026-08-11, 2026-08-12, 2026-09-04) to 6 (2026-08-17, 2026-08-19, 2026-09-06, 2026-09-14).
+
+**Understaffed:**
+The ICU was understaffed on the following unit-days/shifts:
+*   **2026-08-03**: Night shift (8/9 nurses present)
+*   **2026-08-11**: Day shift (10/11 nurses present), Night shift (4/6 nurses present)
+*   **2026-08-19**: Day shift (8/9 nurses present), Night shift (9/10 nurses present)
+*   **2026-09-06**: Night shift (7/8 nurses present)
+*   **20
+
+[audit_id=4 groundedness=0.9 model=gemini-2.5-flash snapshot=1d6c6a9959dd]
