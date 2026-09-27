@@ -1,0 +1,72 @@
+encounter_id,patient_id,encounter_date,encounter_type,provider,chief_complaint
+E00001,P0001,2024-10-03,ED visit,Dr. Patel,Shortness of breath
+E00002,P0001,2024-08-22,Outpatient visit,Dr. Patel,Fatigue
+E00003,P0001,2024-10-01,Outpatient visit,Dr. Garcia,Post-op check
+E00004,P0001,2024-08-05,Telehealth,Dr. Muller,Abdominal pain
+E00005,P0001,2024-05-26,Inpatient admission,Dr. Chen,Uncontrolled hypertension
+E00006,P0002,2026-02-03,Telehealth,Dr. Nguyen,Fatigue
+E00007,P0002,2025-01-05,ED visit,Dr. Chen,Abdominal pain
+E00008,P0002,2024-04-03,Outpatient visit,Dr. Khan,Routine follow-up
+E00009,P0002,2025-10-04,ED visit,Dr. Muller,Chest pain
+E00010,P0003,2025-01-25,Telehealth,Dr. Kim,Type 2 diabetes management
+E00011,P0003,2025-07-20,Outpatient visit,Dr. Khan,Type 2 diabetes management
+E00012,P0003,2026-02-26,Inpatient admission,Dr. Khan,Type 2 diabetes management
+E00013,P0003,2025-03-21,ED visit,Dr. Silva,Shortness of breath
+E00014,P0003,2026-01-09,Inpatient admission,Dr. Kim,Routine follow-up
+E00015,P0004,2026-06-10,Inpatient admission,Dr. Kim,Uncontrolled hypertension
+E00016,P0004,2024-06-05,Inpatient admission,Dr. Chen,Shortness of breath
+E00017,P0005,2025-05-15,Outpatient visit,Dr. Khan,Post-op check
+E00018,P0005,2026-06-18,Inpatient admission,Dr. Garcia,Shortness of breath
+E00019,P0005,2024-09-03,Outpatient visit,Dr. Khan,Abdominal pain
+E00020,P0005,2026-04-15,Outpatient visit,Dr. Kim,Routine follow-up
+E00021,P0006,2025-11-06,Telehealth,Dr. Kim,Routine follow-up
+E00022,P0006,2024-09-28,Telehealth,Dr. Garcia,Uncontrolled hypertension
+E00023,P0006,2025-12-31,Inpatient admission,Dr. Muller,Post-op check
+E00024,P0007,2026-07-10,Telehealth,Dr. Khan,Uncontrolled hypertension
+E00025,P0007,2024-08-18,Outpatient visit,Dr. Patel,Shortness of breath
+E00026,P0007,2025-08-25,ED visit,Dr. Nguyen,Uncontrolled hypertension
+E00027,P0007,2024-01-08,Outpatient visit,Dr. Smith,Uncontrolled hypertension
+E00028,P0007,2024-03-10,Outpatient visit,Dr. Patel,Chest pain
+E00029,P0008,2024-10-12,Telehealth,Dr. Garcia,Routine follow-up
+E00030,P0008,2026-01-10,Telehealth,Dr. Garcia,Abdominal pain
+E00031,P0008,2026-04-06,Telehealth,Dr. Garcia,Chest pain
+E00032,P0009,2025-11-05,Telehealth,Dr. Patel,Fatigue
+E00033,P0009,2025-02-24,Telehealth,Dr. Smith,Chest pain
+E00034,P0010,2025-02-16,Inpatient admission,Dr. Khan,Uncontrolled hypertension
+E00035,P0010,2024-07-15,ED visit,Dr. Kim,Abdominal pain
+E00036,P0011,2025-03-08,ED visit,Dr. Ivanov,Abdominal pain
+E00037,P0011,2024-09-12,Outpatient visit,Dr. Silva,Chest pain
+E00038,P0011,2024-02-21,Outpatient visit,Dr. Khan,Uncontrolled hypertension
+E00039,P0012,2025-02-20,Telehealth,Dr. Silva,Uncontrolled hypertension
+E00040,P0012,2026-06-04,Telehealth,Dr. Smith,Routine follow-up
+E00041,P0012,2025-01-23,Outpatient visit,Dr. Muller,Type 2 diabetes management
+E00042,P0013,2024-10-19,Telehealth,Dr. Kim,Abdominal pain
+E00043,P0013,2024-06-07,ED visit,Dr. Ivanov,Uncontrolled hypertension
+E00044,P0013,2024-02-29,Outpatient visit,Dr. Patel,Shortness of breath
+E00045,P0013,2024-02-21,Telehealth,Dr. Kim,Routine follow-up
+E00046,P0013,2024-02-28,Outpatient visit,Dr. Chen,Chest pain
+E00047,P0014,2025-11-22,ED visit,Dr. Muller,Chest pain
+E00048,P0014,2026-08-22,ED visit,Dr. Nguyen,Shortness of breath
+E00049,P0015,2025-03-05,Inpatient admission,Dr. Ivanov,Uncontrolled hypertension
+E00050,P0015,2025-11-16,Inpatient admission,Dr. Garcia,Type 2 diabetes management
+E00051,P0016,2024-05-14,Inpatient admission,Dr. Silva,Post-op check
+E00052,P0016,2026-08-09,Outpatient visit,Dr. Smith,Abdominal pain
+E00053,P0016,2025-09-28,Outpatient visit,Dr. Khan,Uncontrolled hypertension
+E00054,P0016,2025-06-02,Inpatient admission,Dr. Chen,Post-op check
+E00055,P0016,2026-06-21,Outpatient visit,Dr. Garcia,Post-op check
+E00056,P0017,2024-06-10,Telehealth,Dr. Kim,Type 2 diabetes management
+E00057,P0017,2025-09-18,Outpatient visit,Dr. Kim,Type 2 diabetes management
+E00058,P0017,2026-08-12,Outpatient visit,Dr. Chen,Type 2 diabetes management
+E00059,P0017,2024-04-28,Outpatient visit,Dr. Kim,Routine follow-up
+E00060,P0018,2024-10-15,ED visit,Dr. Patel,Uncontrolled hypertension
+E00061,P0018,2025-12-04,Inpatient admission,Dr. Kim,Abdominal pain
+E00062,P0018,2024-09-14,Outpatient visit,Dr. Khan,Fatigue
+E00063,P0018,2026-04-29,Inpatient admission,Dr. Smith,Shortness of breath
+E00064,P0019,2026-02-28,ED visit,Dr. Ivanov,Routine follow-up
+E00065,P0019,2026-01-29,Telehealth,Dr. Kim,Fatigue
+E00066,P0019,2025-07-28,Outpatient visit,Dr. Khan,Chest pain
+E00067,P0019,2026-08-25,ED visit,Dr. Kim,Shortness of breath
+E00068,P0020,2025-08-19,ED visit,Dr. Muller,Routine follow-up
+E00069,P0020,2024-02-12,Inpatient admission,Dr. Patel,Shortness of breath
+E00070,P0020,2026-07-09,Inpatient admission,Dr. Garcia,Uncontrolled hypertension
+E00071,P0020,2025-11-13,Outpatient visit,Dr. Patel,Fatigue
